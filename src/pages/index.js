@@ -7,7 +7,6 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import Gallery from '../components/Gallery/Index';
 
 const Home = () => {
 
@@ -25,7 +24,6 @@ const Home = () => {
             <HomeSection/>
             <InfoSection/>
             <Services/>
-            <Gallery/>
             <ContactSection/>
             <Footer/>
             <FloatingWhatsApp

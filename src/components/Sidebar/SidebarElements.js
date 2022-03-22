@@ -18,7 +18,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #8f8146;
+    color: #f54242;
 `
 
 export const Icon = styled.div`
@@ -55,13 +55,13 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #8f8146;
     cursor: pointer;
-    font-family: 'Hubballi';
+    font-family: 'Roboto', sans-serif;
+    color: #f54242;
 
     &:hover{
         color: black;
-        background-color: #8f8146;
+        background-color: #f54242;
         transition: 0.2s ease-in-out;
     }
 `
@@ -73,24 +73,24 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkS)`
     margin-top: 20px;
-    background: #8f8146;
+    background: #f54242;
     white-space: nowrap;
     width: 150px;
     height: 50px;
     padding-top: 10px;
-    color: #121e33;
+    color: black;
     font-size: 25px;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    font-family: 'Hubballi';
+    font-family: 'Roboto', sans-serif;
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: #ab9a54;
-        color: black;
+        background: #1c1c1c;
+        color: #f54242;
     }
 `
 

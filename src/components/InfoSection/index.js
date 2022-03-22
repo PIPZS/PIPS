@@ -1,29 +1,33 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoSubtitle, InfoPeople, InfoTitle, InfoWrapper, InfoPeopleTitle, People, ImageWrapper, Image, InfoSubSubtitle } from './InfoElements'
-import Image1 from '../../images/scissorimage.png'
+import { InfoContainer, InfoSubtitle, InfoPeople, InfoTitle, InfoWrapper, InfoPeopleTitle, People, ImageWrapper, Image } from './InfoElements'
+import Image1 from '../../images/infosection.png'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 const InfoSection = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 1000});
+        Aos.init({ duration: 2000});
       }, []);
 
     return (
         <>
             <InfoContainer id={'about'}>
+                <ImageWrapper>
+                    <Image data-aos='fade-right' src={Image1} alt={'img'}></Image>
+                </ImageWrapper>
                  <InfoWrapper>
-                    <ImageWrapper>
-                        <Image src={Image1} alt={'img'}></Image>
-                    </ImageWrapper>
-                    <InfoTitle>¿Que hacemos?</InfoTitle>
-                    <InfoSubtitle>Desde 2015 nos dedicamos a mejorar la imagen de nuestros clientes. El objetivo es brindar el mejor servicio y marcar tendencia. Por eso construimos un espacio en el mundo para que disfrutes y te sientas cómodo. Queremos que BACAN sea tu lugar donde, más allá de cambiar tu look, puedas relajarte, disfrutar de una buena cerveza y encontrarte con amigos.</InfoSubtitle>
-                    <InfoSubSubtitle>- Te esperamos -</InfoSubSubtitle>
-                    <ImageWrapper>
-                        <Image src={Image1} alt={'img'} opposite></Image>
-                    </ImageWrapper>
+                    <InfoTitle>SOBRE NOSOTROS</InfoTitle>
+                    <InfoSubtitle>----------------------------------------------------------------</InfoSubtitle>
+                    <InfoPeople>
+                        <InfoPeopleTitle>
+                            <People>PIPS es un estudio creativo con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse con sus audiencias, a través de webs creativas e innovadoras. </People>
+                            <People>El tipo de trabajo que habla de la posibilidad y el progreso, que abre oportunidades para generar impacto positivo tanto para su marca como para el mundo que nos rodea.</People>
+                            <People>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de realizar cualquier movimiento que haga desafiar el status quo.</People>
+                        </InfoPeopleTitle>
+                    </InfoPeople>
                  </InfoWrapper>
+                 
             </InfoContainer>   
         </>
     )

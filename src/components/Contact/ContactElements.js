@@ -2,109 +2,112 @@ import styled from "styled-components";
 
 
 export const ContactContainer = styled.div`
-    margin-bottom:3%;
+    background: #1c1c1c;
+    padding: 0 24px;
+    height: 860px;
+    position: relative;
+    border-top: 1px dashed black;
+`
+
+export const GeneralWrapper = styled.div`
+    width: 90%;
+    margin:auto;
+    display: flex;
+    padding-top:5%;
+
+    @media screen and (max-width:900px){
+        display: flex;
+        flex-direction:column;
+    }
 `
 
 export const ContactTitle = styled.h1`
-    font-family: 'Inconsolata';
-    font-size: 49px;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    text-align: center;
-    color: #8f8146;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: #f54242;
+    margin-bottom:3%;
 
     @media screen and (max-width:900px){
         font-size: 32px;
+}
+`
+
+export const OtherContacts = styled.div`
+    color:white;
+    font-size: 25px;
+`
+export const OtherContactsTitle = styled.p`
+    color:white;
+    font-size: 18px;
+    opacity: 0.8;
+`
+export const TextWrapper = styled.div`
+    width: 50%;
+
+    @media screen and (max-width:900px){
+        width: 100%;
     }
+`
+export const Subtitle = styled.p`
+    color:white;
+    opacity: 0.8;
+    font-size: 18px;
+`
+export const Mail = styled.p`
+    color:white;
+    font-size: 28px;
+    margin-bottom: 3%;
+`
+
+export const IconWrapper = styled.div`
+    font-size: 8rem;
+    color: white;
 `
 
 export const ContactWrapper = styled.div`
-    display:flex;
-    margin-left: auto;
+    display: flex;
+    width: 50%;
+
+    @media screen and (max-width:900px){
+        width: 100%;
+    }
+`
+
+export const ContactForm = styled.form`
+    width: 100%;
+    margin-left: 10%;
+
+    @media screen and (max-width:900px){
+        width: auto;
+        margin: auto;
+    }
+`
+
+export const ContactInput = styled.input`
     width: 90%;
-
-    @media screen and (max-width:1150px){
-        display:flex;
-        flex-direction: column;
-    }
+    margin-bottom: 3%;
+    border: none;
+    padding: 10px;
+    border-bottom: 1.5px solid white;
+    background: transparent;
+    height: 50px;
 `
 
-export const ImageWrapper = styled.div`
-    width: 50%;
-    margin-right: 3%;
-    border: 5px solid black;
-
-    @media screen and (max-width:1150px){
-        width: 90%;
-        margin-right: 0px;
-    }
-`
-
-export const Image = styled.img`
-    width:100%;
-`
-export const ContactInfoWrapper = styled.div`
-    display:column;
-    width: 50%;
-
-    @media screen and (max-width:1150px){
-        width: 90%;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-
-`
-export const ContactInfo = styled.div`
-    display:flex;
-    padding: 10px 5px;
-    background: black;
-    color: gold;
-    height: 100px;
-    width: 70%;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-    border-radius: 50px;
+export const ContactFormButton = styled.button`
+    background: transparent;
+    padding: 14px 100px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
 
     &:hover{
-        background: #2e2e2e;
-    }
-
-    @media screen and (max-width:1150px){
-        width: 50%;
-        margin:auto;
-        margin-bottom: 5%;
-    }
-
-    @media screen and (max-width:768px){
-        width: 320px;
-        margin:auto;
-        margin-bottom: 5%;
-    }
-
-    @media screen and (max-width:400px){
-        width: 280px;
-        margin:auto;
-        margin-bottom: 5%;
-    }
-`
-export const IconWrapper = styled.div`
-    font-size: 2rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    background: #8f8146;
-    border-radius: 100px;
-    padding:10px;
-    color: black;
-`
-
-export const ContactInfoTitle = styled.p`
-    font-family: 'Inconsolata';
-    font-size: 1.5rem;
-    color: #8f8146;
-    font-weight: bold;
-
-    @media screen and (max-width:768px){
-        font-size: 1.2rem;
+        transition: all 0.2s ease-in-out;
+        background: white;
+        color: black;
+        border: 1px solid #f9f9f9;
     }
 `
