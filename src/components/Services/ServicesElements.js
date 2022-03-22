@@ -29,7 +29,7 @@ export const ServiceTitle = styled.h1`
     color: #f54242;
     margin-bottom: 3%;
     padding-top:50px;
-    margin-left:150px;
+    margin-left:50%;
 
     @media screen and (max-width:1300px){
         margin-bottom: 8%;
@@ -43,13 +43,23 @@ export const ServiceTitle = styled.h1`
 
 export const Service = styled.div`
     width: 500px;
+    @media screen and (max-width:1300px){
+        width: 100%;
+    }
 
 `
 export const Title = styled.h1`
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: green;
     font-size: 55px;
+    display: inline-block;
+    word-wrap: break-word;
 
+    @media screen and (max-width:1300px){
+        font-size: 30px;
+    }
+
+    
 `
 export const Subtitle = styled.h2`
     font-family: 'Roboto', sans-serif;
@@ -74,6 +84,9 @@ export const Description = styled.p`
 export const ServiceDuration = styled.div`
     margin: auto;
     width: 90px;
+    @media screen and (max-width:1300px){
+        display: none;
+    }
     
 `
 export const Duration = styled.p`
@@ -81,4 +94,8 @@ export const Duration = styled.p`
     font-size: 20px;
     opacity: 0.8;
     text-align:center;
+
+    @media screen and (max-width:1300px){
+        display: none;
+    }
 `

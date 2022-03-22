@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
     background: #1c1c1c;
     padding: 0 24px;
-    height: 860px;
+    height: 100vh;
     position: relative;
     border-top: 1px dashed black;
 `
@@ -26,7 +26,7 @@ export const ContactTitle = styled.h1`
     font-size: 45px;
     color: #f54242;
     margin-bottom:3%;
-
+    word-wrap: break-word;
     @media screen and (max-width:900px){
         font-size: 32px;
 }

@@ -29,6 +29,7 @@ export const InfoTitle = styled.h1`
     font-family: 'Inconsolata'; 
     font-size: 49px;
     color: #f54242;
+    word-wrap: break-word;
 
     @media screen and (max-width:900px){
         font-size: 32px;

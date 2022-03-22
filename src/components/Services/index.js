@@ -1,7 +1,13 @@
 import React, {useEffect} from 'react'
 import { ServicesContainer, ServicesWrapper, ServiceTitle, Service, Title, Subtitle, ServiceDescription, Description, ServiceDuration, Duration} from './ServicesElements'
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 const ServicesSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+  }, []);
+
       return (
 
         <ServicesContainer id='services'>
@@ -34,7 +40,7 @@ const ServicesSection = () => {
               <Duration>10-14 dias</Duration>
             </ServiceDuration>
           </ServicesWrapper>
-          <ServicesWrapper>
+          <ServicesWrapper >
             <Service>
               <Title>Implementación</Title>
               <Subtitle>single page website</Subtitle>
@@ -48,7 +54,7 @@ const ServicesSection = () => {
               <Duration>20-30 dias</Duration>
             </ServiceDuration>
           </ServicesWrapper>
-          <ServicesWrapper>
+          <ServicesWrapper >
             <Service>
               <Title>Soporte</Title>
               <Subtitle>cambios y correcciones</Subtitle>
