@@ -4,15 +4,17 @@ import {Link as LinkS} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: black;
+    background: ${({ specialScroll }) => (specialScroll ? '#1c1c1c' : 'rgba(0,0,0,0.2)')};
     height: 80px;
     display: flex; 
-    justify-content: center;
-    align-items: center;
     font-size: 1rem;
-    position: sticky;
     top: 0;
     z-index:30;
+    position:sticky;
+    margin-top: -80px;
+    justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-end' : 'center')};;
+    align-items: ${({ specialScroll }) => (specialScroll ? 'flex-end' : 'center')};;
+
 
     /* @media screen and (max-width:960px){
         transition: 0.8s all ease;
@@ -21,12 +23,8 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    padding: 0 24px;
-    max-width: 1300px;
 `
 
 export const NavIcon = styled.div`
@@ -34,28 +32,25 @@ export const NavIcon = styled.div`
     margin-top: 5px;
     font-size: 3.5rem;
     margin-right: 5%;
-    color: #8f8146;
+    display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
+    align-items:center;
+    margin-left:-1300px;
 
-    @media screen and (max-width:400px){
-        font-size: 2.5rem;
-        margin-top: 12%;
-    }
-
-    @media screen and (max-width:350px){
-        font-size: 2rem;
-        margin-top: 20%;
-    }
+    text-shadow: -1px 1px 0 #f54242,
+                        1px 1px 0 #f54242,
+                        1px -1px 0 #f54242,
+                        -1px -1px 0 #f54242;
 `
 
 export const Title = styled.h1`
-    font-size: 34px;
-    font-family: 'Inconsolata';
-    color: #8f8146;
+    font-size: 60px;
+    font-family: 'Monstserrat';
+    color: #1c1c1c;
 `
 
 export const Subtitle = styled.h1`
-    font-size: 25px;
-    font-family: 'Inconsolata';
+    font-size: 1.7rem;
+    font-family: 'Monstserrat'
     margin-left: 2%;
     color: black;
 
@@ -75,6 +70,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    
 `
 export const MobileIcon = styled.div`
     display: none;
@@ -96,7 +92,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 
     @media screen and (max-width:768px){
         display: none;
@@ -105,58 +100,21 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    padding-right:30px;
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #8f8146;
+    color: white;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-family: 'Inconsolata';
-    font-size: 24px;
-    font-weight: bold;
-
+    font-family: 'Monstserrat';
 
     &.active{
-        border-bottom: 3px solid #8f8146;
-    }
-`
-
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-    margin-left:15px;
-
-    @media screen and(max-width:768px){
-        display: none;
-    }
-`
-
-export const NavBtnLink = styled(LinkS)`
-    white-space: nowrap;
-    padding: 10px 22px;
-    font-family: 'Inconsolata';
-    font-size: 24px;
-    font-weight: bold;
-    outline: none;
-    border:none;
-    border: 2px solid #8f8146;
-    border-left: none;
-    border-right: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    color: #8f8146;
-    border-left: ${({ specialScroll }) => (specialScroll ? '2px solid #8f8146' : 'none')};
-    border-right: ${({ specialScroll }) => (specialScroll ? '2px solid #8f8146' : 'none')};
-    
-
-    &:hover{
-        transition: all 0.2s ease-in-out;
-        background: #8f8146;
-        color: black;
+        color: #f54242;
+        transition: color 0.4s ease;
     }
 `

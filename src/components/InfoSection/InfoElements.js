@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 
 export const InfoContainer = styled.div`
-    background: #f9f9f9;
+    background: #1c1c1c;
     display: flex;
     justify-content: center;
     padding: 0 24px;
+    height: 100vh;
     position: relative;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
     @media screen and (max-width:700px){
         display: flex;
@@ -17,8 +16,9 @@ export const InfoContainer = styled.div`
 `
 
 export const InfoWrapper = styled.div`
-    justify-content: center;
+    justify-content: right;
     width: 50%;
+    padding-top: 8%;
 
     @media screen and (max-width:700px){
         width: 100%;
@@ -26,34 +26,23 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoTitle = styled.h1`
-    font-family: 'Inconsolata';
+    font-family: 'Inconsolata'; 
     font-size: 49px;
-    color: #8f8146;
-    text-align: center;
-    margin-top: 5%;
+    color: #f54242;
 
     @media screen and (max-width:900px){
         font-size: 32px;
-    }
+}
 `
 export const InfoSubtitle = styled.p`
-    font-family: 'Inconsolata';
-    font-size: 19px;
-    color: black;
+    font-family: 'Inconsolata'; 
+    font-size: 23px;
+    color: white;
     margin-top: 3%;
-    margin-bottom: 3%;
-    
 
     @media screen and (max-width:900px){
         font-size: 16px;
     }
-`
-
-export const InfoSubSubtitle = styled.p`
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 5%;
-    font-family: 'Inconsolata';
 `
 
 export const InfoPeople = styled.div`
@@ -63,9 +52,9 @@ export const InfoPeople = styled.div`
 `
 
 export const InfoPeopleTitle = styled.h2`
-    font-family: 'Hubballi', cursive;
+    font-family: 'Inconsolata'; 
     font-size: 30px;
-    color: #8f8146;
+    color: #f54242;
     margin-right: 10%;
 
     @media screen and (max-width:900px){
@@ -74,9 +63,9 @@ export const InfoPeopleTitle = styled.h2`
 `
 
 export const People =  styled.p`
-    font-family: 'Hubballi', cursive;
+    font-family: 'Inconsolata'; 
     font-size: 19px;
-    color: black;
+    color: white;
     margin-top: 5px;
     font-weight: lighter;
 
@@ -85,8 +74,17 @@ export const People =  styled.p`
     }
 `
 
-export const ImageWrapper = styled.div`    
+export const ImageWrapper = styled.div`
+    align-items: left;
+    margin-top: 10%;
+    height:70%;
+    margin-right: 10%;
     
+
+    @media screen and (max-width:700px){
+        display:none;
+    
+    }
 `
 
 export const Image = styled.img`
@@ -94,12 +92,5 @@ export const Image = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-
-    -webkit-transform:rotate(-0.3deg);
-    -moz-transform: rotate(-0.3deg);
-    -ms-transform: rotate(-0.3deg);
-    -o-transform: rotate(-0.3deg);
-
-    transform:${props => props.opposite ? 'rotate(179.7deg);' : 'rotate(-0.3deg);' };
 
 `

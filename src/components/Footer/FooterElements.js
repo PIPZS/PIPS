@@ -42,6 +42,7 @@ export const FooterLinkItems = styled.div`
     width: 160px;
     box-sizing: border-box;
     color: #fff;
+    
 
     @media screen and (max-width:420px){
         margin: 0;
@@ -96,12 +97,11 @@ export const SocialLogo = styled(Link)`
 `
 
 export const WebsiteRigths = styled.small`
-    color: #8f8146;
     margin-bottom: 16px;
     margin-right: 30%;
     font-size: 22px;
-    font-family: 'Inconsolata';
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 
     @media screen and (max-width:670px){
         font-size: 18px;
@@ -121,10 +121,11 @@ export const SocialMediaItems = styled.div`
 `
 
 export const SocialMediaItem = styled.a`
-    font-family: 'Open Sans';
     font-size: 30px;
-    color: #8f8146;
     margin-left: 15%;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
 
     @media screen and (max-width:600px){
         font-size: 1.5rem;

@@ -11,20 +11,14 @@ const Navbar = ({toggle}) => {
 
     const changeNav = () => {
 
-    if (window.innerWidth > 1200){
         if(window.scrollY >= 0){
             setScrollNav(false)
         }if(window.scrollY >= 720){
-            setScrollNav(true)
-        }if (window.scrollY >= 1590){
-            setScrollNav(false)
-        }if (window.scrollY >= 2240){
             setScrollNav(true);
             setSpecialScroll(true)
         }else{
-            setSpecialScroll(false)
+            setSpecialScroll(false);
         }
-    }
     }
 
     useEffect(() => {
@@ -37,33 +31,26 @@ const Navbar = ({toggle}) => {
 
     return (
         <>
-        <Nav scrollNav={scrollNav}>
+        <Nav scrollNav={scrollNav} specialScroll={specialScroll}>
             <NavbarContainer>
-                <NavLogo to='/'  onClick={toggleHome} scrollNav={scrollNav}>
+            <NavLogo to='/'  onClick={toggleHome} scrollNav={scrollNav}>
                 <NavIcon scrollNav={scrollNav}>
-                    <BsScissors/>
+                <Title>PIPS</Title>
                 </NavIcon>
-                    <div>
-                        <Title> Barberia </Title>
-                        <Subtitle> Caballito </Subtitle>
-                    </div>
                 </NavLogo>
                 <MobileIcon scrollNav={scrollNav} onClick={toggle}>
                     <FaBars/>
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="home" smooth={true} duration={500} spy={true} exact={true} offset={-90} scrollNav={scrollNav}>Home</NavLinks>
+                        <NavLinks to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80} scrollNav={scrollNav}>NOSOTROS</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80} scrollNav={scrollNav}>Sobre Nosotros</NavLinks>
+                        <NavLinks to="services" smooth={true} duration={500} spy={true} exact={true} offset={-68} scrollNav={scrollNav}>SERVICIOS</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services" smooth={true} duration={500} spy={true} exact={true} offset={-68} scrollNav={scrollNav}>Servicios</NavLinks>
+                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact={true} offset={-60} scrollNav={scrollNav} specialScroll={specialScroll}>CONTACTO</NavLinks>
                     </NavItem>
-                    <NavBtn>
-                        <NavBtnLink to='contact' smooth={true} duration={500} spy={true} exact={true} offset={-60} scrollNav={scrollNav} specialScroll={specialScroll}>Contacto</NavBtnLink>
-                    </NavBtn>
                 </NavMenu>
                 
             </NavbarContainer>

@@ -36,7 +36,7 @@ const Footer = () => {
                                 
                             </SocialLogo>
                             <WebsiteRigths>
-                              © Barberia {new Date().getFullYear()} - Todos los derechos reservados
+                              © PIPS {new Date().getFullYear()} - Todos los derechos reservados
                             </WebsiteRigths>
                             <SocialMediaItems>
                                 <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialMediaItem>
