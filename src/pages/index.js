@@ -26,13 +26,13 @@ const Home = () => {
             <Services/>
             <ContactSection/>
             <Footer/>
-            {/* <FloatingWhatsApp
+            <FloatingWhatsApp
                 phoneNumber="123456789"
                 accountName="Bot"
                 allowClickAway
                 notification
                 notificationDelay={60000} // 1 minute
-            /> */}
+            />
         </>
     )
 }
