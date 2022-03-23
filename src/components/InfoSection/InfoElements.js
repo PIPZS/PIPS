@@ -22,6 +22,7 @@ export const InfoWrapper = styled.div`
 
     @media screen and (max-width:700px){
         width: 100%;
+        padding-top: 0%;
     }
 `
 
@@ -65,7 +66,7 @@ export const InfoPeopleTitle = styled.h2`
 
 export const People =  styled.p`
     font-family: 'Inconsolata'; 
-    font-size: 19px;
+    font-size: 1.7vw;
     color: white;
     margin-top: 5px;
     font-weight: lighter;
@@ -83,8 +84,10 @@ export const ImageWrapper = styled.div`
     
 
     @media screen and (max-width:700px){
-        display:none;
-    
+        margin:auto; 
+        margin-top:15%;
+        height:50%;
+        margin-bottom:0%;
     }
 `
 

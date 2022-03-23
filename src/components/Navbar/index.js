@@ -13,7 +13,7 @@ const Navbar = ({toggle}) => {
 
         if(window.scrollY >= 0){
             setScrollNav(false)
-        }if(window.scrollY >= 720){
+        }if(window.scrollY >= 820){
             setScrollNav(true);
             setSpecialScroll(true)
         }else{
@@ -33,10 +33,10 @@ const Navbar = ({toggle}) => {
         <>
         <Nav scrollNav={scrollNav} specialScroll={specialScroll}>
             <NavbarContainer>
-            <NavLogo to='/'  onClick={toggleHome} scrollNav={scrollNav}>
-                <NavIcon scrollNav={scrollNav}>
-                <Title>PIPS</Title>
-                </NavIcon>
+                <NavLogo to='/'  onClick={toggleHome} scrollNav={scrollNav}>
+                    <NavIcon scrollNav={scrollNav}>
+                        <Title>PIPS</Title>
+                    </NavIcon>
                 </NavLogo>
                 <MobileIcon scrollNav={scrollNav} onClick={toggle}>
                     <FaBars/>

@@ -27,9 +27,13 @@ export const ContactTitle = styled.h1`
     color: #f54242;
     margin-bottom:3%;
     word-wrap: break-word;
+
     @media screen and (max-width:900px){
         font-size: 32px;
 }
+    @media screen and (max-width:420px){
+        font-size: 25px;
+    }
 `
 
 export const OtherContacts = styled.div`
@@ -62,6 +66,10 @@ export const Mail = styled.p`
 export const IconWrapper = styled.div`
     font-size: 8rem;
     color: white;
+
+    @media screen and (max-width:900px){
+        display:none;
+    }
 `
 
 export const ContactWrapper = styled.div`
@@ -70,6 +78,7 @@ export const ContactWrapper = styled.div`
 
     @media screen and (max-width:900px){
         width: 100%;
+        margin-top: 10%;
     }
 `
 
@@ -95,7 +104,7 @@ export const ContactInput = styled.input`
 
 export const ContactFormButton = styled.button`
     background: transparent;
-    padding: 14px 100px;
+    text-align:center;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
@@ -103,6 +112,8 @@ export const ContactFormButton = styled.button`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 10px;
+    width:40%;
+    padding: 15px 0px;
 
     &:hover{
         transition: all 0.2s ease-in-out;

@@ -18,7 +18,6 @@ const InfoSection = () => {
                 </ImageWrapper>
                  <InfoWrapper>
                     <InfoTitle>SOBRE NOSOTROS</InfoTitle>
-                    <InfoSubtitle>----------------------------------------------------------------</InfoSubtitle>
                     <InfoPeople>
                         <InfoPeopleTitle>
                             <People>PIPS es un estudio creativo con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse con sus audiencias, a través de webs creativas e innovadoras. </People>

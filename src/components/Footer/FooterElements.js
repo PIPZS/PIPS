@@ -103,9 +103,15 @@ export const WebsiteRigths = styled.small`
     font-family: 'Roboto', sans-serif;
     color: white;
 
+    @media screen and (max-width:1200px){
+        width:100%;
+        text-align:center;
+        margin:auto;
+        margin-bottom: 2%;
+    } 
+    
     @media screen and (max-width:670px){
         font-size: 18px;
-        width:60%;
     }   
 `
 

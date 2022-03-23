@@ -3,7 +3,7 @@ import Image from '../../images/PIPS.jpg';
 
 export const HomeContainer = styled.div`
     position: relative;
-    height: 100vh;
+    height: 900px;
     background-image: url(${Image});
     background-repeat: no-repeat;
     background-position: center;

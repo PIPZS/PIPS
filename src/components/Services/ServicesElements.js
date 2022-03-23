@@ -18,8 +18,11 @@ export const ServicesWrapper = styled.div`
     margin-bottom: 1%;   
     border-bottom: 1px solid grey;
 
-    @media screen and (max-width:1300px){
-        margin-bottom: 3%;
+    @media screen and (max-width:1100px){
+        margin-bottom: 7%;
+    }
+    @media screen and (max-width:650px){
+        margin-bottom: 15%;
     }
 `
 
@@ -27,16 +30,16 @@ export const ServiceTitle = styled.h1`
     font-family: 'Inconsolata';
     font-size: 49px;
     color: #f54242;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     padding-top:50px;
-    margin-left:50%;
+    margin-left:5%;
 
     @media screen and (max-width:1300px){
         margin-bottom: 8%;
     }
     
 
-    @media screen and (max-width:900px){
+    @media screen and (max-width:500px){
         font-size: 32px;
 }
 `
@@ -44,18 +47,22 @@ export const ServiceTitle = styled.h1`
 export const Service = styled.div`
     width: 500px;
     @media screen and (max-width:1300px){
-        width: 100%;
+        width: 300px;
     }
 
 `
 export const Title = styled.h1`
     font-family: 'Roboto', sans-serif;
-    color: green;
+    color: white;
     font-size: 55px;
     display: inline-block;
     word-wrap: break-word;
 
     @media screen and (max-width:1300px){
+        font-size: 45px;
+    }
+
+    @media screen and (max-width:650px){
         font-size: 30px;
     }
 
@@ -68,15 +75,20 @@ export const Subtitle = styled.h2`
     margin-top: 1%;
 `
 export const ServiceDescription = styled.div`
+    margin:auto;
     width: 500px;
 
     @media screen and (max-width:1300px){
+        width: 300px;
+    }
+
+    @media screen and (max-width:1100px){
         display: none;
     }
 `
 export const Description = styled.p`
     color:white;
-    font-size: 20px;}
+    font-size: 20px;
     opacity: 0.8;
     margin-bottom: 4%;
 
@@ -84,18 +96,14 @@ export const Description = styled.p`
 export const ServiceDuration = styled.div`
     margin: auto;
     width: 90px;
-    @media screen and (max-width:1300px){
+
+    @media screen and (max-width:500px){
         display: none;
     }
-    
 `
 export const Duration = styled.p`
     color:white;
     font-size: 20px;
     opacity: 0.8;
     text-align:center;
-
-    @media screen and (max-width:1300px){
-        display: none;
-    }
 `
