@@ -113,7 +113,7 @@ export const ContactFormButton = styled.button`
     transition: all 0.2s ease-in-out;
     margin-top: 10px;
     width:40%;
-    padding: 15px 0px;
+    padding: 15 px 0px;
 
     &:hover{
         transition: all 0.2s ease-in-out;
