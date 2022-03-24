@@ -24,6 +24,9 @@ export const ServicesWrapper = styled.div`
     @media screen and (max-width:650px){
         margin-bottom: 15%;
     }
+    @media screen and (max-width:400px){
+        width: 300px;
+    }
 `
 
 export const ServiceTitle = styled.h1`
