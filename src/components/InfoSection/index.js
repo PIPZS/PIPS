@@ -13,9 +13,6 @@ const InfoSection = () => {
     return (
         <>
             <InfoContainer id={'about'}>
-                <ImageWrapper>
-                    <Image data-aos='fade-right' src={Image1} alt={'img'}></Image>
-                </ImageWrapper>
                  <InfoWrapper>
                     <InfoTitle>SOBRE NOSOTROS</InfoTitle>
                     <InfoPeople>
@@ -26,6 +23,9 @@ const InfoSection = () => {
                         </InfoPeopleTitle>
                     </InfoPeople>
                  </InfoWrapper>
+                 <ImageWrapper>
+                    <Image data-aos='fade-right' src={Image1} alt={'img'}></Image>
+                </ImageWrapper>
                  
             </InfoContainer>   
         </>
