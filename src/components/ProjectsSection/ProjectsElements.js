@@ -13,6 +13,8 @@ export const ProjectsWrapper = styled.div`
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
+    width: 80%;
+    margin:auto;
 
     @media screen and (max-width: 1500px){
         grid-template-columns: repeat(auto-fit,minmax(18rem,20rem));
@@ -22,7 +24,7 @@ export const ProjectsWrapper = styled.div`
 export const ProjectsTitle = styled.h1`
     font-family: 'Inconsolata';
     font-size: 49px;
-    color: #8f8146;
+    color: #f54242;
     text-align: center;
     margin-bottom: 5%;
 
@@ -64,14 +66,15 @@ export const CardBackText = styled.p`
 export const CardImage = styled.div`
     height: 200px;
     
-    @media (max-width: 1500px) {
-          width: 300px
+    @media (max-width: 400px) {
+        width: 280px
+        
     }
 `
 export const Image = styled.img`
     height: 200px;
-    @media (max-width: 1500px) {
-        width: 300px
+    @media (max-width: 400px) {
+        width: 100%;
     }
 `
 export const BackIcon = styled.div`
