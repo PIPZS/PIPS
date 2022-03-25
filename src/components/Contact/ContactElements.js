@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
     height: 100vh;
     position: relative;
     border-top: 1px dashed black;
+    overflow: auto;
 `
 
 export const GeneralWrapper = styled.div`
@@ -14,6 +15,9 @@ export const GeneralWrapper = styled.div`
     margin:auto;
     display: flex;
     padding-top:5%;
+    height:80%;
+    position:relative;
+    
 
     @media screen and (max-width:900px){
         display: flex;

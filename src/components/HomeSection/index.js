@@ -8,7 +8,7 @@ import Image from '../../images/PIPS.jpg';
 
 const Background = styled.div`
     display:flex;
-    min-height: 900px;
+    min-height: 100vh;
     flex-direction: column;
     background-image: url(${Image});
     background-position: left;
