@@ -9,7 +9,7 @@ export const InfoContainer = styled.div`
     height: 100vh;
     position: relative;
 
-    @media screen and (max-width:700px){
+    @media screen and (max-width:900px){
         display: flex;
         flex-direction: column;
     }
@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div`
     width: 50%;
     padding-top: 8%;
 
-    @media screen and (max-width:700px){
+    @media screen and (max-width:900px){
         width: 100%;
         padding-top: 0%;
     }
@@ -72,18 +72,18 @@ export const People =  styled.p`
     font-weight: lighter;
 
     @media screen and (max-width:900px){
-        font-size: 12px;
+        font-size: 15px;
     }
 `
 
 export const ImageWrapper = styled.div`
-    align-items: left;
-    margin-top: 10%;
+    align-items: right;
+    margin-top: 9%;
     height:70%;
-    margin-right: 10%;
+    margin-left: 10%;
     
 
-    @media screen and (max-width:700px){
+    @media screen and (max-width:900px){
         margin:auto; 
         margin-top:15%;
         height:50%;
