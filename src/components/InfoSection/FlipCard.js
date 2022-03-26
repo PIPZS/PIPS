@@ -1,9 +1,8 @@
 import { useState } from "react";
 import cn from "classnames";
-import {CardFrontText ,CardBackText, CardImage, Image, BackIcon, CardFrontSubtitle,TextWrapper} from './ProjectsElements'
-import {GiBarbedSun} from "react-icons/gi"
+import {CardFrontText, CardBackText, Text, Image, ImageWrapper } from './InfoElements'
 
-function FlipCard({ card, imageSource}) {
+function FlipCard({ card, icon}) {
   const [showBack, setShowBack] = useState(false);
 
   function handleClick() {
@@ -41,31 +40,22 @@ function FlipCard({ card, imageSource}) {
       >
         <div className="card front">
           <div className="card-body">
-            <CardImage>
-                <Image src={imageSource} alt=""></Image>
-            </CardImage>
+            <CardFrontText>
+              <ImageWrapper>
+                <Image src={icon} alt=""></Image>
+              </ImageWrapper>
+                <Text>{card.front}</Text>
+            </CardFrontText>
           </div>
         </div>
         <div className="card back">
           {/* <div className="card-body d-flex justify-content-center align-items-center"> */}
             <CardBackText>
-                {card.back}
+                <Text>{card.back}</Text>
             </CardBackText>
-            <BackIcon>
-                <GiBarbedSun/>
-            </BackIcon>
           {/* </div> */}
         </div>
       </div>
-        <TextWrapper>
-        <CardFrontText>
-                {card.front}
-            </CardFrontText>
-            <CardFrontSubtitle>
-                {card.subtitle}
-            </CardFrontSubtitle>
-        </TextWrapper>
-
     </div>
   );
 }

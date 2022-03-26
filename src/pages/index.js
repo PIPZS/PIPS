@@ -7,7 +7,6 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import ProjectsSection from '../components/ProjectsSection';
 
 const Home = () => {
 
@@ -24,7 +23,6 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HomeSection/>
             <InfoSection/>
-            <ProjectsSection/>
             <Services/>
             <ContactSection/>
             <Footer/>
