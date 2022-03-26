@@ -56,7 +56,7 @@ const InfoSection = () => {
             <InfoContainer id={'about'}>
                  <InfoWrapper>
                     <InfoTitle>SOBRE NOSOTROS</InfoTitle>  
-                    <InfoText>Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</InfoText>   
+                    <InfoText>Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</InfoText>   
                  </InfoWrapper>
                  <InfoCardsWrapper>
                     {cards.map((card) => (
