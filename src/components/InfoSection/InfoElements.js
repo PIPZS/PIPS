@@ -5,8 +5,7 @@ export const InfoContainer = styled.div`
     background: black;
     display: flex;
     justify-content: center;
-    padding: 0 24px;
-    height: 100vh;
+    padding: 50px 24px;
     position: relative;
     padding-top 5%;
 
