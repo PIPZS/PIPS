@@ -9,6 +9,7 @@ import Image5 from '../../images/PIPS.jpg'
 import Image6 from '../../images/PIPS.jpg'
 import "./styles.scss";
 import FlipCard from './FlipCard';
+import {Carousel} from '../Carousel/Carousel'
 
 const cards = [
     {
@@ -67,12 +68,14 @@ const ProjectsSection = () => {
       return (
 
         <ProjectsContainer id='projects'>
-        <ProjectsTitle>ULTIMOS TRABAJOS</ProjectsTitle>
+        {/* <ProjectsTitle>ULTIMOS TRABAJOS</ProjectsTitle>
         <ProjectsWrapper>
             {cards.map((card) => (
                 <FlipCard key={card.id} card={card} imageSource={card.image}/>
             ))}
-        </ProjectsWrapper>
+        </ProjectsWrapper> */}
+
+        <Carousel></Carousel>
         </ProjectsContainer>
         
       );
