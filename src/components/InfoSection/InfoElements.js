@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
     width: 50%;
     margin-left: 3%;;
 
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1200px){
         width: 100%;
         margin-left: 0%;;
         padding-top: 0%;
@@ -34,8 +34,8 @@ export const InfoTitle = styled.h1`
     color: #f54242;
     word-wrap: break-word;
 
-    @media screen and (max-width:900px){
-        font-size: 32px;
+    @media screen and (max-width:500px){
+        font-size: 8vw;
 }
 `
 export const InfoSubtitle = styled.p`
@@ -44,7 +44,7 @@ export const InfoSubtitle = styled.p`
     color: white;
     margin-top: 3%;
 
-    @media screen and (max-width:900px){
+    @media screen and (max-width:500px){
         font-size: 16px;
     }
 `
@@ -52,13 +52,18 @@ export const InfoSubtitle = styled.p`
 export const InfoText = styled.p`
     margin-top: 3%;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    word-break: break-all;
+
+    @media screen and (max-width:500px){
+        font-size: 6vw;
+}
 `
 
 export const InfoCardsWrapper = styled.div`
     display: grid;
-    grid-template-columns: 20vw 20vw;
-    grid-row: 20vw 20vw;
+    grid-template-columns: 310px 310px;
+    grid-template-rows: 310px 310px;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     width: 70%;
@@ -66,19 +71,42 @@ export const InfoCardsWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 1500px){
-        grid-template-columns: repeat(auto-fit,minmax(18rem,20rem));
-    }    
-      
     @media screen and (max-width: 1200px){
         width: 80%;
         margin: auto;
-    }      
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }   
+
+    @media screen and (max-width: 700px){
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 230px 230px;
+    }  
+    
+    @media screen and (max-width: 500px){
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw;
+    }
+
+    @media screen and (max-width: 400px){
+        display:flex;
+        flex-direction:column;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    } 
 `
 
 export const CardFrontText = styled.div`
     margin-top: 10%;
     font-size: 2rem;
+
+    @media screen and (max-width: 700px){
+        font-size: 1.7rem;
+    }  
+    
+    @media screen and (max-width: 500px){
+        font-size: 5vw;
+    }  
 `
 
 export const CardBackText = styled.div`
@@ -86,7 +114,6 @@ export const CardBackText = styled.div`
     width: 90%;
     margin: auto;
     margin-top: 10%;
-    text-align: center;
 `
 export const Text = styled.p`  
 `
