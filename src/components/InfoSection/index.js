@@ -1,13 +1,15 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText } from './InfoElements'
+import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, MainWrapper, CarouselContainer } from './InfoElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
-import "./styles.scss";
+import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import Image1 from "../../images/Icon1.png"
 import Image2 from "../../images/Icon2.png"
 import Image3 from "../../images/Icon3.png"
 import Image4 from "../../images/Icon4.png"
+import { Assessment } from '@material-ui/icons';
+import  {Carousel}  from '../Carousel/Carousel';
 
 const InfoSection = () => {
 
@@ -53,6 +55,7 @@ const InfoSection = () => {
 
     return (
         <>
+        <MainWrapper>
             <InfoContainer id={'about'}>
                  <InfoWrapper>
                     <InfoTitle>SOBRE NOSOTROS</InfoTitle>  
@@ -63,8 +66,16 @@ const InfoSection = () => {
                     <FlipCard key={card.id} card={card} icon={card.icon} />
                     ))}
                 </InfoCardsWrapper>
-                 
-            </InfoContainer>   
+                
+                </InfoContainer>   
+
+
+              <CarouselContainer>
+                  <Carousel/>
+              </CarouselContainer>
+                </MainWrapper>
+                
+            
         </>
     )
 }

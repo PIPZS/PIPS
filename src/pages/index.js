@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import FloatingWhatsApp from 'react-floating-whatsapp'
+import  {Carousel}  from '../components/Carousel/Carousel';
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HomeSection/>
             <InfoSection/>
-            <Services/>
+{/* 
             <ContactSection/>
             <Footer/>
             <FloatingWhatsApp
@@ -32,7 +33,7 @@ const Home = () => {
                 allowClickAway
                 notification
                 notificationDelay={60000} // 1 minute
-            />
+            /> */}
         </>
     )
 }

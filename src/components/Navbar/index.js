@@ -13,7 +13,7 @@ const Navbar = ({toggle}) => {
 
         if(window.scrollY >= 0){
             setScrollNav(false)
-        }if(window.scrollY >= 820){
+        }if(window.scrollY >= document.documentElement.clientHeight - 80){
             setScrollNav(true);
             setSpecialScroll(true)
         }else{
