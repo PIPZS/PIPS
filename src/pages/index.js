@@ -8,6 +8,9 @@ import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import  {Carousel}  from '../components/Carousel/Carousel';
+import  Themes  from "../components/Theme/Themes.js";
+import { ThemeProvider } from 'styled-components';
+import Switch from '../components/Switch/switch';
 
 const Home = () => {
 
@@ -17,14 +20,15 @@ const Home = () => {
         setIsOpen(!isOpen)
     }
 
-    return (
-        <>
+    const[theme, setTheme] = useState('light')
 
+    return (
+        <ThemeProvider theme={Themes[theme]}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
+            <Switch theme={theme} setTheme={setTheme}/>
             <HomeSection/>
-            <InfoSection/>
-{/* 
+            <InfoSection theme={theme} />
             <ContactSection/>
             <Footer/>
             <FloatingWhatsApp
@@ -33,8 +37,8 @@ const Home = () => {
                 allowClickAway
                 notification
                 notificationDelay={60000} // 1 minute
-            /> */}
-        </>
+            />
+        </ThemeProvider>
     )
 }
 

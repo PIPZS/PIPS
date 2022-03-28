@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import {Link as LinkS} from 'react-scroll';
+import { style } from "@mui/system";
 
 
 
 export const MainWrapper = styled.div`
-    background: black;
-
+    background: ${({theme}) => theme.bgc};
     position:relative;
 `;
 
@@ -62,33 +63,65 @@ export const InfoTitle = styled.h1`
         font-size: 8vw;
 }
 `
+export const ContactText = styled.div`
+    margin-top: 20%;
+`
+
 export const InfoSubtitle = styled.p`
     font-family: 'Inconsolata'; 
     font-size: 23px;
-    color: white;
-    margin-top: 3%;
+    color: ${({theme}) => theme.text};
+    margin-bottom: 5%;
+    position: relative;
+    z-index: 20;
 
     @media screen and (max-width:500px){
         font-size: 16px;
     }
 `
 
+export const Button = styled(LinkS)`
+    background-color: ${({theme}) => theme.bgc};
+    border: 1px solid ${({theme}) => theme.text};;
+    color: ${({theme}) => theme.text};
+    padding: 2%;
+    diplay:flex;
+    justify-self: flex-start;
+    margin:auto;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+
+    &:hover{
+        background: ${({theme}) => theme.text};
+        color: ${({theme}) => theme.bgc};
+        cursor:pointer;
+    }
+`
+
 export const InfoText = styled.p`
-    margin-top: 3%;
-    color: white;
+    color: #f54242;
     font-size: 1.8em;
     word-break: break-all;
+    margin-bottom: 5%;
 
     @media screen and (max-width:500px){
         font-size: 6vw;
 }
 `
 
+export const InfoImage = styled.img`
+    position: absolute;
+    height: 50%;
+    left: 25%;
+    top: 33%;
+    z-index: 1;
+`
+
 export const InfoCardsWrapper = styled.div`
     display: grid;
-    grid-template-columns: 310px 310px;
-    grid-template-rows: 310px 310px;
-    grid-column-gap: 10px;
+    grid-template-columns: 260px 260px;
+    grid-template-rows: 260px 260px;
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
     width: 70%;
     height: 70%;
@@ -118,10 +151,27 @@ export const InfoCardsWrapper = styled.div`
         grid-template-rows: auto auto;
     } 
 `
+export const CardBody = styled.div`
+    border: 1px solid white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
+    height: 250px;
+
+    @media screen and (max-width: 700px){
+        width: 220px;
+        height: 220px;
+        margin: auto;
+    } 
+    @media screen and (max-width: 500px){
+        width: 40vw;
+        height: 40vw;
+        margin: auto;
+    } 
+`
 
 export const CardFrontText = styled.div`
-    margin-top: 10%;
-    font-size: 2rem;
+    margin-top: 20%;
+    font-size: 1.8rem;
+    color: ${({theme}) => theme.text};
 
     @media screen and (max-width: 700px){
         font-size: 1.7rem;
@@ -133,16 +183,25 @@ export const CardFrontText = styled.div`
 `
 
 export const CardBackText = styled.div`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 90%;
     margin: auto;
     margin-top: 10%;
+
+    @media screen and (max-width: 700px){
+        font-size: 1rem;
+    }  
+    
+    @media screen and (max-width: 500px){
+        font-size: 2.8vw;
+    }  
 `
 export const Text = styled.p`  
+    margin-top:5%;
 `
 export const ImageWrapper = styled.div`
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 35%;
     margin:auto;    
 `
 

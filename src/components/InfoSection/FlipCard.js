@@ -1,44 +1,33 @@
 import { useState } from "react";
 import cn from "classnames";
-import {CardFrontText, CardBackText, Text, Image, ImageWrapper } from './InfoElements'
+import {CardFrontText, CardBackText, Text, Image, ImageWrapper, CardBody } from './InfoElements'
 
 function FlipCard({ card, icon}) {
+
   const [showBack, setShowBack] = useState(false);
 
-  function handleClick() {
-    if (card.variant === "click") {
-      setShowBack(!showBack);
-    }
-  }
-
-  function handleFocus() { 
-    if (card.variant === "focus") { 
-      setShowBack(true); 
-    } 
-  } 
-
-  function handleBlur() { 
-    if (card.variant === "focus") { 
-      setShowBack(false); 
-    } 
-  } 
+  let resizeTimer;
+    window.addEventListener("resize", () => {
+      document.body.classList.add("resize-animation-stopper");
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 400);
+    });
 
   return (
     <div
       tabIndex={card.id} 
-      className={cn("flip-card-outer", { 
-        "focus-trigger": card.variant === "focus" 
-      })} 
-      onClick={handleClick}
-      onFocus={handleFocus} 
-      onBlur={handleBlur} 
+      className="flip-card-outer"
     >
       <div className={cn("flip-card-inner", {
           showBack,
           "hover-trigger": card.variant === "hover"
         })}
       >
+        
         <div className="card front">
+        <CardBody>
           <div className="card-body">
             <CardFrontText>
               <ImageWrapper>
@@ -47,13 +36,14 @@ function FlipCard({ card, icon}) {
                 <Text>{card.front}</Text>
             </CardFrontText>
           </div>
+          </CardBody>
         </div>
         <div className="card back">
-          {/* <div className="card-body d-flex justify-content-center align-items-center"> */}
+          <div className="card-body d-flex justify-content-center align-items-center">
             <CardBackText>
                 <Text>{card.back}</Text>
             </CardBackText>
-          {/* </div> */}
+          </div>
         </div>
       </div>
     </div>
