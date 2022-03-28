@@ -10,9 +10,9 @@ const ServicesSection = () => {
 
       return (
 
-        <ServicesContainer id='services'>
+        <ServicesContainer  id='services'>
           <ServiceTitle>Nuestro servicio</ServiceTitle>
-          <ServicesWrapper>
+          <ServicesWrapper data-aos="fade-in" >
             <Service>
               <Title>Analisis</Title>
               <Subtitle>antes de diseñar</Subtitle>
@@ -26,7 +26,7 @@ const ServicesSection = () => {
               <Duration>1 dia</Duration>
             </ServiceDuration>
           </ServicesWrapper>
-          <ServicesWrapper>
+          <ServicesWrapper data-aos="fade-in" >
             <Service>
               <Title>Diseño</Title>
               <Subtitle>vision del cliente</Subtitle>
@@ -40,7 +40,7 @@ const ServicesSection = () => {
               <Duration>10-14 dias</Duration>
             </ServiceDuration>
           </ServicesWrapper>
-          <ServicesWrapper >
+          <ServicesWrapper data-aos="fade-in" >
             <Service>
               <Title>Implementación</Title>
               <Subtitle>single page website</Subtitle>
@@ -54,7 +54,7 @@ const ServicesSection = () => {
               <Duration>20-30 dias</Duration>
             </ServiceDuration>
           </ServicesWrapper>
-          <ServicesWrapper >
+          <ServicesWrapper data-aos="fade-in" >
             <Service>
               <Title>Soporte</Title>
               <Subtitle>cambios y correcciones</Subtitle>

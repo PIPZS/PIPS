@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
     background: #1c1c1c;
-    height: 864px;
     border-top: 1px dashed black;
+    position:relative;
+    height:100vh;
 `
 
 export const ServicesWrapper = styled.div`

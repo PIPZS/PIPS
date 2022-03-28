@@ -3,19 +3,44 @@ import {Link as LinkS} from 'react-scroll';
 import { style } from "@mui/system";
 
 
-export const InfoContainer = styled.div`
+
+export const MainWrapper = styled.div`
     background: black;
+
+    position:relative;
+`;
+
+export const Wrapper = styled.div`
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column ;
+    position:absolute;
+`;
+
+
+export const InfoContainer = styled.div`
+    
     display: flex;
     justify-content: center;
     padding: 50px 24px;
     position: relative;
-    padding-top 5%;
+    padding-top: 5%;
 
     @media screen and (max-width:1200px){
         display: flex;
         flex-direction: column;
     }
 `
+
+
+export const CarouselContainer = styled.div`
+
+
+`;
+
 
 export const InfoWrapper = styled.div`
     justify-content: left;
@@ -105,7 +130,6 @@ export const InfoCardsWrapper = styled.div`
     @media screen and (max-width: 1200px){
         width: 80%;
         margin: auto;
-        margin-bottom: 5%;
         margin-top: 5%;
     }   
 
