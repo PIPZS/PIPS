@@ -5,8 +5,7 @@ import { style } from "@mui/system";
 
 
 export const MainWrapper = styled.div`
-    background: black;
-
+    background: ${({theme}) => theme.bgc};
     position:relative;
 `;
 
@@ -71,7 +70,7 @@ export const ContactText = styled.div`
 export const InfoSubtitle = styled.p`
     font-family: 'Inconsolata'; 
     font-size: 23px;
-    color: white;
+    color: ${({theme}) => theme.text};
     margin-bottom: 5%;
     position: relative;
     z-index: 20;
@@ -82,22 +81,25 @@ export const InfoSubtitle = styled.p`
 `
 
 export const Button = styled(LinkS)`
-    background-color: black;
-    border: 2px solid #0f0f0f;
-    color:white;
+    background-color: ${({theme}) => theme.bgc};
+    border: 1px solid ${({theme}) => theme.text};;
+    color: ${({theme}) => theme.text};
     padding: 2%;
+    diplay:flex;
+    justify-self: flex-start;
+    margin:auto;
     font-size: 1.5rem;
     word-wrap: break-word;
 
     &:hover{
-        background:white;
-        color:black;
+        background: ${({theme}) => theme.text};
+        color: ${({theme}) => theme.bgc};
         cursor:pointer;
     }
 `
 
 export const InfoText = styled.p`
-    color: white;
+    color: #f54242;
     font-size: 1.8em;
     word-break: break-all;
     margin-bottom: 5%;
@@ -125,7 +127,6 @@ export const InfoCardsWrapper = styled.div`
     height: 70%;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 
     @media screen and (max-width: 1200px){
         width: 80%;
@@ -150,10 +151,27 @@ export const InfoCardsWrapper = styled.div`
         grid-template-rows: auto auto;
     } 
 `
+export const CardBody = styled.div`
+    border: 1px solid white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
+    height: 250px;
+
+    @media screen and (max-width: 700px){
+        width: 220px;
+        height: 220px;
+        margin: auto;
+    } 
+    @media screen and (max-width: 500px){
+        width: 40vw;
+        height: 40vw;
+        margin: auto;
+    } 
+`
 
 export const CardFrontText = styled.div`
     margin-top: 20%;
     font-size: 1.8rem;
+    color: ${({theme}) => theme.text};
 
     @media screen and (max-width: 700px){
         font-size: 1.7rem;
@@ -169,6 +187,14 @@ export const CardBackText = styled.div`
     width: 90%;
     margin: auto;
     margin-top: 10%;
+
+    @media screen and (max-width: 700px){
+        font-size: 1rem;
+    }  
+    
+    @media screen and (max-width: 500px){
+        font-size: 2.8vw;
+    }  
 `
 export const Text = styled.p`  
     margin-top:5%;

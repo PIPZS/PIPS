@@ -24,8 +24,7 @@ const MainWrapper = styled.div`
 
 
 const HomeSection = () => {
-
-
+    
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () =>{

@@ -1,13 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink,NavIcon, Title, Subtitle} from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink,NavIcon, Title, ButtonContainer} from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import {BsScissors} from "react-icons/bs"
+import Switch from '../Switch/switch';
 
 const Navbar = ({toggle}) => {
 
     const [scrollNav, setScrollNav] = useState(false)
     const [specialScroll, setSpecialScroll] = useState(false)
+
+    const[theme, setTheme] = useState('light')
 
     const changeNav = () => {
 
@@ -54,6 +57,9 @@ const Navbar = ({toggle}) => {
                 </NavMenu>
                 
             </NavbarContainer>
+            {/* <ButtonContainer specialScroll={specialScroll}>
+                <Switch theme={theme} setTheme={setTheme}/>
+            </ButtonContainer> */}
         </Nav>
         </>
     )
