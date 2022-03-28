@@ -12,8 +12,10 @@ export const Nav = styled.nav`
     z-index:30;
     position:sticky;
     margin-top: -80px;
-    justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-end' : 'center')};;
-    align-items: ${({ specialScroll }) => (specialScroll ? 'flex-end' : 'center')};;
+    justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};;
+    align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};;
+    
+
 
     @media screen and (max-width:768px){
         justify-content: flex-start;
@@ -29,7 +31,6 @@ export const NavbarContainer = styled.div`
     display: flex;
     height: 80px;
     z-index: 1;
-    width: 95%;
 `
 
 export const NavIcon = styled.div`
@@ -37,6 +38,7 @@ export const NavIcon = styled.div`
     margin-top: 10px;
     font-size: 3.5rem;
     margin-right: 5%;
+    margin-left: 10%;
     display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
     align-items:center;
 
@@ -121,4 +123,13 @@ export const NavLinks = styled(LinkS)`
         color: #f54242;
         transition: color 0.4s ease;
     }
+`
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    position:absolute;
+    right: 0;
+    margin-right: 3%;
+    margin-top: ${({ specialScroll }) => (specialScroll ? '20px' : '0%')};;
 `
