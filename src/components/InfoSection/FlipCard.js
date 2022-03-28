@@ -5,33 +5,20 @@ import {CardFrontText, CardBackText, Text, Image, ImageWrapper } from './InfoEle
 function FlipCard({ card, icon}) {
   const [showBack, setShowBack] = useState(false);
 
-  function handleClick() {
-    if (card.variant === "click") {
-      setShowBack(!showBack);
-    }
-  }
 
-  function handleFocus() { 
-    if (card.variant === "focus") { 
-      setShowBack(true); 
-    } 
-  } 
-
-  function handleBlur() { 
-    if (card.variant === "focus") { 
-      setShowBack(false); 
-    } 
-  } 
+  let resizeTimer;
+    window.addEventListener("resize", () => {
+      document.body.classList.add("resize-animation-stopper");
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 400);
+    });
 
   return (
     <div
       tabIndex={card.id} 
-      className={cn("flip-card-outer", { 
-        "focus-trigger": card.variant === "focus" 
-      })} 
-      onClick={handleClick}
-      onFocus={handleFocus} 
-      onBlur={handleBlur} 
+      className="flip-card-outer"
     >
       <div className={cn("flip-card-inner", {
           showBack,
