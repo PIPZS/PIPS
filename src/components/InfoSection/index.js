@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText } from './InfoElements'
+import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, InfoImage, ImageWrapper } from './InfoElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import "./styles.scss";
@@ -8,6 +8,7 @@ import Image1 from "../../images/Icon1.png"
 import Image2 from "../../images/Icon2.png"
 import Image3 from "../../images/Icon3.png"
 import Image4 from "../../images/Icon4.png"
+import Image5 from "../../images/infosection.png"
 
 const InfoSection = () => {
 
@@ -55,8 +56,12 @@ const InfoSection = () => {
         <>
             <InfoContainer id={'about'}>
                  <InfoWrapper>
-                    <InfoTitle>SOBRE NOSOTROS</InfoTitle>  
-                    <InfoText>Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</InfoText>   
+                    <InfoTitle>ABOUT US</InfoTitle>  
+                    <InfoSubtitle><br></br>PIPS LAB is a creative company based in Buenos Aires that seeks to help brands and people communicate through creative and innovative websites. <br></br> <br></br>No matter what your challenge, big or small, there is a chance to make any move that will challenge the status quo.</InfoSubtitle>
+                    <ContactText>
+                      <InfoText>¿Queres trabajar en un proyecto?</InfoText>
+                      <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Contactanos!</Button>
+                    </ContactText>
                  </InfoWrapper>
                  <InfoCardsWrapper>
                     {cards.map((card) => (
