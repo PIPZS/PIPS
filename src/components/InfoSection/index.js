@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer } from './InfoElements'
+import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section } from './InfoElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import "./infoSection.scss";
@@ -74,7 +74,8 @@ const InfoSection = (props) => {
                   <InfoCardsWrapper>
                       {cards.map((card) => (<FlipCard key={card.id} card={card} icon={card.icon} />))}
                   </InfoCardsWrapper>
-                </InfoContainer>   
+                </InfoContainer>
+                <Section/>
                 <CarouselContainer>
                     <Carousel/>
                 </CarouselContainer>

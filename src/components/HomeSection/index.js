@@ -4,6 +4,7 @@ import Navbar from '../Navbar/index.js';
 import {HomeContainer, Title, Subtitle, TextContainer} from './HomeElements.js';
 import './Home.css';
 import Image from '../../images/PIPS.jpg';
+import VideoUrl from '../../videos/home_video.mp4';
 
 
 const Background = styled.div`
@@ -23,9 +24,21 @@ const MainWrapper = styled.div`
 `;
 
 
+const Video = styled.video`
+    position: fixed ;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height: 100%;
+    opacity: 0.07 ;
+    
+`;
+
 const HomeSection = () => {
+
     
     const [isOpen, setIsOpen] = useState(false)
+    
 
     const toggle = () =>{
         setIsOpen(!isOpen)
@@ -33,14 +46,17 @@ const HomeSection = () => {
 
     return (
       <Background>
-                
-                <MainWrapper >
-                    <span className='text'>PIPS</span>
-                </MainWrapper>
+            <Video id="myVideo" controls="controls" autoPlay="autoplay" muted loop>
+                <source src={VideoUrl} type="video/mp4"></source>
+            </Video>
+            <MainWrapper >
+                <span className='text'>PIPS</span>
+            </MainWrapper>
 
-            </Background>
+        </Background>
 
     )
 }
+
 
 export default HomeSection
