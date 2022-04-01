@@ -6,20 +6,20 @@ import {Link as LinkS} from 'react-scroll';
 export const Nav = styled.nav`
     background: ${({ specialScroll }) => (specialScroll ? '#1c1c1c' : 'rgba(0,0,0,0.2)')};
     height: 80px;
-    display: flex; 
+    display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')}; 
     font-size: 1rem;
     top: 0;
     z-index:30;
     position:sticky;
     margin-top: -80px;
-    justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};;
-    align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};;
+    justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
+    align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     
 
 
     @media screen and (max-width:768px){
         justify-content: flex-start;
-        align-items: flex-start;    
+        align-items: flex-start;   
     }
 
     /* @media screen and (max-width:960px){
@@ -50,13 +50,13 @@ export const NavIcon = styled.div`
 
 export const Title = styled.h1`
     font-size: 60px;
-    font-family: 'Monstserrat';
+    font-family: 'Abibas';
     color: #1c1c1c;
 `
 
 export const Subtitle = styled.h1`
     font-size: 1.7rem;
-    font-family: 'Monstserrat'
+    font-family: 'Monstserrat';
     margin-left: 2%;
     color: black;
 

@@ -11,6 +11,9 @@ import  {Carousel}  from '../components/Carousel/Carousel';
 import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
 import Switch from '../components/Switch/switch';
+import styled from "styled-components";
+
+
 
 const Home = () => {
 
@@ -29,6 +32,7 @@ const Home = () => {
             <Switch theme={theme} setTheme={setTheme}/>
             <HomeSection/>
             <InfoSection theme={theme} />
+            <Services/>
             <ContactSection/>
             <Footer/>
             <FloatingWhatsApp
