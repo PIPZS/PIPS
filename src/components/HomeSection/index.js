@@ -4,7 +4,7 @@ import Navbar from '../Navbar/index.js';
 import {HomeContainer, Title, Subtitle, TextContainer} from './HomeElements.js';
 import './Home.css';
 import Image from '../../images/PIPS.jpg';
-import VideoUrl from '../../videos/home_video.mp4';
+import VideoUrl from '../../videos/home_video_number_two.mp4';
 
 
 const Background = styled.div`
@@ -30,7 +30,7 @@ const Video = styled.video`
     bottom:0;
     min-width:100%;
     min-height: 100%;
-    opacity: 0.07 ;
+    opacity: 0.2 ;
     
 `;
 
@@ -46,7 +46,7 @@ const HomeSection = () => {
 
     return (
       <Background>
-            <Video id="myVideo" controls="controls" autoPlay="autoplay" muted loop>
+            <Video id="myVideo"  autoPlay="autoplay" muted="muted" loop="loop" preload="auto">
                 <source src={VideoUrl} type="video/mp4"></source>
             </Video>
             <MainWrapper >
