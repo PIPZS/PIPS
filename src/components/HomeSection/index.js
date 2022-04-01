@@ -4,14 +4,18 @@ import Navbar from '../Navbar/index.js';
 import {HomeContainer, Title, Subtitle, TextContainer} from './HomeElements.js';
 import './Home.css';
 import Image from '../../images/PIPS.jpg';
-import VideoUrl from '../../videos/home_video.mp4';
+import VideoUrl from '../../videos/home_video_number_two.mp4';
+import VideoUrl2 from '../../videos/Sequence-01.mp4';
+import VideoUrl3 from '../../videos/video_amarrilo.mp4';
+
 
 
 const Background = styled.div`
     display:flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(${Image});
+    //background-image: url(${Image});
+    background-color: black;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +34,7 @@ const Video = styled.video`
     bottom:0;
     min-width:100%;
     min-height: 100%;
-    opacity: 0.07 ;
+    opacity: 1 ;
     
 `;
 
@@ -46,7 +50,7 @@ const HomeSection = () => {
 
     return (
       <Background>
-            <Video id="myVideo" controls="controls" autoPlay="autoplay" muted loop>
+            <Video id="myVideo"  autoPlay="autoplay" muted="muted" loop="loop" preload="auto">
                 <source src={VideoUrl} type="video/mp4"></source>
             </Video>
             <MainWrapper >

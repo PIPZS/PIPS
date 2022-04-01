@@ -68,7 +68,7 @@ export const ContactText = styled.div`
 `
 
 export const InfoSubtitle = styled.p`
-    font-family: 'Inconsolata'; 
+    font-family: 'Montserrat'; 
     font-size: 23px;
     color: ${({theme}) => theme.text};
     margin-bottom: 5%;
@@ -81,15 +81,16 @@ export const InfoSubtitle = styled.p`
 `
 
 export const Button = styled(LinkS)`
-    background-color: ${({theme}) => theme.bgc};
+    background-color: rgba(228,27,35,1);;
     border: 1px solid ${({theme}) => theme.text};;
     color: ${({theme}) => theme.text};
     padding: 2%;
-    diplay:flex;
+    /* display:flex; */
     justify-self: flex-start;
     margin:auto;
     font-size: 1.5rem;
     word-wrap: break-word;
+    font-family: 'Montserrat';
 
     &:hover{
         background: ${({theme}) => theme.text};
@@ -103,6 +104,8 @@ export const InfoText = styled.p`
     font-size: 1.8em;
     word-break: break-all;
     margin-bottom: 5%;
+    font-family: 'Montserrat';
+
 
     @media screen and (max-width:500px){
         font-size: 6vw;
@@ -183,17 +186,17 @@ export const CardFrontText = styled.div`
 `
 
 export const CardBackText = styled.div`
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     width: 90%;
     margin: auto;
     margin-top: 10%;
 
     @media screen and (max-width: 700px){
-        font-size: 1rem;
+        font-size: 0.7rem;
     }  
     
     @media screen and (max-width: 500px){
-        font-size: 2.8vw;
+        font-size: 0.7rem;
     }  
 `
 export const Text = styled.p`  

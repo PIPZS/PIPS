@@ -35,12 +35,12 @@
       &.back {
         transform: rotateY(180deg);
         background-color: black;
-        background-image: url('https://i.pinimg.com/originals/0a/21/b1/0a21b158fc91c2da80ec76b9daabbcc5.gif');
+        //background-image: url('https://i.pinimg.com/originals/0a/21/b1/0a21b158fc91c2da80ec76b9daabbcc5.gif');
         background-size: 200%;
         color: white;
-        font-weight: bold;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-family: 'Montserrat';
       }
     }
   }

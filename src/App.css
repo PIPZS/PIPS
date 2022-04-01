@@ -1,6 +1,9 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
+
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -9,3 +12,17 @@
 /* div {
   outline: 1px solid red;
 }   */
+
+@font-face {
+  font-family: Abibas;
+  src: url('./font/Abibas.ttf');
+}
+@font-face {
+  font-family: Eurostar;
+  src: url('./font/eurostarregularextended.ttf');
+}
+@font-face {
+  font-family: SpecifyPERSONAL;
+  src: url('./font/SpecifyPERSONAL-ConLight.ttf');
+}
+
