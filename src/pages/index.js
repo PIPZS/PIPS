@@ -6,12 +6,12 @@ import InfoSection from '../components/InfoSection/index';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
-import FloatingWhatsApp from 'react-floating-whatsapp'
 import  {Carousel}  from '../components/Carousel/Carousel';
 import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
 import Switch from '../components/Switch/switch';
-import styled from "styled-components";
+import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
+import MiddleBar from '../components/MiddleBar/MiddleBar';
 
 
 
@@ -31,17 +31,11 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <Switch theme={theme} setTheme={setTheme}/>
             <HomeSection/>
-            <InfoSection theme={theme} />
+            <InfoSection theme={theme}/>
             <Services/>
             <ContactSection/>
             <Footer/>
-            <FloatingWhatsApp
-                phoneNumber="123456789"
-                accountName="Bot"
-                allowClickAway
-                notification
-                notificationDelay={60000} // 1 minute
-            />
+            <WhatsappButton/>
         </ThemeProvider>
     )
 }

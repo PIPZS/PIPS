@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SwitchContainer = styled.div`
     width:20%;
     background-color: inherit;
-    display: flex; 
+    display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')};
     font-size: 1rem;
     top: 25px;
     float:right;

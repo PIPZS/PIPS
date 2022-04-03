@@ -1,11 +1,14 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section } from './InfoElements'
+import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle, CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './InfoElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import  {Carousel}  from '../Carousel/Carousel';
 import {BsChevronCompactRight, BsChevronCompactLeft} from "react-icons/bs";
+import MiddleBar from '../MiddleBar/MiddleBar';
+import {GoLightBulb} from 'react-icons/go'
+import AltMiddleBar from '../AlternativeMiddleBar/AltMiddleBar';
 
 const InfoSection = (props) => {
 
@@ -58,8 +61,11 @@ const InfoSection = (props) => {
               <InfoContainer id={'about'}>
                   <InfoWrapper>
                       {/* <InfoTitle>ABOUT US</InfoTitle>   */}
-                      <InfoSubtitle><br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web innovadores y únicos.<br></br>
-                                    <br></br>Trabajamos para hacer un cambio disruptivo, que defina la industria y que haga latir el corazón. El tipo de trabajo que habla de posibilidad y progreso, 
+                      <InfoSubtitle>
+                      <InfoSubtitle bold>
+                                    <br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web innovadores y únicos.
+                      </InfoSubtitle>
+                                    Trabajamos para hacer un cambio disruptivo, que defina la industria y que haga latir el corazón. El tipo de trabajo que habla de posibilidad y progreso, 
                                               abriendo oportunidades para generar un impacto positivo para su marca y el mundo que nos rodea.<br></br>
                                     <br></br>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de hacer cualquier movimiento que desafíe el status quo
                       </InfoSubtitle>
@@ -72,9 +78,46 @@ const InfoSection = (props) => {
                   </InfoCardsWrapper>
                 </InfoContainer>
                 <Section/>
+                <CariuseltextWrapper>
+                  <CarouselTitle>
+                      DISEÑO DE SITIO WEB PERSONALIZADO
+                  </CarouselTitle>
+                  <CarouselSubtitle>
+                      Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la produccion de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
+                  </CarouselSubtitle>
+                </CariuseltextWrapper>
                 <CarouselContainer>
                     <Carousel/>
                 </CarouselContainer>
+                <MiddleBar/>
+                <CardsTextWrapper>
+                    <CardsTitle>COMO TRABAJAMOS</CardsTitle>
+                    <CardsSubtitle>NUESTRO PROCESO</CardsSubtitle>
+                </CardsTextWrapper>
+                <CardsWrapper>
+                    <Card>
+                        <GoLightBulb/>
+                        <CardTitle>Planear</CardTitle>
+                        <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
+                          por el producto/servicio que ofrece el sitio web.
+                        </CardText>
+                    </Card>
+                    <Card>
+                        <GoLightBulb/>
+                        <CardTitle>Desarrollar</CardTitle>
+                        <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
+                          por el producto/servicio que ofrece el sitio web.
+                        </CardText>
+                    </Card>
+                    <Card>
+                        <GoLightBulb/>
+                        <CardTitle>Desarrollar</CardTitle>
+                        <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
+                          por el producto/servicio que ofrece el sitio web.
+                        </CardText>
+                    </Card>
+                </CardsWrapper>
+                <AltMiddleBar/>
             </MainWrapper>
         </>
     )

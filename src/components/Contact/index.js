@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, Mail, OtherContacts, OtherContactsTitle, GeneralWrapper, IconWrapper} from './ContactElements'
-import {BsArrowRight} from "react-icons/bs";
+import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo} from './ContactElements'
+import {BsPhone} from "react-icons/bs";
+import {IoMailOutline} from "react-icons/io5";
 import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
@@ -22,15 +23,26 @@ const ContactSection = () => {
             <ContactContainer id={'contact'}>
                 <GeneralWrapper>
                 <TextWrapper>
-                    <ContactTitle>Necesitas alguno de nuestros servicios?</ContactTitle>
-                    <Subtitle>Envianos una solicitus o dejanos un mensaje:</Subtitle>
-                    <Mail>team@pips.com</Mail>
-                    <IconWrapper>
-                        <BsArrowRight/>
-                    </IconWrapper>
-                    <OtherContactsTitle>Medios de comunicacion:</OtherContactsTitle>
-                    <OtherContacts>Telegram</OtherContacts>
-                    <OtherContacts>Whatsapp</OtherContacts>
+                    <ContactTitle>COMUNIQUESE CON NOSTROS</ContactTitle>
+                    <Subtitle>No seas timido, solo cuantanos sobre ti y encontraremos la mejor opcion para ti y tu proyecto. ¿No te gusta llenar formularios?
+                        Envíenos un correo electrónico directamente y luego hola@pipslab.co
+                    </Subtitle>
+                    <ContactOption>
+                        <OptionWrapper>
+                            <BsPhone/>
+                            <OptionTextWrapper>
+                                <OptionTitle>LLAMANOS AL</OptionTitle>
+                                <OptionInfo>+5491168007357</OptionInfo>
+                            </OptionTextWrapper>
+                        </OptionWrapper>
+                        <OptionWrapper>
+                            <IoMailOutline/>
+                            <OptionTextWrapper>
+                                <OptionTitle>ENVIANOS UN CORREO</OptionTitle>
+                                <OptionInfo>hola@pipslab.co</OptionInfo>
+                            </OptionTextWrapper>
+                        </OptionWrapper>
+                    </ContactOption>
                 </TextWrapper>
                 <ContactWrapper>
                     <ContactForm onSubmit={sendEmail}> 
