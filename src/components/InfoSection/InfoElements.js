@@ -20,8 +20,7 @@ export const Wrapper = styled.div`
 `;
 
 
-export const InfoContainer = styled.div`
-    
+export const InfoContainer = styled.div`  
     display: flex;
     justify-content: center;
     padding: 50px 24px;
@@ -37,14 +36,16 @@ export const InfoContainer = styled.div`
 
 export const CarouselContainer = styled.div`
 
-
 `;
 
 
 export const InfoWrapper = styled.div`
     justify-content: left;
     width: 50%;
-    margin-left: 3%;;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
     @media screen and (max-width:1200px){
         width: 100%;
@@ -64,7 +65,6 @@ export const InfoTitle = styled.h1`
 }
 `
 export const ContactText = styled.div`
-    margin-top: 20%;
 `
 
 export const InfoSubtitle = styled.p`
@@ -74,6 +74,7 @@ export const InfoSubtitle = styled.p`
     margin-bottom: 5%;
     position: relative;
     z-index: 20;
+    font-weight: ${props => props.bold ? 'bold' : '' };
 
     @media screen and (max-width:500px){
         font-size: 16px;
@@ -82,15 +83,16 @@ export const InfoSubtitle = styled.p`
 
 export const Button = styled(LinkS)`
     background-color: rgba(228,27,35,1);;
-    border: 1px solid ${({theme}) => theme.text};;
+    border: none;
     color: ${({theme}) => theme.text};
     padding: 2%;
-    /* display:flex; */
-    justify-self: flex-start;
-    margin:auto;
     font-size: 1.5rem;
     word-wrap: break-word;
     font-family: 'Montserrat';
+    color:white;
+    position: absolute;
+    bottom: 5rem;
+    
 
     &:hover{
         background: ${({theme}) => theme.text};
@@ -217,3 +219,74 @@ export const Section = styled.div`
     height: 150px;
 
 `;
+
+export const CariuseltextWrapper = styled.div`
+    width: 80%;
+    margin: auto;
+`
+
+export const CarouselTitle = styled.h3`
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+`
+
+export const CarouselSubtitle = styled.p`
+    font-size: 1.4rem;
+`
+
+export const CardsWrapper = styled.div`
+    display:flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+`
+export const Card = styled.div`
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 30px;
+    text-align: center;
+    padding: 50px;
+    transition: 0.3s all ease-out;
+    color: #363636;
+    height: 25rem;
+
+    svg {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        color: red;
+    }
+
+    &:hover{
+        background: red;
+        color:white;
+
+        svg{
+            color: white
+        }
+    }
+`
+
+export const CardTitle = styled.h3`
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+`
+
+export const CardText = styled.p`
+    font-size: 1.5rem;
+    width: 100%;
+`
+
+export const CardsTextWrapper = styled.div`
+    margin-top: 7rem;
+    text-align: center;
+`
+
+export const CardsTitle = styled.h3`
+    font-size: 1.8rem;
+`
+export const CardsSubtitle = styled.p`
+    font-size: 1.5rem;
+    margin-top: 1rem;
+`

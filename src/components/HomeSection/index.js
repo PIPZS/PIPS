@@ -14,7 +14,7 @@ const Background = styled.div`
     display:flex;
     min-height: 100vh;
     flex-direction: column;
-    //background-image: url(${Image});
+    background-image: url(${Image});
     background-color: black;
     background-position: left;
     background-size: cover;
@@ -29,7 +29,7 @@ const MainWrapper = styled.div`
 
 
 const Video = styled.video`
-    position: fixed ;
+    // position: fixed;
     right:0;
     bottom:0;
     min-width:100%;

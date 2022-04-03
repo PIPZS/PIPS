@@ -37,8 +37,7 @@ export const NavIcon = styled.div`
     height: 80%;
     margin-top: 10px;
     font-size: 3.5rem;
-    margin-right: 5%;
-    margin-left: 10%;
+    margin-left: 50%;
     display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
     align-items:center;
 
@@ -95,9 +94,9 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
     display: flex;
+    position: absolute;
     list-style: none;
-
-    margin-left: 3vw;
+    right: 7rem;
 
     @media screen and (max-width:768px){
         display: none;
