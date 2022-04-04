@@ -5,11 +5,20 @@ export const BarContainer = styled.div`
     background: ${({theme}) => theme.text};
     height: 250px;
     display: flex;
+    justify-content: center ;
+    align-items: center;
+    @media screen and (max-width:1000px){
+        height:auto;
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center;
+        height: auto;
+
+
+    }
 `
 export const TextWrapper = styled.div`
-    margin-left: 10rem;
-    width: 30%;
-    margin-top: 5rem;
+    
     
 `
 export const Title = styled.h3`
@@ -32,9 +41,8 @@ export const ButtonWrapper = styled.div`
     margin-top:0px;
 `
 export const Button = styled(LinkS)`
-    position: absolute;
-    right:5rem;
-    top: 40%;
+
+
     width: 10rem;
     background: red;
     color: white;

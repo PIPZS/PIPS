@@ -28,3 +28,15 @@
     -10px -10px 25px black,
     10px -10px 25px black;
 }
+    
+@media screen and (max-width:950px){
+    .text {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .text {
+        font-size: 6rem;
+    }
+}
