@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialIconLink, SocialIcons, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRigths, SocialMediaItem, SocialMediaItems, Icon } from './FooterElements'
+import { FooterContainer, FooterWrap, FooterInfo, LeftContainer, RightContainer, Title, Subtitle, SocialMediaWrapper, SocialMediaItem, SocialLinks} from './FooterElements'
 import {FaFacebook, FaTwitter, FaLinkedin, FaWhatsapp} from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll'
 
@@ -13,45 +13,28 @@ const Footer = () => {
         <>
             <FooterContainer>
                 <FooterWrap>
-                    {/* <FooterLinksContainer>
-                        <FooterLinksWrapper>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>Sobre Nosotros</FooterLinkTitle>
-                                    <FooterLink to='/'>Como funciona</FooterLink>
-                                    <FooterLink to='/'>Testimonios</FooterLink>
-                                    <FooterLink to='/'>Terminos y condiciones</FooterLink>
-                            </FooterLinkItems>
-                            <FooterLinkItems>
-                                <FooterLinkTitle>Redes Sociales</FooterLinkTitle>
-                                    <FooterLink to='/'>Facebook</FooterLink>
-                                    <FooterLink to='/'>LinkedIn</FooterLink>
-                                    <FooterLink to='/'>Twitter</FooterLink>
-                                    <FooterLink to='/'>Whatsapp</FooterLink>
-                            </FooterLinkItems>
-                        </FooterLinksWrapper>
-                    </FooterLinksContainer> */}
-                    <SocialMedia>
-                        <SocialMediaWrap>
-                            <SocialLogo to='/' onClick={toggleHome}>
-                                
-                            </SocialLogo>
-                            <WebsiteRigths>
-                              © PIPS {new Date().getFullYear()} - Todos los derechos reservados
-                            </WebsiteRigths>
-                            <SocialMediaItems>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialMediaItem>
-                                <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn'><FaLinkedin/></SocialMediaItem>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaTwitter/></SocialMediaItem>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaWhatsapp/></SocialMediaItem>
-                            </SocialMediaItems>
-                        </SocialMediaWrap>
-                    </SocialMedia>
-                    <FooterLinksContainer>
-                        <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialMediaItem>
-                        <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn'><FaLinkedin/></SocialMediaItem>
-                        <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaTwitter/></SocialMediaItem>
-                        <SocialMediaItem href='/' target='_blank' aria-label='Facebook'><FaWhatsapp/></SocialMediaItem>
-                    </FooterLinksContainer>
+                    <FooterInfo>
+                        <LeftContainer>
+                            <Title>PIPS LAB</Title>
+                            <Subtitle>Desafiando el status quo</Subtitle>
+                        </LeftContainer>
+                        <RightContainer>
+                            <Title>HABLEMOS!</Title>
+                            <Subtitle>hola@pipslab.co</Subtitle>
+                        </RightContainer>
+                    </FooterInfo>
+                    <SocialMediaWrapper>
+                        <LeftContainer>
+                            <Subtitle>Buenos Aires, Argentina</Subtitle> 
+                        </LeftContainer>
+                        <RightContainer>
+                            <SocialLinks>
+                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'>LINKEDIN</SocialMediaItem>
+                                <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn'>TWITTER</SocialMediaItem>
+                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'>INSTAGRAM</SocialMediaItem>
+                            </SocialLinks>
+                        </RightContainer>
+                    </SocialMediaWrapper>
                 </FooterWrap>
             </FooterContainer>
         </>
