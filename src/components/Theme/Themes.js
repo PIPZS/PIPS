@@ -4,6 +4,8 @@ const LightTheme = {
     hover: "#0085FF",
     bgc: "white",
     border: "rgba(0, 0, 0, 0.35)",
+    card: 'none', 
+    input: 'rgba(0,0,0,0.3)',
 };
 const DarkTheme = {
     text: "white",
@@ -11,6 +13,8 @@ const DarkTheme = {
     hover: "#00D4FF",
     bgc: "black",
     border: "rgba(100, 100, 100, 0.3)",
+    card: 'white',
+    input: 'rgba(255,255,255,0.3)',
 };
 
 const Themes = {

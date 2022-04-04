@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 
 export const ContactContainer = styled.div`
-    background: white;
+    background: ${({theme}) => theme.bgc};
     padding: 0 24px;
-    height: 100vh;
     position: relative;
     border-top: 1px dashed black;
     overflow: auto;
@@ -17,6 +16,7 @@ export const GeneralWrapper = styled.div`
     padding-top:5%;
     height:80%;
     position:relative;
+    margin-bottom: 5%;
     
 
     @media screen and (max-width:900px){
@@ -26,9 +26,9 @@ export const GeneralWrapper = styled.div`
 `
 
 export const ContactTitle = styled.h1`
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font); 
     font-size: 2rem;
-    color: black;
+    color: ${({theme}) => theme.text};
     margin-bottom:4%;
     word-wrap: break-word;
 
@@ -48,9 +48,11 @@ export const TextWrapper = styled.div`
     }
 `
 export const Subtitle = styled.p`
-    color: black;
+    color: ${({theme}) => theme.text};
     font-size: 1.4rem;
     width:90%;
+    font-family: var(--font); 
+    
 `
 
 export const ContactWrapper = styled.div`
@@ -76,10 +78,11 @@ export const ContactForm = styled.form`
 export const ContactInput = styled.input`
     width: 90%;
     margin-bottom: 5%;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid color: ${({theme}) => theme.input};
     padding: 10px;
     background: transparent;
     height: 50px;
+    font-family: var(--font); 
 `
 
 export const ContactFormButton = styled.button`
@@ -95,6 +98,7 @@ export const ContactFormButton = styled.button`
     height: 4rem;
     margin-top: 10px;
     padding: 15 px 0px;
+    font-family: var(--font); 
 
     &:hover{
         transition: all 0.2s ease-in-out;
@@ -126,8 +130,12 @@ export const OptionTextWrapper = styled.div`
 `
 export const OptionTitle = styled.h3`
     font-size: 1.3rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `
 
 export const OptionInfo = styled.div`
     font-size: 1.3rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `

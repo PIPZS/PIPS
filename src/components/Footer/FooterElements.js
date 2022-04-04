@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-    background-color: black;
+    background: ${({theme}) => theme.text};
 `
 
 export const FooterWrap = styled.div`
@@ -32,7 +32,7 @@ export const SocialLinks = styled.div`
 `
 
 export const SocialMediaItem = styled.div`
-    color: white;
+    color: ${({theme}) => theme.bgc};
     font-size: 1.3rem;
     transition: .5s all ease-out;
 
@@ -43,10 +43,10 @@ export const SocialMediaItem = styled.div`
 `
 
 export const Title = styled.h3`
-    color: white;
     font-size: 2rem;
+    color: ${({theme}) => theme.bgc};
 `
 export const Subtitle = styled.p`
-    color: white;
     font-size: 1.5rem;
+    color: ${({theme}) => theme.bgc};
 `
