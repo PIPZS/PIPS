@@ -9,20 +9,21 @@
   margin: 0;
   padding: 0;
 }
-/* div {
+ /* div {
   outline: 1px solid red;
-}   */
+}     */
 
 @font-face {
   font-family: Abibas;
   src: url('./font/Abibas.ttf');
 }
 @font-face {
-  font-family: Eurostar;
-  src: url('./font/eurostarregularextended.ttf');
-}
-@font-face {
-  font-family: SpecifyPERSONAL;
-  src: url('./font/SpecifyPERSONAL-ConLight.ttf');
+  font-family: AvenirLight;
+  src: url('./font/AvenirLTStd-Roman.otf');
 }
 
+
+:root {
+  --font: 'AvenirLight';
+
+}

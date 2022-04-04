@@ -11,9 +11,8 @@ const ServicesSection = () => {
       return (
 
         <MainWrapper>
-          <Section>
-            <h1>ddsdsd</h1>
-          </Section>
+    
+        
 
         </MainWrapper>
         

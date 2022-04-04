@@ -78,7 +78,7 @@ export const ContactForm = styled.form`
 export const ContactInput = styled.input`
     width: 90%;
     margin-bottom: 5%;
-    border: 1px solid color: ${({theme}) => theme.input};
+    border: 1px solid ${({theme}) => theme.input};
     padding: 10px;
     background: transparent;
     height: 50px;

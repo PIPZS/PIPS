@@ -16,9 +16,9 @@ function AltMiddleBar() {
                 Reconocidos por nuestros logros sobresalientes.
             </Subtitle>
         </TextWrapper>
-        <ButtonWrapper>
+        {/* <ButtonWrapper>
             <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-80}>Contactanos!</Button>
-        </ButtonWrapper>
+        </ButtonWrapper> */}
     </BarContainer>
   )
 }

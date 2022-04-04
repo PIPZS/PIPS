@@ -1,21 +1,22 @@
 .Slide {
-    transform: scale(0.6);
+    transform: scale(0.9); 
     transition: transform 1500ms;
     opacity: 0.5;
     border-radius: 5%;
+
 }
 
 
 .ActiveSlide {
     transform: scale(1);
     opacity: 1;
+
 }
 
 .slider {
 
     display: flex;
     align-items: center;
-
     width: 60%; 
 }
 
