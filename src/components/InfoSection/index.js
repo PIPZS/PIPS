@@ -5,9 +5,11 @@ import Aos from 'aos';
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import  {Carousel}  from '../Carousel/Carousel';
-import {BsChevronCompactRight, BsChevronCompactLeft} from "react-icons/bs";
 import MiddleBar from '../MiddleBar/MiddleBar';
 import {GoLightBulb} from 'react-icons/go'
+import {HiOutlineDesktopComputer} from 'react-icons/hi'
+import {IoImageOutline} from 'react-icons/io5'
+import {AiOutlineCloud} from 'react-icons/ai'
 import AltMiddleBar from '../AlternativeMiddleBar/AltMiddleBar';
 
 const InfoSection = (props) => {
@@ -23,7 +25,7 @@ const InfoSection = (props) => {
           front: "Desarrollo web",
           subtitle: "Proyecto 1",
           back: "Nuestra especialidad. Creamos experiencias digitales que desafían el status quo. Trabajamos estratégicamente para que las marcas y las personas interactúen a través de sitios web disruptivos e innovadores.",
-          icon: props.theme === 'dark' ? <BsChevronCompactRight/> : <BsChevronCompactRight/>,
+          icon: <HiOutlineDesktopComputer/>,
         },
         {
           id: "2",
@@ -31,7 +33,7 @@ const InfoSection = (props) => {
           front: "Contenido Visual",
           subtitle: "Proyecto 1",
           back: "Los contenidos visuales son captados y procesados por el cerebro 60 mil veces más rápido que el texto. Facilitamos la generación de contenido visual de calidad ajustado a los objetivos de los clientes.",
-          icon: props.theme === 'dark' ? <BsChevronCompactRight/> : <BsChevronCompactRight/>,
+          icon: <IoImageOutline/>,
         },
         {
           id: "3",
@@ -39,7 +41,7 @@ const InfoSection = (props) => {
           front: "Branding",
           subtitle: "Proyecto 1",
           back: "Interpretando las ideas de los clientes, alineamos el discurso de la marca, sus valores y sus atributos con su imagen. Diseñamos marcas sólidas, atractivas e innovadoras con el objetivo de transformar la información en estrategia y la estrategia en acción.",
-          icon: props.theme === 'dark' ? <BsChevronCompactRight/> : <BsChevronCompactRight/>,
+          icon: <GoLightBulb/>,
         },
         {
           id: "4",
@@ -47,7 +49,7 @@ const InfoSection = (props) => {
           front: "Tiendanube",
           subtitle: "Proyecto 1",
           back: "Redefinimos el mundo del e-commerce. Diseñamos y organizamos todo lo que tu negocio digital necesita para vender a través de Tiendanube, la plataforma de ventas más elegida de Latinoamérica. ",
-          icon: props.theme === 'dark' ? <BsChevronCompactRight/> : <BsChevronCompactRight/>,
+          icon: <AiOutlineCloud/>,
         },
         
       ];
@@ -70,7 +72,7 @@ const InfoSection = (props) => {
                                     <br></br>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de hacer cualquier movimiento que desafíe el status quo
                       </InfoSubtitle>
                       <ContactText>
-                        <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Contactanos!</Button>
+                        <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Ver más</Button>
                       </ContactText>
                   </InfoWrapper>
                   <InfoCardsWrapper>

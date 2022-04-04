@@ -55,7 +55,7 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoTitle = styled.h1`
-    font-family: 'Inconsolata'; 
+    font-family: var(--font);  
     font-size: 49px;
     color: #f54242;
     word-wrap: break-word;
@@ -68,7 +68,7 @@ export const ContactText = styled.div`
 `
 
 export const InfoSubtitle = styled.p`
-    font-family: 'Montserrat'; 
+    font-family: var(--font); 
     font-size: 23px;
     color: ${({theme}) => theme.text};
     margin-bottom: 5%;
@@ -88,10 +88,10 @@ export const Button = styled(LinkS)`
     padding: 2%;
     font-size: 1.5rem;
     word-wrap: break-word;
-    font-family: 'Montserrat';
     color:white;
     position: absolute;
     bottom: 5rem;
+    font-family: var(--font); 
     
 
     &:hover{
@@ -106,7 +106,7 @@ export const InfoText = styled.p`
     font-size: 1.8em;
     word-break: break-all;
     margin-bottom: 5%;
-    font-family: 'Montserrat';
+    font-family: var(--font); 
 
 
     @media screen and (max-width:500px){
@@ -177,6 +177,7 @@ export const CardFrontText = styled.div`
     margin-top: 20%;
     font-size: 1.8rem;
     color: ${({theme}) => theme.text};
+    font-family: var(--font); 
 
     @media screen and (max-width: 700px){
         font-size: 1.7rem;
@@ -188,10 +189,11 @@ export const CardFrontText = styled.div`
 `
 
 export const CardBackText = styled.div`
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     width: 90%;
     margin: auto;
     margin-top: 10%;
+    font-family: var(--font); 
 
     @media screen and (max-width: 700px){
         font-size: 0.7rem;
@@ -203,11 +205,17 @@ export const CardBackText = styled.div`
 `
 export const Text = styled.p`  
     margin-top:5%;
+    font-family: var(--font); 
 `
 export const ImageWrapper = styled.div`
     width: 35%;
     height: 35%;
-    margin:auto;    
+    margin:auto;   
+    
+    svg{
+        font-size: 5rem;
+        color: red;
+    }
 `
 
 export const Image = styled.img`
@@ -229,10 +237,14 @@ export const CarouselTitle = styled.h3`
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.3rem;
+    font-family: var(--font);
+    color: ${({theme}) => theme.text};
 `
 
 export const CarouselSubtitle = styled.p`
     font-size: 1.4rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `
 
 export const CardsWrapper = styled.div`
@@ -251,6 +263,7 @@ export const Card = styled.div`
     transition: 0.3s all ease-out;
     color: #363636;
     height: 25rem;
+    border: 0.3px solid ${({theme}) => theme.card};
 
     svg {
         font-size: 5rem;
@@ -271,11 +284,15 @@ export const Card = styled.div`
 export const CardTitle = styled.h3`
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
+    font-family: var(--font);
+    color: ${({theme}) => theme.text};
 `
 
 export const CardText = styled.p`
     font-size: 1.5rem;
     width: 100%;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `
 
 export const CardsTextWrapper = styled.div`
@@ -285,8 +302,12 @@ export const CardsTextWrapper = styled.div`
 
 export const CardsTitle = styled.h3`
     font-size: 1.8rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `
 export const CardsSubtitle = styled.p`
     font-size: 1.5rem;
     margin-top: 1rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
 `
