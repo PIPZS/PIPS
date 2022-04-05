@@ -3,7 +3,6 @@ import {Link as LinkS} from 'react-scroll';
 import { style } from "@mui/system";
 
 
-
 export const MainWrapper = styled.div`
     background: ${({theme}) => theme.bgc};
     position:relative;
@@ -89,9 +88,8 @@ export const Button = styled(LinkS)`
     font-size: 1.5rem;
     word-wrap: break-word;
     color:white;
-    position: absolute;
     bottom: 5rem;
-    font-family: var(--font); 
+    font-family: var(--font);
     
 
     &:hover{
@@ -194,6 +192,7 @@ export const CardBackText = styled.div`
     margin: auto;
     margin-top: 10%;
     font-family: var(--font); 
+    text-align: left;
 
     @media screen and (max-width: 700px){
         font-size: 0.7rem;
@@ -254,6 +253,10 @@ export const CardsWrapper = styled.div`
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 10rem;
+
+    @media screen and (max-width: 1000px){
+        flex-direction:column ;
+    }  
 `
 export const Card = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -286,6 +289,7 @@ export const CardTitle = styled.h3`
     margin-bottom: 1.5rem;
     font-family: var(--font);
     color: ${({theme}) => theme.text};
+    text-transform: uppercase;
 `
 
 export const CardText = styled.p`

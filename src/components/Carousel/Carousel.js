@@ -19,14 +19,14 @@ const Cards = styled.div`
 const Card = styled.div`
     /* width: 20rem ;
     margin: 0 auto; */
-    border: 1px solid white;
+    border: 1px solid red;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
     height: 30rem;
 
 
 
     @media screen and (max-width: 700px){
-        height:20rem;
+        height:30rem;
         margin: auto;
     } 
     @media screen and (max-width: 500px){
@@ -93,7 +93,7 @@ export const Carousel = () => {
 
                         return (
                             <Card className={index == selectedIndex ? 'Slide ActiveSlide' : 'Slide'}>
-                                <img src={data.image}></img>
+                                {/* <img src={data.image}></img> */}
                             </Card>
                         )
 
