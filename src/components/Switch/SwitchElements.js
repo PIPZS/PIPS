@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
-    width:20%;
+    width: 5%;
     background-color: inherit;
     display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')};
     font-size: 1rem;
@@ -34,6 +34,10 @@ export const SwitchBGC = styled.div`
     background-color: ${({theme}) => theme.toggle};
     transition: 1s all ease-in;
 
+    @media screen and (max-width: 500px){
+        width: 30px;
+    } 
+
 `
 export const ButtonSwitch = styled.button`
     position: absolute;
@@ -50,5 +54,8 @@ export const ButtonSwitch = styled.button`
     background-color: ${({position}) => position ? 'transparent' : 'white'} ;
     border-radius:50%;
     box-shadow:${({position}) => position ? '5px 5px 0 0 white' : 'none'} ;
-    
+
+    @media screen and (max-width: 500px){
+        left: ${({position}) => position ? '0' : '5px'};  
+    } 
 `

@@ -81,7 +81,7 @@ export const InfoSubtitle = styled.p`
 `
 
 export const Button = styled(LinkS)`
-    background-color: rgba(228,27,35,1);;
+    background-color: #CE1212;
     border: none;
     color: ${({theme}) => theme.text};
     padding: 2%;
@@ -105,7 +105,6 @@ export const InfoText = styled.p`
     word-break: break-all;
     margin-bottom: 5%;
     font-family: var(--font); 
-
 
     @media screen and (max-width:500px){
         font-size: 6vw;
@@ -147,15 +146,16 @@ export const InfoCardsWrapper = styled.div`
         grid-template-rows: 40vw 40vw;
     }
 
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 500px){
         display:flex;
         flex-direction:column;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+        margin-top: 50px;
     } 
 `
 export const CardBody = styled.div`
-    border: 1px solid white;
+    border: 1px solid #CE1212;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
     height: 250px;
 
@@ -165,8 +165,8 @@ export const CardBody = styled.div`
         margin: auto;
     } 
     @media screen and (max-width: 500px){
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
         margin: auto;
     } 
 `
@@ -178,7 +178,7 @@ export const CardFrontText = styled.div`
     font-family: var(--font); 
 
     @media screen and (max-width: 700px){
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }  
     
     @media screen and (max-width: 500px){
@@ -213,8 +213,16 @@ export const ImageWrapper = styled.div`
     
     svg{
         font-size: 5rem;
-        color: red;
+        color: #CE1212;
+
+        @media screen and (max-width: 700px){
+            font-size: 4rem;
+        } 
+        @media screen and (max-width: 500px){
+            font-size: 15vw;
+        } 
     }
+    
 `
 
 export const Image = styled.img`
@@ -266,20 +274,29 @@ export const Card = styled.div`
     transition: 0.3s all ease-out;
     color: #363636;
     height: 25rem;
-    border: 0.3px solid ${({theme}) => theme.card};
+    border: 0.3px solid #CE1212;
 
     svg {
         font-size: 5rem;
         margin-bottom: 1.5rem;
-        color: red;
+        color: #CE1212;
+
     }
 
     &:hover{
-        background: red;
-        color:white;
+        background: #CE1212;
+        color: white; 
 
         svg{
             color: white
+        }
+
+        h3{
+            color:white;
+        }
+
+        p{
+            color:white;
         }
     }
 `
@@ -290,10 +307,11 @@ export const CardTitle = styled.h3`
     font-family: var(--font);
     color: ${({theme}) => theme.text};
     text-transform: uppercase;
+    
 `
 
 export const CardText = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};

@@ -2,40 +2,35 @@ import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
 
 export const BarContainer = styled.div`
-    background: ${({theme}) => theme.text};
-    padding-bottom : 2rem;
+    background: #202124;
     display: flex;
-    height: 260px;
+    height: 280px;
     @media screen and (max-width:1000px){
         height:auto;
         flex-direction: column ;
         justify-content: center ;
         align-items: center;
-
-
     }
 `
 export const TextWrapper = styled.div`
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     @media screen and (max-width:1000px){
-        margin-left: 0;
-        width:100%;
-
-
+        width:90%;
     }
-
 `
 
 export const Wrapper = styled.div`
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column ;
-    margin-left:20% ;
+    margin-left:15%;
 
-
-
+    @media screen and (max-width:1000px){
+        width: 90%;
+        margin-left: 0px;
+    }
 `;
 
 export const Title = styled.h3`
@@ -44,13 +39,13 @@ export const Title = styled.h3`
     margin-bottom: 0.5rem;
     margin-top: 2rem;
     font-family: var(--font); 
-    color: ${({theme}) => theme.bgc};
+    color: white;
 `
 export const Subtitle = styled.p`
     color: white;
     font-size: 1.1rem;
     font-family: var(--font); 
-    color: ${({theme}) => theme.bgc};
+    color: white;
     align-items: center;
 `
 export const ButtonWrapper = styled.div`
@@ -58,14 +53,21 @@ export const ButtonWrapper = styled.div`
     align-items: center ;
     position: relative;
     width: 30%;
+
+    @media screen and (max-width:1000px){
+        width:100%;
+        margin-top 30px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
     
 `
 export const Button = styled(LinkS)`
-
-    right:5rem;
-    top: 43%;
+    right: 5rem;
+    top: 50%;
     width: 10rem;
-    background: red;
+    background: #CE1212;
     color: white;
     font-size: 1.2rem;
     padding-top: 1.2rem;

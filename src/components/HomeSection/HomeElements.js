@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link as LinkS} from 'react-scroll';
 import Image from '../../images/PIPS.jpg';
 
 export const HomeContainer = styled.div`
@@ -26,3 +27,8 @@ export const Subtitle = styled.h2`
     color: #f54242;
 `
 
+export const ScrollDown = styled(LinkS)`
+    &:hover{
+        cursor: pointer;
+    }
+`

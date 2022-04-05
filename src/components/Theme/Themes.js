@@ -9,9 +9,9 @@ const LightTheme = {
 };
 const DarkTheme = {
     text: "white",
-    toggle: "#f54242",
+    toggle: "#CE1212",
     hover: "#00D4FF",
-    bgc: "black",
+    bgc: "#202124",
     border: "rgba(100, 100, 100, 0.3)",
     card: 'white',
     input: 'rgba(255,255,255,0.3)',
