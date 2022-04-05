@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
 import Navbar from '../Navbar/index.js';
-import {HomeContainer, Title, Subtitle, TextContainer} from './HomeElements.js';
+import {HomeContainer, Title, Subtitle, TextContainer, ScrollDown} from './HomeElements.js';
 import './Home.css';
-import Image from '../../images/PIPS.jpg';
-import VideoUrl from '../../videos/home_video_number_two.mp4';
-import VideoUrl2 from '../../videos/Sequence-01.mp4';
-import VideoUrl3 from '../../videos/video_amarrilo.mp4';
+import VideoUrl from '../../videos/videoedificios.mp4';
 
 
 
@@ -55,6 +52,13 @@ const HomeSection = () => {
             <MainWrapper >
                 <span className='text'>PIPS</span>
             </MainWrapper>
+            
+            <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
+            <div className='scrolldown'>
+                <span></span>
+                <span></span>
+            </div>
+            </ScrollDown>
 
         </Background>
 

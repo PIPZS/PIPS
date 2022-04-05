@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: ${({ specialScroll }) => (specialScroll ? '#1c1c1c' : 'rgba(0,0,0,0.2)')};
+    background: ${({ specialScroll }) => (specialScroll ? '#202124' : 'rgba(0,0,0,0.2)')};
     height: 80px;
     display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')}; 
     font-size: 1rem;
@@ -50,19 +50,19 @@ export const NavIcon = styled.div`
 export const Title = styled.h1`
     font-size: 60px;
     font-family: 'Abibas';
-    color: #1c1c1c;
+    color: #202124;
 `
 
 export const Subtitle = styled.h1`
     font-size: 1.7rem;
     font-family: 'Monstserrat';
     margin-left: 2%;
-    color: black;
+    color: #CE1212;
 
-    text-shadow: -1px 1px 0 #8f8146,
-                        1px 1px 0 #8f8146,
-                        1px -1px 0 #8f8146,
-                        -1px -1px 0 #8f8146;
+    text-shadow: -1px 1px 0 #CE1212,
+                        1px 1px 0 #CE1212,
+                        1px -1px 0 #CE1212,
+                        -1px -1px 0 #CE1212;
 `
 
 export const NavLogo = styled(LinkR)`
@@ -83,7 +83,7 @@ export const MobileIcon = styled.div`
     @media screen and (max-width:768px){
         display: block;
         position: absolute;
-        top: 0;
+        top: 3px;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
@@ -96,7 +96,7 @@ export const NavMenu = styled.ul`
     display: flex;
     position: absolute;
     list-style: none;
-    right: 7rem;
+    right: 2rem;
 
     @media screen and (max-width:768px){
         display: none;
@@ -117,9 +117,10 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     font-family: 'Monstserrat';
+    font-size: 18px;
 
     &.active{
-        color: #f54242;
+        color: #CE1212;
         transition: color 0.4s ease;
     }
 `

@@ -23,10 +23,10 @@
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4); */
-    text-shadow: 10px 10px 25px black,
+    /* text-shadow: 10px 10px 25px black,
     -10px 10px 25px black,
     -10px -10px 25px black,
-    10px -10px 25px black;
+    10px -10px 25px black; */
 }
     
 @media screen and (max-width:950px){
@@ -38,5 +38,64 @@
 @media screen and (max-width:500px){
     .text {
         font-size: 6rem;
+    }
+}
+
+
+.scrolldown{
+    position: absolute;
+    bottom: 20px;
+    left: 51.5vw;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50px) rotate(45deg);
+}
+
+.scrolldown span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    animation: animate 1.5s linear infinite;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: 0.4s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: 0.2s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0;
+}
+
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    .scrolldown {
+        left: 55vw;
     }
 }

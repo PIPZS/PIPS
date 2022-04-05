@@ -23,13 +23,13 @@ const Home = () => {
         setIsOpen(!isOpen)
     }
 
-    const[theme, setTheme] = useState('light')
+    const[theme, setTheme] = useState('dark')
 
     return (
         <ThemeProvider theme={Themes[theme]}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
-            <Switch theme={theme} setTheme={setTheme}/>
+            {/* <Switch theme={theme} setTheme={setTheme}/> */}
             <HomeSection/>
             <InfoSection theme={theme}/>
             <ContactSection/>

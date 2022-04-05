@@ -1,9 +1,10 @@
 import React from 'react'
-import {BarContainer, TextWrapper, Title, Subtitle, ButtonWrapper, Button} from './AltMiddleBarElements'
+import {BarContainer, TextWrapper, Title, Subtitle, ButtonWrapper, Button, MainWrapper} from './AltMiddleBarElements'
 
 function AltMiddleBar() {
   return (
     <BarContainer>
+        <MainWrapper>
         <TextWrapper first>
             <Title>MISIÓN</Title>
             <Subtitle>Estamos comprometidos a brindarle soluciones de diseño web de primera calidad que los ayudarán a hacer crecer sus marcas y su negocio. 
@@ -19,6 +20,7 @@ function AltMiddleBar() {
         {/* <ButtonWrapper>
             <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-80}>Contactanos!</Button>
         </ButtonWrapper> */}
+        </MainWrapper>
     </BarContainer>
   )
 }

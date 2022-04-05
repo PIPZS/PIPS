@@ -86,7 +86,7 @@ export const ContactInput = styled.input`
 `
 
 export const ContactFormButton = styled.button`
-    background: red;
+    background: #CE1212;
     text-align:center;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -117,7 +117,7 @@ export const OptionWrapper = styled.div`
     margin-bottom: 3rem;
 
     svg{
-        color:red;
+        color: #CE1212;
         font-size: 2.5rem;
         margin-right: 2rem;
     }
