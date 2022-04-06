@@ -76,6 +76,10 @@ export const SocialMediaItem = styled.div`
     font-size: 1.3rem;
     transition: .5s all ease-out;
 
+    @media screen and (max-width:750px){
+        font-size: 1rem;
+    }
+
     &:hover{
         cursor: pointer;
         color: #CE1212;

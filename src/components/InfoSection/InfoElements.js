@@ -25,6 +25,7 @@ export const InfoContainer = styled.div`
     padding: 50px 24px;
     position: relative;
     padding-top: 5%;
+    align-items:center;
 
     @media screen and (max-width:1200px){
         display: flex;
@@ -68,7 +69,6 @@ export const ContactText = styled.div`
 
 export const InfoSubtitle = styled.p`
     font-family: var(--font); 
-    font-size: 23px;
     color: ${({theme}) => theme.text};
     margin-bottom: 5%;
     position: relative;
@@ -241,15 +241,16 @@ export const CariuseltextWrapper = styled.div`
 `
 
 export const CarouselTitle = styled.h3`
-    font-size: 1.8rem;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 1.3rem;
     font-family: var(--font);
     color: ${({theme}) => theme.text};
+    text-transform: uppercase;
 `
 
 export const CarouselSubtitle = styled.p`
-    font-size: 1.4rem;
+    font-size: 19px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
 `
@@ -264,20 +265,31 @@ export const CardsWrapper = styled.div`
 
     @media screen and (max-width: 1000px){
         flex-direction:column ;
+        width: 50%;
+    }  
+
+    @media screen and (max-width: 750px){
+        flex-direction:column ;
+        width: 90%;
     }  
 `
 export const Card = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 30px;
+
     text-align: center;
     padding: 50px;
     transition: 0.3s all ease-out;
     color: #363636;
     height: 25rem;
     border: 0.3px solid #CE1212;
+    overflow: hidden ;
+    width:100%;
+  
+
+ 
 
     svg {
-        font-size: 5rem;
+        font-size: 3.5rem;
         margin-bottom: 1.5rem;
         color: #CE1212;
 
@@ -302,7 +314,7 @@ export const Card = styled.div`
 `
 
 export const CardTitle = styled.h3`
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-family: var(--font);
     color: ${({theme}) => theme.text};
@@ -311,7 +323,7 @@ export const CardTitle = styled.h3`
 `
 
 export const CardText = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 100%;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};

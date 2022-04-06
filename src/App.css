@@ -9,9 +9,9 @@
   margin: 0;
   padding: 0;
 }
- /* div {
+  /* div {
   outline: 1px solid red;
-}     */
+}      */
 
 @font-face {
   font-family: Abibas;
@@ -25,4 +25,9 @@
 
 :root {
   --font: 'Public Sans', sans-serif;
+}
+
+
+svg {
+  stroke-width: 0.5;
 }
