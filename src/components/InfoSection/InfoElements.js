@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
-import { style } from "@mui/system";
+
 
 
 export const MainWrapper = styled.div`

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoTitle, InfoWrapper, InfoCardsWrapper, InfoText, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle, CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle, CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './InfoElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import "./infoSection.scss";

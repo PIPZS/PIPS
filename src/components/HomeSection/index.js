@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
-import Navbar from '../Navbar/index.js';
-import {HomeContainer, Title, Subtitle, TextContainer, ScrollDown} from './HomeElements.js';
+import { ScrollDown} from './HomeElements.js';
 import './Home.css';
 import VideoUrl from '../../videos/videoedificios.mp4';
 

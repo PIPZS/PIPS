@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { MainWrapper, Section } from './ServicesElements'
+import { MainWrapper } from './ServicesElements'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 
