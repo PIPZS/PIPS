@@ -330,8 +330,11 @@ export const CardText = styled.p`
 `
 
 export const CardsTextWrapper = styled.div`
-    margin-top: 7rem;
+    margin-top: 18rem;
     text-align: center;
+    @media screen and (max-width: 1250px) {
+        margin-top: 10rem;
+    }
 `
 
 export const CardsTitle = styled.h3`
