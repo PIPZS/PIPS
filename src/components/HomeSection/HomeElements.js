@@ -1,6 +1,9 @@
-import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
 import Image from '../../images/PIPS.jpg';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+
+const animation = keyframes`${fadeIn}`;
 
 export const HomeContainer = styled.div`
     position: relative;
@@ -19,8 +22,7 @@ export const TextContainer = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 15rem;
-    color: #f54242;
+    animation: 5s ${animation};
 `
 export const Subtitle = styled.h2`
     font-size: 0.9rem;  
