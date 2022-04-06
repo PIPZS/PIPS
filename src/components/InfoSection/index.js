@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react'
 import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle, CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './InfoElements'
-import 'aos/dist/aos.css';
-import Aos from 'aos';
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import  {Carousel}  from '../Carousel/Carousel';
@@ -16,10 +14,6 @@ import {FiFileText} from 'react-icons/fi';
 import AltMiddleBar from '../AlternativeMiddleBar/AltMiddleBar';
 
 const InfoSection = (props) => {
-
-    useEffect(() => {
-        Aos.init({ duration: 2000});
-      }, []);
 
       const cards = [
         {
