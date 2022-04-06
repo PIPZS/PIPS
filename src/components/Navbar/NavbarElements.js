@@ -5,18 +5,16 @@ import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
     background: ${({ specialScroll }) => (specialScroll ? '#202124' : 'rgba(0,0,0,0.2)')};
-    height: 80px;
+    height: ${({ specialScroll }) => (specialScroll ? '80px' : '0px')}; 
     display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')}; 
     font-size: 1rem;
     top: 0;
     z-index:30;
-    position:sticky;
-    margin-top: -80px;
+    position: sticky;
+    margin-top: ${({ specialScroll }) => (specialScroll ? '-80px' : '0px')};
     justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     
-
-
     @media screen and (max-width:768px){
         justify-content: flex-start;
         align-items: flex-start;   
@@ -116,7 +114,7 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-family: 'Monstserrat';
+    font-family: var(--font);
     font-size: 18px;
 
     &.active{
