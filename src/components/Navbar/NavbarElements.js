@@ -15,10 +15,6 @@ export const Nav = styled.nav`
     justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     
-    @media screen and (max-width:768px){
-        justify-content: flex-start;
-        align-items: flex-start;   
-    }
 
     /* @media screen and (max-width:960px){
         transition: 0.8s all ease;
