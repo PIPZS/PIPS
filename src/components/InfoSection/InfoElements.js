@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
-import { style } from "@mui/system";
+
 
 
 export const MainWrapper = styled.div`
@@ -311,6 +311,20 @@ export const Card = styled.div`
             color:white;
         }
     }
+    
+
+    // Con esto se modifica el tamaño de las tarjetas
+    
+    // @media screen and (max-width: 700px){
+    //     width: 300px;
+    //     height: 300px;
+    //     margin: auto;
+    // } 
+    // @media screen and (max-width: 500px){
+    //     width: 80vw;
+    //     height: 80vw;
+    //     margin: auto;
+    // } 
 `
 
 export const CardTitle = styled.h3`
@@ -330,8 +344,11 @@ export const CardText = styled.p`
 `
 
 export const CardsTextWrapper = styled.div`
-    margin-top: 7rem;
+    margin-top: 18rem;
     text-align: center;
+    @media screen and (max-width: 1250px) {
+        margin-top: 10rem;
+    }
 `
 
 export const CardsTitle = styled.h3`

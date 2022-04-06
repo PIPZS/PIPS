@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom';
+
 
 export const FooterContainer = styled.div`
     background: #1c1c1c;
@@ -63,6 +63,13 @@ export const SocialLinks = styled.div`
     justify-content: right;
     gap: 1rem;
 
+    svg{
+        font-size: 2rem;
+        &:hover{
+            color: #CE1212;
+        }
+    }
+
     @media screen and (max-width:750px){
         width: 100%;
         align-items:center;
@@ -74,23 +81,37 @@ export const SocialLinks = styled.div`
 export const SocialMediaItem = styled.div`
     color: white;
     font-size: 1.3rem;
+    font-family: var(--font);
     transition: .5s all ease-out;
+
+    &:hover{
+        cursor: pointer;
+        color: #CE1212;
+    }
 
     @media screen and (max-width:750px){
         font-size: 1rem;
     }
 
-    &:hover{
-        cursor: pointer;
-        color: #CE1212;
+    @media screen and (max-width:500px){
+        display: ${props => props.alt ? '' : 'none' };
     }
 `
 
 export const Title = styled.h3`
     font-size: 2rem;
     color: white;
+    font-family: ${props => props.alt ? 'Abibas' : 'var(--font)' };;
 `
 export const Subtitle = styled.p`
     font-size: 1.5rem;
     color: white;
+    font-family: var(--font);
+`
+export const AlternativeLinks = styled.div`
+    display:none;
+
+    @media screen and (max-width:500px){
+        display: flex;
+    }
 `

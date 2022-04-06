@@ -5,15 +5,7 @@ import Slider from "react-slick";
 import "./Carousel.css"
 import {BsChevronCompactRight, BsChevronCompactLeft} from "react-icons/bs";
 
-const Cards = styled.div`
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    position: relative;
-    height:21.875rem;
-    width:100%;
-`;
+
 
 
 const Card = styled.div`
@@ -92,7 +84,7 @@ export const Carousel = () => {
                     {CarouselData.map((data, index) => {
 
                         return (
-                            <Card className={index == selectedIndex ? 'Slide ActiveSlide' : 'Slide'}>
+                            <Card className={index === selectedIndex ? 'Slide ActiveSlide' : 'Slide'}>
                                 {/* <img src={data.image}></img> */}
                             </Card>
                         )

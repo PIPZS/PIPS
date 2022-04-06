@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
-import Navbar from '../Navbar/index.js';
-import {HomeContainer, Title, Subtitle, TextContainer, ScrollDown} from './HomeElements.js';
+import {Title, ScrollDown} from './HomeElements.js';
 import './Home.css';
 import VideoUrl from '../../videos/videoedificios.mp4';
 
@@ -11,7 +10,7 @@ const Background = styled.div`
     display:flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,16 +49,17 @@ const HomeSection = () => {
                 <source src={VideoUrl} type="video/mp4"></source>
             </Video>
             <MainWrapper >
+                <Title>
                 <span className='text'>PIPS</span>
-            </MainWrapper>
-            
-            <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
-            <div className='scrolldown'>
-                <span></span>
-                <span></span>
-            </div>
-            </ScrollDown>
+                </Title>
 
+                <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
+                    <div className='scrolldown'>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </ScrollDown>
+            </MainWrapper>       
         </Background>
 
     )
