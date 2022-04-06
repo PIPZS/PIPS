@@ -311,6 +311,20 @@ export const Card = styled.div`
             color:white;
         }
     }
+    
+
+    // Con esto se modifica el tamaño de las tarjetas
+    
+    // @media screen and (max-width: 700px){
+    //     width: 300px;
+    //     height: 300px;
+    //     margin: auto;
+    // } 
+    // @media screen and (max-width: 500px){
+    //     width: 80vw;
+    //     height: 80vw;
+    //     margin: auto;
+    // } 
 `
 
 export const CardTitle = styled.h3`

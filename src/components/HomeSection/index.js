@@ -50,15 +50,14 @@ const HomeSection = () => {
             </Video>
             <MainWrapper >
                 <span className='text'>PIPS</span>
-            </MainWrapper>
-            
-            <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
-            <div className='scrolldown'>
-                <span></span>
-                <span></span>
-            </div>
-            </ScrollDown>
 
+                <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
+                    <div className='scrolldown'>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </ScrollDown>
+            </MainWrapper>       
         </Background>
 
     )
