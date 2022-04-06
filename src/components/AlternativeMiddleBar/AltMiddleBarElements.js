@@ -20,7 +20,7 @@ export const MainWrapper = styled.div`
     display: flex;
     justify-content: center ;
     align-items: center;
-    gap: 80px;
+    gap: 80px; 
 
     @media screen and (max-width:1000px){
         flex-direction: column ;
