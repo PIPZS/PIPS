@@ -1,6 +1,6 @@
 import React from 'react'
-import { FooterContainer, FooterWrap, FooterInfo, LeftContainer, RightContainer, Title, Subtitle, SocialMediaWrapper, SocialMediaItem, SocialLinks} from './FooterElements'
-
+import { FooterContainer, FooterWrap, FooterInfo, LeftContainer, RightContainer, Title, Subtitle, SocialMediaWrapper, SocialMediaItem, SocialLinks, AlternativeLinks} from './FooterElements'
+import {FiLinkedin, FiInstagram, FiTwitter} from 'react-icons/fi'
 
 const Footer = () => {
 
@@ -11,7 +11,7 @@ const Footer = () => {
                 <FooterWrap>
                     <FooterInfo>
                         <LeftContainer>
-                            <Title>PIPS LAB</Title>
+                            <Title alt>PIPS LAB</Title>
                             <Subtitle>Desafiando el status quo</Subtitle>
                         </LeftContainer>
                         <RightContainer>
@@ -30,6 +30,13 @@ const Footer = () => {
                                 <SocialMediaItem href='/' target='_blank' aria-label='Facebook'>INSTAGRAM</SocialMediaItem>
                             </SocialLinks>
                         </RightContainer>
+                        <AlternativeLinks>
+                            <SocialLinks>
+                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook' alt><FiLinkedin/></SocialMediaItem>
+                                <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn' alt><FiTwitter/></SocialMediaItem>
+                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook' alt><FiInstagram/></SocialMediaItem>
+                            </SocialLinks>
+                        </AlternativeLinks>
                     </SocialMediaWrapper>
                 </FooterWrap>
             </FooterContainer>

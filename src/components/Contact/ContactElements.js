@@ -82,7 +82,8 @@ export const ContactInput = styled.input`
     padding: 10px;
     background: transparent;
     height: 50px;
-    font-family: var(--font); 
+    font-family: var(--font);
+    font-size: 1.1rem;
 `
 
 export const ContactFormButton = styled.button`
