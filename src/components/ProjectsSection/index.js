@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react'
-import { ProjectsContainer, ProjectsWrapper, ProjectsTitle} from './ProjectsElements'
-import Aos from 'aos';
+import React from 'react'
+import { ProjectsContainer} from './ProjectsElements'
+
 import Image1 from '../../images/PIPS.jpg'
 import Image2 from '../../images/PIPS.jpg'
 import Image3 from '../../images/PIPS.jpg'
@@ -8,7 +8,6 @@ import Image4 from '../../images/PIPS.jpg'
 import Image5 from '../../images/PIPS.jpg'
 import Image6 from '../../images/PIPS.jpg'
 import "./styles.scss";
-import FlipCard from './FlipCard';
 import {Carousel} from '../Carousel/Carousel'
 
 const cards = [

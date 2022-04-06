@@ -4,7 +4,6 @@ import {Link as LinkS} from 'react-scroll';
 export const BarContainer = styled.div`
     background: #202124;
     display: flex;
-    height: 280px;
     @media screen and (max-width:1000px){
         height:auto;
         flex-direction: column ;
@@ -56,7 +55,7 @@ export const ButtonWrapper = styled.div`
 
     @media screen and (max-width:1000px){
         width:100%;
-        margin-top 30px;
+        margin-top: 30px;
         align-items: center;
         justify-content: center;
         padding-bottom: 20px;

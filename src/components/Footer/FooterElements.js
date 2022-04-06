@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom';
+
 
 export const FooterContainer = styled.div`
     background: #1c1c1c;
@@ -75,6 +75,10 @@ export const SocialMediaItem = styled.div`
     color: white;
     font-size: 1.3rem;
     transition: .5s all ease-out;
+
+    @media screen and (max-width:750px){
+        font-size: 1rem;
+    }
 
     &:hover{
         cursor: pointer;

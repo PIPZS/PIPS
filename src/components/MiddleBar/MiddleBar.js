@@ -5,13 +5,24 @@ function MiddleBar() {
   return (
     <BarContainer>
         <TextWrapper>
-            <Wrapper><Title>TE AYUDAMOS A CRECER</Title>
-            <Subtitle>A partir de las necesidades de la organización, trabajamos con el cliente para diseñar soluciones a medida que harán crecer su negocio.
+            <Wrapper><Title>MANTENIMIENTO WEB</Title>
+            <Subtitle>Seguimiento de los avances del proyecto. Mantenimiento y actualizaciones de sitios web CMS y tradicionales. 
+                      Optimización de código y mejoras de funcionalidades.
             </Subtitle></Wrapper>
             <Wrapper>
-            <Title>¿POR QUÉ ELEGIRNOS?</Title>
-            <Subtitle>Creemos que las primeras impresiones importan y que solo existe una oportunidad. 
-                    Por eso, somos especialistas en implementar acciones disruptivas que definen la industria y que hacen latir el corazón.
+            <Title>OPTIMIZACIÓN SEO</Title>
+            <Subtitle>Ofrecemos soluciones versátiles con el objetivo de maximizar la visibilidad orgánica de los sitios web en los buscadores y en las redes sociales. 
+                      Tags personalizados con estándares de SEO actuales.
+            </Subtitle>
+            </Wrapper>
+            <Wrapper>
+            <Title>REGISTRO DE DOMINIO</Title>
+            <Subtitle>Nos aseguramos de que encuentres el dominio correcto y que tenga un lugar seguro en línea con protección de privacidad para personas y empresas.
+            </Subtitle>
+            </Wrapper>
+            <Wrapper>
+            <Title>SERVICIO DE HOSTING</Title>
+            <Subtitle>Mapeamos todo para que tu presencia online sea efectiva: variedad de planes de Hosting profesionales con emails propios, soporte formidable y aplicaciones autoinstalables.
             </Subtitle>
             </Wrapper>
         </TextWrapper>

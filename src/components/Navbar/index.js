@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink,NavIcon, Title, ButtonContainer} from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavIcon, Title} from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import {BsScissors} from "react-icons/bs"
-import Switch from '../Switch/switch';
 
 const Navbar = ({toggle}) => {
 
