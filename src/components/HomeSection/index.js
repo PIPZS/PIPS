@@ -7,13 +7,8 @@ import VideoUrl from '../../videos/videoedificios.mp4';
 
 
 const Background = styled.div`
-    display:flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: white;
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #202124;
 `;
 
 const MainWrapper = styled.div`
