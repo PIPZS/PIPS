@@ -74,6 +74,7 @@ export const InfoSubtitle = styled.p`
     position: relative;
     z-index: 20;
     font-weight: ${props => props.bold ? 'bold' : '' };
+    text-align: justify;
 
     @media screen and (max-width:500px){
         font-size: 16px;
@@ -173,7 +174,7 @@ export const CardBody = styled.div`
 
 export const CardFrontText = styled.div`
     margin-top: 20%;
-    font-size: 1.8rem;
+    font-size: 2px;
     color: ${({theme}) => theme.text};
     font-family: var(--font); 
 
