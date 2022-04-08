@@ -12,16 +12,24 @@ function FlipCard({ card, icon}) {
         <div class="card">
           
           <figure class="front">
-          <div>
+          <div class="inner-container">
+            <div class="icon-container">
               {icon}
-              <p>sasasaas</p>
+            </div>
+            <div class="title-container"> 
+              {card.front}
+            </div>
+              
+             
             </div>
             
             
 
           </figure>
           <figure class="back">
-            <h1>back</h1>
+          <div class="text-container"> 
+            {card.back}
+            </div>
           </figure>
         
         </div>  

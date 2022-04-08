@@ -131,6 +131,17 @@ export const InfoCardsWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
+
+    @media screen and (max-width: 1350px){
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        grid-template-columns: 260px 260px;
+        grid-template-rows: 260px 260px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    } 
+
     @media screen and (max-width: 1200px){
         width: 80%;
         margin: auto;
@@ -140,18 +151,19 @@ export const InfoCardsWrapper = styled.div`
     @media screen and (max-width: 700px){
         grid-template-columns: 230px 230px;
         grid-template-rows: 230px 230px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }  
     
-    @media screen and (max-width: 500px){
+    /* @media screen and (max-width: 500px){
         grid-template-columns: 40vw 40vw;
         grid-template-rows: 40vw 40vw;
-    }
+    } */
 
     @media screen and (max-width: 500px){
         display:flex;
         flex-direction:column;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        width:100% ;
         margin-top: 50px;
     } 
 `
