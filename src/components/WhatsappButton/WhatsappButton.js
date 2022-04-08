@@ -26,9 +26,10 @@ function WhatsappButton() {
     return (
         <ButtonWrapper specialScroll={specialScroll} >
         <FloatingWhatsApp
-                    phoneNumber="1154552769"
+                    phoneNumber="541154552769"
                     accountName="PIPS"
                     allowClickAway
+                    darkMode
                     notification
                     chatMessage="Hola que tal? Quisiera una pagina web"
                     statusMessage=""
