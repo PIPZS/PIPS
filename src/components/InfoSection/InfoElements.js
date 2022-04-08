@@ -309,12 +309,8 @@ export const Card = styled.div`
     }
 
     &:hover{
-        background: #CE1212;
         color: white; 
 
-        svg{
-            color: white
-        }
 
         h3{
             color:white;

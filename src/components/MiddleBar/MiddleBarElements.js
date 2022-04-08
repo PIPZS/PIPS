@@ -66,11 +66,11 @@ export const Button = styled(LinkS)`
     right: 5rem;
     top: 50%;
     width: 10rem;
+    height:2.5rem;
     background: #CE1212;
     color: white;
     font-size: 1.2rem;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 0.5rem;
     font-family: var(--font); 
     text-align: center;
 
