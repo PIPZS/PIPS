@@ -19,14 +19,20 @@ function WhatsappButton() {
         window.addEventListener('scroll', changeNav)
     }, [])
 
+    const redirect = () => {
+        window.location.href = "https://wa.me/1154552769";
+    }
+
     return (
-        <ButtonWrapper specialScroll={specialScroll}>
+        <ButtonWrapper specialScroll={specialScroll} >
         <FloatingWhatsApp
-                    phoneNumber="123456789"
-                    accountName="Bot"
+                    phoneNumber="1154552769"
+                    accountName="PIPS"
                     allowClickAway
                     notification
-                    notificationDelay={60000} // 1 minute
+                    chatMessage="Hola que tal? Quisiera una pagina web"
+                    statusMessage=""
+                    notificationDelay={30000} // 1 minute
         />
         </ButtonWrapper>
     )
