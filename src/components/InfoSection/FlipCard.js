@@ -13,7 +13,7 @@ function FlipCard({ card, icon}) {
           
           <figure class="front">
           <div>
-              <h1>front</h1>
+              {icon}
               <p>sasasaas</p>
             </div>
             

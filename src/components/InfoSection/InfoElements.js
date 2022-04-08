@@ -122,8 +122,8 @@ export const InfoImage = styled.img`
 
 export const InfoCardsWrapper = styled.div`
     display: grid;
-    grid-template-columns: 260px 260px;
-    grid-template-rows: 260px 260px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     width: 70%;
