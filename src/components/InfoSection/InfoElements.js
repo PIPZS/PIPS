@@ -74,6 +74,7 @@ export const InfoSubtitle = styled.p`
     position: relative;
     z-index: 20;
     font-weight: ${props => props.bold ? 'bold' : '' };
+    text-align: justify;
 
     @media screen and (max-width:500px){
         font-size: 16px;
@@ -121,8 +122,8 @@ export const InfoImage = styled.img`
 
 export const InfoCardsWrapper = styled.div`
     display: grid;
-    grid-template-columns: 260px 260px;
-    grid-template-rows: 260px 260px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     width: 70%;
@@ -173,7 +174,7 @@ export const CardBody = styled.div`
 
 export const CardFrontText = styled.div`
     margin-top: 20%;
-    font-size: 1.8rem;
+    font-size: 2px;
     color: ${({theme}) => theme.text};
     font-family: var(--font); 
 
