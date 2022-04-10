@@ -83,6 +83,11 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #f54242;
+
+        svg{
+            font-size: 1.8rem;
+            color: #f54242;
+        }
     }
 `
 
