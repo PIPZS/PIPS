@@ -57,7 +57,7 @@ export const Title = styled.h3`
 
     @media screen and (max-width:800px){
         width:100%;
-        margin-top:5%;
+        margin-top:15%;
         text-align: center;
     }
 `
