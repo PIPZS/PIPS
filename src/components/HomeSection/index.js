@@ -41,7 +41,7 @@ const HomeSection = () => {
 
     return (
       <Background>
-            <Video id="myVideo"  autoPlay="autoplay" muted="muted" loop="loop" preload="auto" playsinline="playsinline">
+            <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto"  muted playsInline>
                 <source src={VideoUrl} type="video/mp4"></source>
             </Video>
             <MainWrapper >
