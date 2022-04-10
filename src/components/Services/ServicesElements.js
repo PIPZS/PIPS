@@ -36,6 +36,7 @@ export const Card = styled.div`
     border: 0.3px solid #CE1212;
     overflow: hidden ;
     width:100%;
+    
   
 
  
