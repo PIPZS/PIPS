@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Title, ScrollDown} from './HomeElements.js';
 import './Home.css';
 import VideoUrl from '../../videos/videoedificios.mp4';
+import VideoUrlWebm from '../../videos/videoedificios.webm'
 
 
 
@@ -40,7 +41,7 @@ const HomeSection = () => {
 
     return (
       <Background>
-            <Video id="myVideo"  autoPlay="autoplay" muted="muted" loop="loop" preload="auto">
+            <Video id="myVideo"  autoPlay="autoplay" muted="muted" loop="loop" preload="auto" playsinline="playsinline">
                 <source src={VideoUrl} type="video/mp4"></source>
             </Video>
             <MainWrapper >

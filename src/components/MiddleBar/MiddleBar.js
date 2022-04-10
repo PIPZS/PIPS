@@ -5,10 +5,12 @@ function MiddleBar() {
   return (
     <BarContainer>
         <TextWrapper>
-            <Wrapper><Title>MANTENIMIENTO WEB</Title>
-            <Subtitle>Seguimiento de los avances del proyecto. Mantenimiento y actualizaciones de sitios web CMS y tradicionales. 
-                      Optimización de código y mejoras de funcionalidades.
-            </Subtitle></Wrapper>
+            <Wrapper>
+              <Title>MANTENIMIENTO WEB</Title>
+              <Subtitle>Seguimiento de los avances del proyecto. Mantenimiento y actualizaciones de sitios web CMS y tradicionales. 
+                        Optimización de código y mejoras de funcionalidades.
+              </Subtitle>
+            </Wrapper>
             <Wrapper>
             <Title>OPTIMIZACIÓN SEO</Title>
             <Subtitle>Ofrecemos soluciones versátiles con el objetivo de maximizar la visibilidad orgánica de los sitios web en los buscadores y en las redes sociales. 
