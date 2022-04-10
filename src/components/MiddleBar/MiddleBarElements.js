@@ -72,7 +72,7 @@ export const Subtitle = styled.p`
 
     @media screen and (max-width:800px){
         width:100%;
-        margin-top:10%;
+        margin-top:5%;
 
     }
     
