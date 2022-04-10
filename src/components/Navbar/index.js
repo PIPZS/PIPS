@@ -55,9 +55,6 @@ const Navbar = ({toggle}) => {
                 </NavMenu>
                 
             </NavbarContainer>
-            {/* <ButtonContainer specialScroll={specialScroll}>
-                <Switch theme={theme} setTheme={setTheme}/>
-            </ButtonContainer> */}
         </Nav>
         </>
     )

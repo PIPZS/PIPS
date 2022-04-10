@@ -6,12 +6,12 @@ import InfoSection from '../components/InfoSection/index';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
-import  {Carousel}  from '../components/Carousel/Carousel';
 import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
 import Switch from '../components/Switch/switch';
 import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
 import MiddleBar from '../components/MiddleBar/MiddleBar';
+import ServicesSection from '../components/Services';
 
 
 
@@ -32,6 +32,7 @@ const Home = () => {
             {/* <Switch theme={theme} setTheme={setTheme}/> */}
             <HomeSection/>
             <InfoSection theme={theme}/>
+            <ServicesSection/>
             <ContactSection/>
             <Footer/>
             <WhatsappButton/>
