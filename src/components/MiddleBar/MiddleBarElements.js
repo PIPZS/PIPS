@@ -22,23 +22,44 @@ export const TextWrapper = styled.div`
 
 export const Wrapper = styled.div`
     width: 70%;
-    display: flex;
-    flex-direction: column ;
+    display:inline-grid;
     margin-left:15%;
+    grid-template-columns:  1fr 3fr;
+    grid-template-rows:  100px;
+    column-gap: 15px;
+
+    @media screen and (max-width: 1250px){
+        width: 90%;
+        margin-left: 0px;
+    }
 
     @media screen and (max-width:1000px){
         width: 90%;
         margin-left: 0px;
     }
+
+    @media screen and (max-width:800px){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+
+
 `;
 
 export const Title = styled.h3`
     color: white;
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    margin-top: 2rem;
     font-family: var(--font); 
     color: white;
+    width:30%;
+
+    @media screen and (max-width:800px){
+        width:100%;
+        margin-top:5%;
+        text-align: center;
+    }
 `
 export const Subtitle = styled.p`
     color: white;
@@ -46,6 +67,15 @@ export const Subtitle = styled.p`
     font-family: var(--font); 
     color: white;
     align-items: center;
+    text-align: justify;
+    margin-left:10%;
+
+    @media screen and (max-width:800px){
+        width:100%;
+        margin-top:5%;
+
+    }
+    
 `
 export const ButtonWrapper = styled.div`
     display: flex;

@@ -4,13 +4,10 @@ import Footer from '../components/Footer';
 import HomeSection from '../components/HomeSection';
 import InfoSection from '../components/InfoSection/index';
 import Navbar from '../components/Navbar';
-import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
-import Switch from '../components/Switch/switch';
 import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
-import MiddleBar from '../components/MiddleBar/MiddleBar';
 import ServicesSection from '../components/Services';
 
 

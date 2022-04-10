@@ -1,6 +1,4 @@
 import { useState } from "react";
-import cn from "classnames";
-import {CardFrontText, CardBackText, Text, ImageWrapper, CardBody } from './InfoElements';
 import "./flipCard.css"
 
 function FlipCard({ card, icon}) {
