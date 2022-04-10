@@ -11,9 +11,11 @@ export const BarContainer = styled.div`
         align-items: center;
     }
 `
+
 export const TextWrapper = styled.div`
-    width: 90%;
+    width: 100%;
     display: flex;
+    margin-left: 7%;
     flex-direction: column;
     @media screen and (max-width:1000px){
         width:90%;
@@ -21,9 +23,8 @@ export const TextWrapper = styled.div`
 `
 
 export const Wrapper = styled.div`
-    width: 70%;
+    width: 85%;
     display:inline-grid;
-    margin-left:15%;
     grid-template-columns:  1fr 3fr;
     grid-template-rows:  100px;
     column-gap: 15px;
@@ -54,6 +55,7 @@ export const Title = styled.h3`
     font-family: var(--font); 
     color: white;
     width:100%;
+    margin:auto;
 
     @media screen and (max-width:800px){
         width:100%;
@@ -68,7 +70,9 @@ export const Subtitle = styled.p`
     color: white;
     align-items: center;
     text-align: justify;
-    margin-left:10%;
+    margin:auto;
+    margin-left:3%;
+    width: 100%;
 
     @media screen and (max-width:800px){
         width:100%;
@@ -81,7 +85,7 @@ export const ButtonWrapper = styled.div`
     display: flex;
     align-items: center ;
     position: relative;
-    width: 30%;
+    width: 20%;
 
     @media screen and (max-width:1000px){
         width:100%;
