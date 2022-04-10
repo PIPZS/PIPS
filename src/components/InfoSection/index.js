@@ -1,17 +1,12 @@
 import React, {useEffect} from 'react'
-import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle, CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle } from './InfoElements'
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import  {Carousel}  from '../Carousel/Carousel';
-import MiddleBar from '../MiddleBar/MiddleBar';
 import {FiMonitor} from 'react-icons/fi';
-import {FiCode} from 'react-icons/fi';
 import {FiAward} from 'react-icons/fi';
 import {FiImage} from 'react-icons/fi';
-import {FiUploadCloud} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
-import {FiFileText} from 'react-icons/fi';
-import AltMiddleBar from '../AlternativeMiddleBar/AltMiddleBar';
 
 const InfoSection = (props) => {
 
@@ -88,35 +83,6 @@ const InfoSection = (props) => {
                 <CarouselContainer>
                     <Carousel/>
                 </CarouselContainer>
-                <MiddleBar/>
-                <CardsTextWrapper>
-                    <CardsTitle>COMO TRABAJAMOS</CardsTitle>
-                    <CardsSubtitle>NUESTRO PROCESO</CardsSubtitle>
-                </CardsTextWrapper>
-                <CardsWrapper>
-                    <Card>
-                        <FiFileText/>
-                        <CardTitle>Planear</CardTitle>
-                        <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
-                          por el producto/servicio que ofrece el sitio web.
-                        </CardText>
-                    </Card>
-                    <Card>
-                        <FiCode/>
-                        <CardTitle>Desarrollar</CardTitle>
-                        <CardText>La etapa de desarrollo implica mover la información recolectada en la etapa de planificación hacia la realidad. 
-                                  Se entrega una estructura de sitio documentada y una representación visual.
-                        </CardText>
-                    </Card>
-                    <Card>
-                        <FiUploadCloud/>
-                        <CardTitle>Lanzar</CardTitle>
-                        <CardText>En la fase de lanzamiento se prepara el sitio web para ser visto por el público. 
-                          Esto requiere el pulido final de los elementos de diseño, pruebas profundas de interactividad, funciones y una evaluación de la experiencia de usuario.
-                        </CardText>
-                    </Card>
-                </CardsWrapper>
-                <AltMiddleBar/>
             </MainWrapper>
         </>
     )
