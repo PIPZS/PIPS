@@ -34,11 +34,14 @@ export const NavIcon = styled.div`
     margin-left: 50%;
     display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
     align-items:center;
-
     text-shadow: -1px 1px 0 #f54242,
                         1px 1px 0 #f54242,
                         1px -1px 0 #f54242,
                         -1px -1px 0 #f54242;
+
+    @media screen and (max-width:768px){
+        margin-left: 20%;
+    }
 `
 
 export const Title = styled.h1`
