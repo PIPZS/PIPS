@@ -53,7 +53,7 @@ export const Title = styled.h3`
     font-weight: bold;
     font-family: var(--font); 
     color: white;
-    width:30%;
+    width:100%;
 
     @media screen and (max-width:800px){
         width:100%;
