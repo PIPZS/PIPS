@@ -9,6 +9,7 @@ import {FiImage} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
 
 const InfoSection = (props) => {
+ 
 
       const cards = [
         {
