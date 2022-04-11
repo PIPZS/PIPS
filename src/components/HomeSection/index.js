@@ -9,7 +9,7 @@ import VideoUrlWebm from '../../videos/videoedificios.webm'
 
 const Background = styled.div`
     height: 100vh;
-    background-color: transparent;
+    background-color: #202124;
 `;
 
 const MainWrapper = styled.div`
@@ -20,13 +20,12 @@ const MainWrapper = styled.div`
 
 
 const Video = styled.video`
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
     
 `;
 
@@ -44,6 +43,7 @@ const HomeSection = () => {
       <Background>
             <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto"  muted playsInline>
                 <source src={VideoUrl} type="video/mp4"></source>
+                <source src={VideoUrlWebm} type="video/webm"></source>
             </Video>
             <MainWrapper >
                 <Title>
