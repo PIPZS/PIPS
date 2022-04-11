@@ -18,6 +18,12 @@ export const MainTitle = styled.h3`
     padding-top: 5rem;
     text-align: center;
     word-break: break-all;
+    @media screen and (max-width:1000px){
+        font-size: 3rem;
+    }
+    @media screen and (max-width:500px){
+        font-size: 2.4rem;
+    }
 
 `
 export const TextWrapper = styled.div`
