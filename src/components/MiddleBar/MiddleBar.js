@@ -1,5 +1,5 @@
 import React from 'react'
-import {BarContainer, TextWrapper, Title, Subtitle, ButtonWrapper, Button, Wrapper} from './MiddleBarElements'
+import {BarContainer, TextWrapper, Title, Subtitle, ButtonWrapper, Button, Wrapper, MainTitle} from './MiddleBarElements'
 
 function MiddleBar() {
   return (

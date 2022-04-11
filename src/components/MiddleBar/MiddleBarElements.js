@@ -11,7 +11,15 @@ export const BarContainer = styled.div`
         align-items: center;
     }
 `
+export const MainTitle = styled.h3`
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    word-break: break-all;
 
+`
 export const TextWrapper = styled.div`
     width: 100%;
     display: flex;

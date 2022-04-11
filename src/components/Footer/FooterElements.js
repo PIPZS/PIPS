@@ -83,6 +83,7 @@ export const SocialMediaItem = styled.div`
     font-size: 1.3rem;
     font-family: var(--font);
     transition: .5s all ease-out;
+    word-break: break-all;
 
     &:hover{
         cursor: pointer;
@@ -101,16 +102,17 @@ export const SocialMediaItem = styled.div`
 export const Title = styled.h3`
     font-size: 2rem;
     color: white;
-    font-family: ${props => props.alt ? 'Abibas' : 'var(--font)' };;
+    font-family: ${props => props.alt ? 'Abibas' : 'var(--font)' };
+    word-break: break-all;
 `
 export const Subtitle = styled.p`
     font-size: 1.5rem;
     color: white;
     font-family: var(--font);
+    word-break: break-all;
 `
 export const AlternativeLinks = styled.div`
     display:none;
-
     @media screen and (max-width:500px){
         display: flex;
     }

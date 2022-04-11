@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: ${({ specialScroll }) => (specialScroll ? '#202124' : 'rgba(0,0,0,0.2)')};
+    background: ${({ specialScroll }) => (specialScroll ? '#1c1c1c' : 'rgba(0,0,0,0.2)')};
     height: ${({ specialScroll }) => (specialScroll ? '80px' : '0px')}; 
     display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')}; 
     font-size: 1rem;
@@ -34,10 +34,10 @@ export const NavIcon = styled.div`
     margin-left: 50%;
     display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
     align-items:center;
-    text-shadow: -1px 1px 0 #f54242,
-                        1px 1px 0 #f54242,
-                        1px -1px 0 #f54242,
-                        -1px -1px 0 #f54242;
+    text-shadow: -1px 1px 0 #CE1212,
+                        1px 1px 0 #CE1212,
+                        1px -1px 0 #CE1212,
+                        -1px -1px 0 #CE1212;
 
     @media screen and (max-width:768px){
         margin-left: 20%;
@@ -47,7 +47,7 @@ export const NavIcon = styled.div`
 export const Title = styled.h1`
     font-size: 60px;
     font-family: 'Abibas';
-    color: #202124;
+    color: #1c1c1c;
 `
 
 export const Subtitle = styled.h1`
@@ -85,11 +85,10 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #f54242;
 
         svg{
             font-size: 1.8rem;
-            color: #f54242;
+            color: #CE1212;
         }
     }
 `
