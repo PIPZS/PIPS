@@ -52,6 +52,7 @@ export const Subtitle = styled.p`
     font-size: 1.4rem;
     width:90%;
     font-family: var(--font); 
+    word-wrap: break-word;
     
 `
 
@@ -105,12 +106,22 @@ export const ContactFormButton = styled.button`
         transition: all 0.2s ease-in-out;
         background: black;
     }
+
+    @media screen and (max-width:900px){
+        margin-bottom: 18rem;
+    }
 `
 
 export const ContactOption = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
+
+    @media screen and (max-width:900px){
+        position: absolute;
+        bottom: 0;
+    }
+
 `
 
 export const OptionWrapper = styled.div`
@@ -120,23 +131,34 @@ export const OptionWrapper = styled.div`
     svg{
         color: #CE1212;
         font-size: 2.5rem;
-        margin-right: 2rem;
     }
 `
 
 export const OptionTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 
 `
 export const OptionTitle = styled.h3`
     font-size: 1.3rem;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
+
+    @media screen and (max-width:400px){
+        font-size: 4.6vw;
+        word-break: break-all;
+    }
+
 `
 
 export const OptionInfo = styled.div`
     font-size: 1.3rem;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
+
+    @media screen and (max-width:400px){
+        font-size: 4.6vw;
+        word-break: break-all;
+    }
 `
