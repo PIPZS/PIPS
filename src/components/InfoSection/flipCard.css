@@ -47,9 +47,9 @@
  
 }
 
-.card-container:hover .card {
+/* .card-container:hover .card {
     transform: rotateY(180deg);
-}
+} */
 
 .card figure {
     position: absolute;
@@ -117,4 +117,8 @@ svg {
     margin-right: 5%;
     text-align:justify;
 
+}
+
+.flip {
+    transform: rotateY(180deg);
 }

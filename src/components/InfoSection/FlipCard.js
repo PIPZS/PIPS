@@ -2,28 +2,15 @@ import React, { useState } from "react";
 import "./flipCard.css"
 
 function FlipCard({ card, icon}) {
-   // Declare a new state variable with the "useState" Hook
-   const [width, setWidth] = React.useState(window.innerWidth);
-   const breakpoint = 620;
- 
-   React.useEffect(() => {
-     /* Inside of a "useEffect" hook add an event listener that updates
-        the "width" state variable when the window size changes */
-     window.addEventListener("resize", () => setWidth(window.innerWidth));
- 
-     /* passing an empty array as the dependencies of the effect will cause this
-        effect to only run when the component mounts, and not each time it updates.
-        We only want the listener to be added once */
-   }, []);
-
-
+  const [flip, setFlip] = useState(false)
   
+  
+
   return (
     <div class="container">
-      <div class="card-container">
-        <div class="card">
-          
-          <figure class="front">
+      <div class="card-container" >
+        <div className={`card ${flip ? "flip" : ""}`}>
+          <figure class="front" onClick={() => setFlip(!flip) }>
           <div class="inner-container">
             <div class="icon-container">
               {icon}
@@ -31,14 +18,9 @@ function FlipCard({ card, icon}) {
             <div class="title-container"> 
               {card.front}
             </div>
-              
-             
             </div>
-            
-            
-
           </figure>
-          <figure class="back">
+          <figure class="back" onClick={() => setFlip(!flip)} >
           <div class="text-container"> 
             {card.back}
             </div>
