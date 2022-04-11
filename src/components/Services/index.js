@@ -4,6 +4,7 @@ import MiddleBar from '../MiddleBar/MiddleBar';
 import {FiUploadCloud} from 'react-icons/fi';
 import {FiFileText} from 'react-icons/fi';
 import {FiCode} from 'react-icons/fi';
+import { MainTitle } from '../MiddleBar/MiddleBarElements';
 
 const ServicesSection = () => {
 
@@ -11,6 +12,7 @@ const ServicesSection = () => {
       return (
 
         <MainWrapper id="services">
+            <MainTitle>Nuestros Servicios</MainTitle>
             <MiddleBar/>
             <CardsTextWrapper>
                 <CardsTitle>COMO TRABAJAMOS</CardsTitle>
