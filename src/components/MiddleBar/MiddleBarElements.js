@@ -68,6 +68,7 @@ export const Subtitle = styled.p`
     font-size: 1.1rem;
     font-family: var(--font); 
     color: white;
+    word-break:normal;
     align-items: center;
     text-align: justify;
     margin:auto;
