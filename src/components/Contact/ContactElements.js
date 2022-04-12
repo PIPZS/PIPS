@@ -27,16 +27,16 @@ export const GeneralWrapper = styled.div`
 
 export const ContactTitle = styled.h1`
     font-family: var(--font); 
-    font-size: 2rem;
+    font-size: 20px;
     color: ${({theme}) => theme.text};
-    margin-bottom:4%;
+    margin-bottom:1rem;
     word-wrap: break-word;
 
     @media screen and (max-width:900px){
-        font-size: 32px;
+        font-size: 20px;
 }
     @media screen and (max-width:420px){
-        font-size: 25px;
+        font-size: 20px;
     }
 `
 
@@ -49,7 +49,7 @@ export const TextWrapper = styled.div`
 `
 export const Subtitle = styled.p`
     color: ${({theme}) => theme.text};
-    font-size: 1.4rem;
+    font-size: 17px;
     width:90%;
     font-family: var(--font); 
     word-wrap: break-word;
@@ -100,7 +100,8 @@ export const ContactFormButton = styled.button`
     height: 4rem;
     margin-top: 10px;
     padding: 15 px 0px;
-    font-family: var(--font); 
+    font-family: var(--font);
+    text-transform:uppercase ;
 
     &:hover{
         transition: all 0.2s ease-in-out;

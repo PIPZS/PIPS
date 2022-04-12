@@ -9,21 +9,24 @@ export const MainWrapper = styled.div`
 
 export const CardsWrapper = styled.div`
     display:flex;
-    width: 90%;
+    width: 70%;
     justify-content: center;
     margin: auto;
     margin-top: 3rem;
     padding-bottom: 10rem;
 
+    @media screen and (max-width: 1350px){
+        width: 100%;
+    }  
+
     @media screen and (max-width: 1000px){
-        flex-direction:column ;
-        width: 50%;
-        gap: 20px;
+        width: 100%;
     }  
 
     @media screen and (max-width: 750px){
         flex-direction:column ;
         width: 90%;
+        gap:20px;
     }  
 `
 export const Card = styled.div`
@@ -65,7 +68,7 @@ export const Card = styled.div`
 `
 
 export const CardTitle = styled.h3`
-    font-size: 1.5rem;
+    font-size: 19px;
     margin-bottom: 1.5rem;
     font-family: var(--font);
     color: ${({theme}) => theme.text};
@@ -79,7 +82,7 @@ export const CardTitle = styled.h3`
 `
 
 export const CardText = styled.p`
-    font-size: 1.1rem;
+    font-size: 17px;
     width: 100%;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
@@ -98,13 +101,13 @@ export const CardsTextWrapper = styled.div`
 `
 
 export const CardsTitle = styled.h3`
-    font-size: 1.8rem;
+    font-size: 20px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
     word-wrap: break-word;
 `
 export const CardsSubtitle = styled.p`
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-top: 1rem;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};

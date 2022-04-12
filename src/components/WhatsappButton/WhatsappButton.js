@@ -31,7 +31,7 @@ function WhatsappButton() {
                     allowClickAway
                     darkMode
                     notification
-                    chatMessage="Hola que tal? Quisiera una pagina web"
+                    chatMessage="Hola, ¿qué tal? Quisiera una página web."
                     statusMessage=""
                     notificationDelay={30000} // 1 minute
         />

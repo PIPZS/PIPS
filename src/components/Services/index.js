@@ -12,7 +12,7 @@ const ServicesSection = () => {
       return (
 
         <MainWrapper id="services">
-            <MainTitle>Nuestros Servicios</MainTitle>
+            <MainTitle>TAMBIÉN OFRECEMOS</MainTitle>
             <MiddleBar/>
             <CardsTextWrapper>
                 <CardsTitle>COMO TRABAJAMOS</CardsTitle>

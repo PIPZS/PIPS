@@ -65,6 +65,7 @@ export const InfoTitle = styled.h1`
 }
 `
 export const ContactText = styled.div`
+
 `
 
 export const InfoSubtitle = styled.p`
@@ -76,6 +77,11 @@ export const InfoSubtitle = styled.p`
     font-weight: ${props => props.bold ? 'bold' : '' };
     text-align: justify;
 
+
+    @media screen and (max-width:1700px){
+        font-size: 1.2rem;
+    }
+
     @media screen and (max-width:500px){
         font-size: 16px;
     }
@@ -86,11 +92,12 @@ export const Button = styled(LinkS)`
     border: none;
     color: ${({theme}) => theme.text};
     padding: 2%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     word-wrap: break-word;
     color:white;
     bottom: 5rem;
     font-family: var(--font);
+    text-transform: uppercase;
     
 
     &:hover{
@@ -132,14 +139,14 @@ export const InfoCardsWrapper = styled.div`
     justify-content: center;
 
 
-    @media screen and (max-width: 1350px){
+    @media screen and (max-width: 1700px){
         width: 80%;
         margin: auto;
         margin-top: 5%;
         grid-template-columns: 260px 260px;
         grid-template-rows: 260px 260px;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     } 
 
     @media screen and (max-width: 1200px){
@@ -255,10 +262,9 @@ export const CariuseltextWrapper = styled.div`
 
 export const CarouselTitle = styled.h3`
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 1.3rem;
-    font-family: var(--font);
+    font-family: var(--font); 
     color: ${({theme}) => theme.text};
+    word-wrap: break-word;
     text-transform: uppercase;
 `
 
@@ -266,4 +272,5 @@ export const CarouselSubtitle = styled.p`
     font-size: 19px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
+    margin-top: 1rem;
 `
