@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./flipCard.css"
 
 function FlipCard({ card, icon}) {
-  const [flip, setFlip] = useState(false)
+  const [flip, setFlip] = useState(false);
   
   
 
