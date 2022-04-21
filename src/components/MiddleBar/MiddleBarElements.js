@@ -4,6 +4,7 @@ import {Link as LinkS} from 'react-scroll';
 export const BarContainer = styled.div`
     background: #202124;
     display: flex;
+    margin-top:0.5rem;
     @media screen and (max-width:1000px){
         height:auto;
         flex-direction: column ;
@@ -12,12 +13,13 @@ export const BarContainer = styled.div`
     }
 `
 export const MainTitle = styled.h3`
-    color: white;
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    padding-top: 5rem;
+    font-size: 20px;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+    word-wrap: break-word;
     text-align: center;
-    word-break: break-all;
+    text-transform: uppercase;
+
 
 `
 export const TextWrapper = styled.div`
@@ -64,6 +66,7 @@ export const Title = styled.h3`
     color: white;
     width:100%;
     margin:auto;
+    font-size:19px;
 
     @media screen and (max-width:800px){
         width:100%;
@@ -73,7 +76,7 @@ export const Title = styled.h3`
 `
 export const Subtitle = styled.p`
     color: white;
-    font-size: 1.1rem;
+    font-size: 17px;
     font-family: var(--font); 
     color: white;
     word-break:normal;
@@ -116,6 +119,7 @@ export const Button = styled(LinkS)`
     padding-top: 0.5rem;
     font-family: var(--font); 
     text-align: center;
+    text-transform: uppercase ;
 
     &:hover{
         background: white;

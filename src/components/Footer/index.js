@@ -25,16 +25,16 @@ const Footer = () => {
                         </LeftContainer>
                         <RightContainer>
                             <SocialLinks>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'>LINKEDIN</SocialMediaItem>
+                                <SocialMediaItem onClick={() => window.location='https://www.linkedin.com/company/labpips/'} target='_blank' aria-label='Facebook'>LINKEDIN</SocialMediaItem>
                                 <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn'>TWITTER</SocialMediaItem>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook'>INSTAGRAM</SocialMediaItem>
+                                <SocialMediaItem onClick={() => window.location='https://www.instagram.com/lab_pips/'} target='_blank' aria-label='Facebook'>INSTAGRAM</SocialMediaItem>
                             </SocialLinks>
                         </RightContainer>
                         <AlternativeLinks>
                             <SocialLinks>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook' alt><FiLinkedin/></SocialMediaItem>
+                                <SocialMediaItem onClick={() => window.location='https://www.linkedin.com/company/labpips/'} target='_blank' aria-label='Facebook' alt><FiLinkedin/></SocialMediaItem>
                                 <SocialMediaItem href='/' target='_blank' aria-label='LinkedIn' alt><FiTwitter/></SocialMediaItem>
-                                <SocialMediaItem href='/' target='_blank' aria-label='Facebook' alt><FiInstagram/></SocialMediaItem>
+                                <SocialMediaItem onClick={() => window.location='https://www.instagram.com/lab_pips/'} target='_blank' aria-label='Facebook' alt><FiInstagram/></SocialMediaItem>
                             </SocialLinks>
                         </AlternativeLinks>
                     </SocialMediaWrapper>

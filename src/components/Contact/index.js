@@ -24,8 +24,8 @@ const ContactSection = () => {
                 <GeneralWrapper>
                 <TextWrapper>
                     <ContactTitle>COMUNIQUESE CON NOSTROS</ContactTitle>
-                    <Subtitle>No seas timido, solo cuantanos sobre ti y encontraremos la mejor opcion para ti y tu proyecto. ¿No te gusta llenar formularios?
-                        Envíenos un correo electrónico directamente y luego hola@pipslab.co
+                    <Subtitle>Contanos sobre vos y encontraremos la mejor opción para tu proyecto. ¿No te gusta llenar formularios?
+                        Envianos un correo electrónico directamente a hola@pipslab.co
                     </Subtitle>
                     <ContactOption>
                         <OptionWrapper>

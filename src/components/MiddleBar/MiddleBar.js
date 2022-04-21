@@ -29,7 +29,7 @@ function MiddleBar() {
             </Wrapper>
         </TextWrapper>
         <ButtonWrapper>
-            <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-80}>A ver mas!</Button>
+            <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-80}>Ver más</Button>
         </ButtonWrapper>
     </BarContainer>
   )
