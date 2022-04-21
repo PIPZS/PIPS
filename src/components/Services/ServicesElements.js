@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainWrapper = styled.div`
     background: ${({theme}) => theme.bgc};
     position: relative;
-    padding: 0px 24px;
+    padding: 100px 24px;
 `;
 
 
