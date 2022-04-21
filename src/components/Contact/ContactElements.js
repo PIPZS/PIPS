@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 
 export const ContactContainer = styled.div`
-    background: #1c1c1c;
+    background: ${({theme}) => theme.bgc};
     padding: 0 24px;
-    height: 100vh;
     position: relative;
     border-top: 1px dashed black;
     overflow: auto;
@@ -17,6 +16,7 @@ export const GeneralWrapper = styled.div`
     padding-top:5%;
     height:80%;
     position:relative;
+    margin-bottom: 5%;
     
 
     @media screen and (max-width:900px){
@@ -26,29 +26,20 @@ export const GeneralWrapper = styled.div`
 `
 
 export const ContactTitle = styled.h1`
-    font-family: 'Roboto', sans-serif;
-    font-size: 45px;
-    color: #f54242;
-    margin-bottom:3%;
+    font-family: var(--font); 
+    font-size: 20px;
+    color: ${({theme}) => theme.text};
+    margin-bottom:1rem;
     word-wrap: break-word;
 
     @media screen and (max-width:900px){
-        font-size: 32px;
+        font-size: 20px;
 }
     @media screen and (max-width:420px){
-        font-size: 25px;
+        font-size: 20px;
     }
 `
 
-export const OtherContacts = styled.div`
-    color:white;
-    font-size: 25px;
-`
-export const OtherContactsTitle = styled.p`
-    color:white;
-    font-size: 18px;
-    opacity: 0.8;
-`
 export const TextWrapper = styled.div`
     width: 50%;
 
@@ -57,23 +48,12 @@ export const TextWrapper = styled.div`
     }
 `
 export const Subtitle = styled.p`
-    color:white;
-    opacity: 0.8;
-    font-size: 18px;
-`
-export const Mail = styled.p`
-    color:white;
-    font-size: 28px;
-    margin-bottom: 3%;
-`
-
-export const IconWrapper = styled.div`
-    font-size: 8rem;
-    color: white;
-
-    @media screen and (max-width:900px){
-        display:none;
-    }
+    color: ${({theme}) => theme.text};
+    font-size: 17px;
+    width:90%;
+    font-family: var(--font); 
+    word-wrap: break-word;
+    
 `
 
 export const ContactWrapper = styled.div`
@@ -98,31 +78,88 @@ export const ContactForm = styled.form`
 
 export const ContactInput = styled.input`
     width: 90%;
-    margin-bottom: 3%;
-    border: none;
+    margin-bottom: 5%;
+    border: 1px solid ${({theme}) => theme.input};
     padding: 10px;
-    border-bottom: 1.5px solid white;
     background: transparent;
     height: 50px;
+    font-family: var(--font);
+    font-size: 1.1rem;
 `
 
 export const ContactFormButton = styled.button`
-    background: transparent;
+    background: #CE1212;
     text-align:center;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    border: 1px solid white;
+    border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    width: 10rem;
+    height: 4rem;
     margin-top: 10px;
-    width:40%;
     padding: 15 px 0px;
+    font-family: var(--font);
+    text-transform:uppercase ;
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: white;
-        color: black;
-        border: 1px solid #f9f9f9;
+        background: black;
+    }
+
+    @media screen and (max-width:900px){
+        margin-bottom: 18rem;
+    }
+`
+
+export const ContactOption = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+
+    @media screen and (max-width:900px){
+        position: absolute;
+        bottom: 0;
+    }
+
+`
+
+export const OptionWrapper = styled.div`
+    display: flex;
+    margin-bottom: 3rem;
+
+    svg{
+        color: #CE1212;
+        font-size: 2.5rem;
+    }
+`
+
+export const OptionTextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+
+`
+export const OptionTitle = styled.h3`
+    font-size: 1.3rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+
+    @media screen and (max-width:400px){
+        font-size: 4.6vw;
+        word-break: break-all;
+    }
+
+`
+
+export const OptionInfo = styled.div`
+    font-size: 1.3rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+
+    @media screen and (max-width:400px){
+        font-size: 4.6vw;
+        word-break: break-all;
     }
 `

@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink,NavIcon, Title, Subtitle} from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavIcon, Title} from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import {BsScissors} from "react-icons/bs"
 
 const Navbar = ({toggle}) => {
 
     const [scrollNav, setScrollNav] = useState(false)
     const [specialScroll, setSpecialScroll] = useState(false)
+
+    const[theme, setTheme] = useState('light')
 
     const changeNav = () => {
 
@@ -46,7 +47,7 @@ const Navbar = ({toggle}) => {
                         <NavLinks to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80} scrollNav={scrollNav}>NOSOTROS</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services" smooth={true} duration={500} spy={true} exact={true} offset={-68} scrollNav={scrollNav}>SERVICIOS</NavLinks>
+                        <NavLinks to="services" smooth={true} duration={500} spy={true} exact={true} offset={-70} scrollNav={scrollNav}>SERVICIOS</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to='contact' smooth={true} duration={500} spy={true} exact={true} offset={-60} scrollNav={scrollNav} specialScroll={specialScroll}>CONTACTO</NavLinks>

@@ -1,0 +1,142 @@
+
+.container {
+    width: 100%;
+}
+
+
+.card-container {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px; 
+    transition: transform 0.1s ease-in-out;
+  }
+
+
+  .card-container:hover  {
+    transform: scale(1.04);
+} 
+  
+  @media (max-width: 1700px) {
+    .card-container {
+        width: 260px;
+        height: 260px;
+        margin-right: 0; 
+        }
+    }
+
+    @media (max-width: 700px) {
+        .card-container {
+            width: 230px;
+            height: 230px;
+            margin-right: 0; 
+            }
+        }
+
+
+    @media (max-width: 700px) {
+        .card-container {
+            width: 100%;
+            height: 230px;
+            margin-right: 0; 
+            }
+        .card-container:hover  {
+            transform: scale(1);
+        } 
+            
+        }
+
+
+
+    
+
+.card {
+    width:100%;
+    height:100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
+    
+ 
+}
+
+
+
+.card figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  
+}
+
+.card .front {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    font-family: var(--font);
+}
+
+
+@media (max-width: 1350px) {
+    .card .front {
+        font-size: 1rem;
+        }
+    }
+
+.inner-container {
+    width:100%;
+    margin-top: -5%;
+}
+
+
+.icon-container {
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.title-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color:white;
+}
+
+
+.card .back {
+
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+svg {
+    color: red;
+    font-size: 4rem;
+    
+}
+
+@media (max-width: 1350px) {
+    svg {
+        font-size: 3.2rem;
+        }
+    }
+
+.text-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align:justify;
+
+}
+
+.flip {
+    transform: rotateY(180deg);
+}

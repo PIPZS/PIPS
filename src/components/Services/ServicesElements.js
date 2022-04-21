@@ -1,112 +1,115 @@
 import styled from "styled-components";
 
+export const MainWrapper = styled.div`
+    background: ${({theme}) => theme.bgc};
+    position: relative;
+    padding: 100px 24px;
+`;
 
-export const ServicesContainer = styled.div`
-    background: #1c1c1c;
-    height: 864px;
-    border-top: 1px dashed black;
-`
 
-export const ServicesWrapper = styled.div`
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-left: auto;
-    margin-right: auto;
-    left:0;
-    right:0;
-    width: 85%;
-    margin-bottom: 1%;   
-    border-bottom: 1px solid grey;
-
-    @media screen and (max-width:1100px){
-        margin-bottom: 7%;
-    }
-    @media screen and (max-width:650px){
-        margin-bottom: 15%;
-    }
-    @media screen and (max-width:400px){
-        width: 300px;
-    }
-`
-
-export const ServiceTitle = styled.h1`
-    font-family: 'Inconsolata';
-    font-size: 49px;
-    color: #f54242;
-    margin-bottom: 5%;
-    padding-top:50px;
-    margin-left:5%;
-
-    @media screen and (max-width:1300px){
-        margin-bottom: 8%;
-    }
-    
-
-    @media screen and (max-width:500px){
-        font-size: 32px;
-}
-`
-
-export const Service = styled.div`
-    width: 500px;
-    @media screen and (max-width:1300px){
-        width: 300px;
-    }
-
-`
-export const Title = styled.h1`
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 55px;
-    display: inline-block;
-    word-wrap: break-word;
-
-    @media screen and (max-width:1300px){
-        font-size: 45px;
-    }
-
-    @media screen and (max-width:650px){
-        font-size: 30px;
-    }
-
-    
-`
-export const Subtitle = styled.h2`
-    font-family: 'Roboto', sans-serif;
-    color:white;
-    opacity: 0.5;
-    margin-top: 1%;
-`
-export const ServiceDescription = styled.div`
-    margin:auto;
-    width: 500px;
-
-    @media screen and (max-width:1300px){
-        width: 300px;
-    }
-
-    @media screen and (max-width:1100px){
-        display: none;
-    }
-`
-export const Description = styled.p`
-    color:white;
-    font-size: 20px;
-    opacity: 0.8;
-    margin-bottom: 4%;
-
-`
-export const ServiceDuration = styled.div`
+export const CardsWrapper = styled.div`
+    display:flex;
+    width: 70%;
+    justify-content: center;
     margin: auto;
-    width: 90px;
+    margin-top: 3rem;
+    padding-bottom: 10rem;
 
-    @media screen and (max-width:500px){
-        display: none;
+    @media screen and (max-width: 1350px){
+        width: 100%;
+    }  
+
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }  
+
+    @media screen and (max-width: 750px){
+        flex-direction:column ;
+        width: 90%;
+        gap:20px;
+    }  
+`
+export const Card = styled.div`
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    color: #363636;
+    height: 25rem;
+    border: 0.3px solid #CE1212;
+    overflow: hidden ;
+    width:100%;
+    
+    svg {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: #CE1212;
+
+        @media screen and (max-width: 450px){
+            font-size: 15vw;
+            margin-bottom: 5%;
+        } 
+    }
+
+    // Con esto se modifica el tamaño de las tarjetas
+    
+    @media screen and (max-width: 1000px){
+        width: 380px;
+        height: 380px;
+        margin: auto;
+    } 
+    @media screen and (max-width: 500px){
+        width: 75vw;
+        height: 75vw;
+        margin: auto;
+        padding-top: 10%;
+    } 
+`
+
+export const CardTitle = styled.h3`
+    font-size: 19px;
+    margin-bottom: 1.5rem;
+    font-family: var(--font);
+    color: ${({theme}) => theme.text};
+    text-transform: uppercase;
+
+    @media screen and (max-width: 450px){
+        font-size: 1.1em;
+        margin-bottom: 5%;
+    } 
+
+`
+
+export const CardText = styled.p`
+    font-size: 17px;
+    width: 100%;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+
+    @media screen and (max-width: 450px){
+        font-size: 70%;
+    } 
+`
+
+export const CardsTextWrapper = styled.div`
+    margin-top: 10rem;
+    text-align: center;
+    @media screen and (max-width: 1250px) {
+        margin-top: 10rem;
     }
 `
-export const Duration = styled.p`
-    color:white;
+
+export const CardsTitle = styled.h3`
     font-size: 20px;
-    opacity: 0.8;
-    text-align:center;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+    word-wrap: break-word;
+`
+export const CardsSubtitle = styled.p`
+    font-size: 20px;
+    margin-top: 1rem;
+    font-family: var(--font); 
+    color: ${({theme}) => theme.text};
+    word-wrap: break-word;
 `

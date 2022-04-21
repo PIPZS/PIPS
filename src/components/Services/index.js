@@ -1,74 +1,47 @@
 import React, {useEffect} from 'react'
-import { ServicesContainer, ServicesWrapper, ServiceTitle, Service, Title, Subtitle, ServiceDescription, Description, ServiceDuration, Duration} from './ServicesElements'
-import 'aos/dist/aos.css';
-import Aos from 'aos';
+import { MainWrapper,  CardsWrapper, Card, CardText, CardsTitle, CardsSubtitle, CardsTextWrapper, CardTitle } from './ServicesElements'
+import MiddleBar from '../MiddleBar/MiddleBar';
+import {FiUploadCloud} from 'react-icons/fi';
+import {FiFileText} from 'react-icons/fi';
+import {FiCode} from 'react-icons/fi';
+import { MainTitle } from '../MiddleBar/MiddleBarElements';
 
 const ServicesSection = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000});
-  }, []);
+
 
       return (
 
-        <ServicesContainer  id='services'>
-          <ServiceTitle>Nuestro servicio</ServiceTitle>
-          <ServicesWrapper data-aos="fade-in" >
-            <Service>
-              <Title>Analisis</Title>
-              <Subtitle>antes de diseñar</Subtitle>
-            </Service>
-            <ServiceDescription>
-              <Description>- Analisis completo del proyecto </Description>
-              <Description>- Entender las necesidades del cliente </Description>
-              <Description>- Alinear objetivos y estrategias </Description>
-            </ServiceDescription>
-            <ServiceDuration>
-              <Duration>1 dia</Duration>
-            </ServiceDuration>
-          </ServicesWrapper>
-          <ServicesWrapper data-aos="fade-in" >
-            <Service>
-              <Title>Diseño</Title>
-              <Subtitle>vision del cliente</Subtitle>
-            </Service>
-            <ServiceDescription>
-              <Description>- Diseño del sitio web </Description>
-              <Description>- Feedback constante </Description>
-              <Description>- </Description>
-            </ServiceDescription>
-            <ServiceDuration>
-              <Duration>10-14 dias</Duration>
-            </ServiceDuration>
-          </ServicesWrapper>
-          <ServicesWrapper data-aos="fade-in" >
-            <Service>
-              <Title>Implementación</Title>
-              <Subtitle>single page website</Subtitle>
-            </Service>
-            <ServiceDescription>
-              <Description>- Desarrollo del sitio </Description>
-              <Description>- Estrategias de posisionamiento </Description>
-              <Description>- Diseño responsive</Description>
-            </ServiceDescription>
-            <ServiceDuration>
-              <Duration>20-30 dias</Duration>
-            </ServiceDuration>
-          </ServicesWrapper>
-          <ServicesWrapper data-aos="fade-in" >
-            <Service>
-              <Title>Soporte</Title>
-              <Subtitle>cambios y correcciones</Subtitle>
-            </Service>
-            <ServiceDescription>
-              <Description>- Mantenimiento </Description>
-              <Description>- Cambios solicitados </Description>
-              <Description>- Hosting </Description>
-            </ServiceDescription>
-            <ServiceDuration>
-              <Duration>1 dia</Duration>
-            </ServiceDuration>
-          </ServicesWrapper>
-        </ServicesContainer>
+        <MainWrapper id="services">
+            <MainTitle>TAMBIÉN OFRECEMOS</MainTitle>
+            <MiddleBar/>
+            <CardsTextWrapper>
+                <CardsTitle>COMO TRABAJAMOS</CardsTitle>
+                <CardsSubtitle>NUESTRO PROCESO</CardsSubtitle>
+            </CardsTextWrapper>
+            <CardsWrapper>
+                <Card>
+                    <FiFileText/>
+                    <CardTitle>Planear</CardTitle>
+                    <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
+                      por el producto/servicio que ofrece el sitio web.
+                    </CardText>
+                </Card>
+                <Card>
+                    <FiCode/>
+                    <CardTitle>Desarrollar</CardTitle>
+                    <CardText>La etapa de desarrollo implica mover la información recolectada en la etapa de planificación hacia la realidad. 
+                              Se entrega una estructura de sitio documentada y una representación visual.
+                    </CardText>
+                </Card>
+                <Card>
+                    <FiUploadCloud/>
+                    <CardTitle>Lanzar</CardTitle>
+                    <CardText>En la fase de lanzamiento se prepara el sitio web para ser visto por el público. 
+                      Esto requiere el pulido final de los elementos de diseño, pruebas profundas de interactividad, funciones y una evaluación de la experiencia de usuario.
+                    </CardText>
+                </Card>
+            </CardsWrapper>
+        </MainWrapper>
         
       );
 }

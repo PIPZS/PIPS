@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import {Link as LinkS} from 'react-scroll';
 import Image from '../../images/PIPS.jpg';
+import styled, {  } from 'styled-components';
 
 export const HomeContainer = styled.div`
     position: relative;
@@ -18,11 +19,15 @@ export const TextContainer = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 15rem;
-    color: #f54242;
+
 `
 export const Subtitle = styled.h2`
     font-size: 0.9rem;  
     color: #f54242;
 `
 
+export const ScrollDown = styled(LinkS)`
+    &:hover{
+        cursor: pointer;
+    }
+`

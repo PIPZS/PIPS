@@ -4,10 +4,13 @@ import Footer from '../components/Footer';
 import HomeSection from '../components/HomeSection';
 import InfoSection from '../components/InfoSection/index';
 import Navbar from '../components/Navbar';
-import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
-import FloatingWhatsApp from 'react-floating-whatsapp'
-import ProjectsSection from '../components/ProjectsSection';
+import  Themes  from "../components/Theme/Themes.js";
+import { ThemeProvider } from 'styled-components';
+import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
+import ServicesSection from '../components/Services';
+
+
 
 const Home = () => {
 
@@ -17,25 +20,20 @@ const Home = () => {
         setIsOpen(!isOpen)
     }
 
-    return (
-        <>
+    const[theme, setTheme] = useState('dark')
 
+    return (
+        <ThemeProvider theme={Themes[theme]}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
+            {/* <Switch theme={theme} setTheme={setTheme}/> */}
             <HomeSection/>
-            <InfoSection/>
-            <ProjectsSection/>
-            <Services/>
+            <InfoSection theme={theme}/>
+            <ServicesSection/>
             <ContactSection/>
             <Footer/>
-            <FloatingWhatsApp
-                phoneNumber="123456789"
-                accountName="Bot"
-                allowClickAway
-                notification
-                notificationDelay={60000} // 1 minute
-            />
-        </>
+            <WhatsappButton/>
+        </ThemeProvider>
     )
 }
 
