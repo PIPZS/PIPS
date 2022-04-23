@@ -35,6 +35,7 @@ export const InfoWrapper = styled.div`
 
     @media screen and (max-width:1650px){
         width: 100%;
+        flex-direction: column;
     }
 `
 export const Box = styled.div`
@@ -50,7 +51,7 @@ export const BoxTitle = styled.div`
     font-family: var(--font);
     font-size: 1.4rem;
     p{
-        color:red;
+        color: ${({theme}) => theme.toggle};
         margin-right:10px;
     }
 `

@@ -87,7 +87,7 @@ export const SocialMediaItem = styled.div`
 
     &:hover{
         cursor: pointer;
-        color: #CE1212;
+        color: ${({theme}) => theme.toggle};
     }
 
     @media screen and (max-width:750px){
