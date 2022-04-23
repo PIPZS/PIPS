@@ -30,21 +30,19 @@ export const CardsWrapper = styled.div`
     }  
 `
 export const Card = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     text-align: center;
     padding: 20px;
     padding-top: 50px;
     color: #363636;
     height: 25rem;
-    border: 0.3px solid #CE1212;
+    border: 0.3px solid ${({theme}) => theme.toggle};
     overflow: hidden ;
     width:100%;
     
     svg {
         font-size: 3.5rem;
         margin-bottom: 1.5rem;
-        color: #CE1212;
+        color: ${({theme}) => theme.toggle};
 
         @media screen and (max-width: 450px){
             font-size: 15vw;

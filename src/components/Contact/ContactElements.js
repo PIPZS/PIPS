@@ -88,24 +88,24 @@ export const ContactInput = styled.input`
 `
 
 export const ContactFormButton = styled.button`
-    background: #CE1212;
+    background: #1c1c1c;
     text-align:center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     width: 10rem;
-    height: 4rem;
-    margin-top: 10px;
-    padding: 15 px 0px;
+    height: 3.5rem;
+    margin-top: 5px;
     font-family: var(--font);
     text-transform:uppercase ;
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: black;
+        background: ${({theme}) => theme.toggle};
+        cursor:pointer;
     }
 
     @media screen and (max-width:900px){
@@ -130,7 +130,7 @@ export const OptionWrapper = styled.div`
     margin-bottom: 3rem;
 
     svg{
-        color: #CE1212;
+        color: ${({theme}) => theme.toggle};
         font-size: 2.5rem;
     }
 `

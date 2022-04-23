@@ -34,10 +34,10 @@ export const NavIcon = styled.div`
     margin-left: 50%;
     display: ${({ scrollNav }) => (scrollNav ? 'flex' : 'none')};
     align-items:center;
-    text-shadow: -1px 1px 0 #CE1212,
-                        1px 1px 0 #CE1212,
-                        1px -1px 0 #CE1212,
-                        -1px -1px 0 #CE1212;
+    text-shadow: -1px 1px 0 ${({theme}) => theme.toggle},
+                        1px 1px 0 ${({theme}) => theme.toggle},
+                        1px -1px 0 ${({theme}) => theme.toggle},
+                        -1px -1px 0 ${({theme}) => theme.toggle};
 
     @media screen and (max-width:768px){
         margin-left: 20%;
@@ -56,10 +56,10 @@ export const Subtitle = styled.h1`
     margin-left: 2%;
     color: #CE1212;
 
-    text-shadow: -1px 1px 0 #CE1212,
-                        1px 1px 0 #CE1212,
-                        1px -1px 0 #CE1212,
-                        -1px -1px 0 #CE1212;
+    text-shadow: -1px 1px 0 ${({theme}) => theme.text},
+                        1px 1px 0 ${({theme}) => theme.text},
+                        1px -1px 0 ${({theme}) => theme.text},
+                        -1px -1px 0 ${({theme}) => theme.text};
 `
 
 export const NavLogo = styled(LinkR)`
@@ -121,7 +121,7 @@ export const NavLinks = styled(LinkS)`
     font-size: 18px;
 
     &.active{
-        color: #CE1212;
+        color: ${({theme}) => theme.toggle};
         transition: color 0.4s ease;
     }
 `

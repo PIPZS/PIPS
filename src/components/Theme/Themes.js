@@ -9,7 +9,7 @@ const LightTheme = {
 };
 const DarkTheme = {
     text: "white",
-    toggle: "#CE1212",
+    toggle: "#FC5757",
     hover: "#00D4FF",
     bgc: "#202124",
     border: "rgba(100, 100, 100, 0.3)",
