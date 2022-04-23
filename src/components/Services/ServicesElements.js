@@ -103,13 +103,13 @@ export const CardsTextWrapper = styled.div`
 export const CardsTitle = styled.h3`
     font-size: 20px;
     font-family: var(--font); 
-    color: ${({theme}) => theme.text};
+    color: #FC5757;
     word-wrap: break-word;
 `
 export const CardsSubtitle = styled.p`
     font-size: 20px;
     margin-top: 1rem;
     font-family: var(--font); 
-    color: ${({theme}) => theme.text};
+    color: #FC5757;
     word-wrap: break-word;
 `

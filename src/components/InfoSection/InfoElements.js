@@ -263,7 +263,7 @@ export const CariuseltextWrapper = styled.div`
 export const CarouselTitle = styled.h3`
     font-size: 20px;
     font-family: var(--font); 
-    color: ${({theme}) => theme.text};
+    color: #FC5757;
     word-wrap: break-word;
     text-transform: uppercase;
 `
