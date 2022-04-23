@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
 
 export const BarContainer = styled.div`
-    background: #202124;
+    background: ${({theme}) => theme.bgc};
     display: flex;
     margin-top: 5rem;
 `
@@ -80,7 +80,7 @@ export const Button = styled(LinkS)`
     margin:auto;
     height: 20rem;
     width: 20rem;
-    background-color: #1c1c1c;
+    background-color: #202020;
     border-radius: 100%;
     cursor: pointer;
     justify-content: center;

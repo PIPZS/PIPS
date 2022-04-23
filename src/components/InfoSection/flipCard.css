@@ -113,8 +113,9 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font);
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
+    
 }
 
 
@@ -131,8 +132,8 @@ svg {
     }
 
 .text-container {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
     text-align:justify;
 
 }
