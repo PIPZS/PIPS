@@ -11,7 +11,7 @@ import {BsChevronCompactRight, BsChevronCompactLeft} from "react-icons/bs";
 const Card = styled.div`
     /* width: 20rem ;
     margin: 0 auto; */
-    border: 1px solid red;
+    border: 1px solid ${({theme}) => theme.toggle};
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
     height: 30rem;
 

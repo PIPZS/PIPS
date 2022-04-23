@@ -88,21 +88,25 @@ export const InfoSubtitle = styled.p`
 `
 
 export const Button = styled(LinkS)`
-    background-color: #CE1212;
+    display: flex;
+    background-color: #1c1c1c;
     border: none;
     color: ${({theme}) => theme.text};
-    padding: 2%;
-    font-size: 1rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 20px;
     word-wrap: break-word;
     color:white;
     bottom: 5rem;
     font-family: var(--font);
     text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
     
 
     &:hover{
-        background: ${({theme}) => theme.text};
-        color: ${({theme}) => theme.bgc};
+        transition: all 0.2s ease-in-out;
+        background: ${({theme}) => theme.toggle};
         cursor:pointer;
     }
 `

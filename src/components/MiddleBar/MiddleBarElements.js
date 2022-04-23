@@ -20,7 +20,7 @@ export const MainWrapper = styled.div`
     width: 75%;
     margin:auto;
 
-    @media screen and (max-width:1650px){
+    @media screen and (max-width:1000px){
         flex-direction: column;
     }
 `
@@ -34,6 +34,12 @@ export const InfoWrapper = styled.div`
     margin: auto;
 
     @media screen and (max-width:1650px){
+        width: 70%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:1000px){
         width: 100%;
     }
 `
@@ -50,7 +56,7 @@ export const BoxTitle = styled.div`
     font-family: var(--font);
     font-size: 1.4rem;
     p{
-        color:red;
+        color: ${({theme}) => theme.toggle};
         margin-right:10px;
     }
 `
@@ -66,9 +72,13 @@ export const ButtonWrapper = styled.div`
     margin-left: 15%;
 
     @media screen and (max-width:1650px){
-        width: 100%;
         margin: auto;
-        margin-top: 5%;
+        width: 50%;
+    }
+
+    @media screen and (max-width:1000px){
+        width: 100%;
+        margin-top:10%;
     }
 `
 
