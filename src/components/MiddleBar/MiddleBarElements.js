@@ -7,7 +7,7 @@ export const BarContainer = styled.div`
     margin-top: 5rem;
 `
 export const MainTitle = styled.h3`
-    font-size: 2rem;
+    font-size: 20px;
     font-family: var(--font); 
     color: ${({theme}) => theme.toggle};
     word-wrap: break-word;
@@ -54,7 +54,8 @@ export const BoxTitle = styled.div`
     color: white;
     margin-bottom: 20px;
     font-family: var(--font);
-    font-size: 1.4rem;
+    font-size: 19px;
+    font-weight: bold;
     p{
         color: ${({theme}) => theme.toggle};
         margin-right:10px;
@@ -63,7 +64,7 @@ export const BoxTitle = styled.div`
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
-    font-size: 1.3rem;
+    font-size: 19px;
 `
 
 export const ButtonWrapper = styled.div`

@@ -108,6 +108,6 @@ export const CardsSubtitle = styled.p`
     font-size: 20px;
     margin-top: 1rem;
     font-family: var(--font); 
-    color: #FC5757;
+    color: white;
     word-wrap: break-word;
 `
