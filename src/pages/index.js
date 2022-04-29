@@ -9,6 +9,7 @@ import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
 import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
 import ServicesSection from '../components/Services';
+import Gallery from '../components/Gallery/Index';
 
 
 
@@ -29,7 +30,9 @@ const Home = () => {
             {/* <Switch theme={theme} setTheme={setTheme}/> */}
             <HomeSection/>
             <InfoSection theme={theme}/>
+            <Gallery/>
             <ServicesSection/>
+            
             <ContactSection/>
             <Footer/>
             <WhatsappButton/>
