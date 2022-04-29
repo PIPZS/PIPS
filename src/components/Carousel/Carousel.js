@@ -85,7 +85,7 @@ export const Carousel = () => {
 
                         return (
                             <Card className={index === selectedIndex ? 'Slide ActiveSlide' : 'Slide'}>
-                                {/* <img src={data.image}></img> */}
+                                { <img src={data.image}></img> }
                             </Card>
                         )
 

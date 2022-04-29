@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
     background: #1c1c1c;
+    
+    
 `
 
 export const FooterWrap = styled.div`
@@ -39,6 +41,7 @@ export const LeftContainer = styled.div`
 export const RightContainer = styled.div`
     width: 50%;
     text-align: right;
+    
 
     @media screen and (max-width:750px){
         flex-direction: column;
@@ -50,6 +53,7 @@ export const RightContainer = styled.div`
 `
 export const SocialMediaWrapper = styled.div`
     display: flex;
+    align-items:center;
 
     @media screen and (max-width:750px){
         flex-direction: column;
@@ -80,7 +84,7 @@ export const SocialLinks = styled.div`
 
 export const SocialMediaItem = styled.div`
     color: white;
-    font-size: 1.3rem;
+    font-size: 19px;
     font-family: var(--font);
     transition: .5s all ease-out;
     word-break: break-all;
@@ -100,13 +104,13 @@ export const SocialMediaItem = styled.div`
 `
 
 export const Title = styled.h3`
-    font-size: 2rem;
+    font-size: 25px;
     color: white;
     font-family: ${props => props.alt ? 'Abibas' : 'var(--font)' };
     word-break: break-all;
 `
 export const Subtitle = styled.p`
-    font-size: 1.5rem;
+    font-size: 19px;
     color: white;
     font-family: var(--font);
     word-break: break-all;

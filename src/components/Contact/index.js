@@ -23,7 +23,7 @@ const ContactSection = () => {
             <ContactContainer id={'contact'}>
                 <GeneralWrapper>
                 <TextWrapper>
-                    <ContactTitle>COMUNIQUESE CON NOSTROS</ContactTitle>
+                    <ContactTitle>COMUNICATE CON NOSTROS</ContactTitle>
                     <Subtitle>Contanos sobre vos y encontraremos la mejor opción para tu proyecto. ¿No te gusta llenar formularios?
                         Envianos un correo electrónico directamente a hola@pipslab.co
                     </Subtitle>

@@ -28,7 +28,7 @@ export const GeneralWrapper = styled.div`
 export const ContactTitle = styled.h1`
     font-family: var(--font); 
     font-size: 20px;
-    color: ${({theme}) => theme.text};
+    color: ${({theme}) => theme.toggle};
     margin-bottom:1rem;
     word-wrap: break-word;
 
@@ -142,19 +142,19 @@ export const OptionTextWrapper = styled.div`
 
 `
 export const OptionTitle = styled.h3`
-    font-size: 1.3rem;
+    font-size: 19px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
 
     @media screen and (max-width:400px){
-        font-size: 4.6vw;
+        font-size: 20px;
         word-break: break-all;
     }
 
 `
 
 export const OptionInfo = styled.div`
-    font-size: 1.3rem;
+    font-size: 19px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
 
