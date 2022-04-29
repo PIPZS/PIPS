@@ -174,7 +174,7 @@ export const InfoCardsWrapper = styled.div`
     @media screen and (max-width: 500px){
         display:flex;
         flex-direction:column;
-        width:100% ;
+        width:70% ;
         margin-top: 50px;
     } 
 `

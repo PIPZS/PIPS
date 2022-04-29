@@ -46,7 +46,12 @@ export const InfoWrapper = styled.div`
 export const Box = styled.div`
     height: 10rem;
     width: 30rem;
-    margin:auto;
+    margin: auto;
+
+    @media screen and (max-width:650px){
+        width: 100%;
+    }
+    
 `
 export const BoxTitle = styled.div`
     display:flex;
@@ -60,12 +65,28 @@ export const BoxTitle = styled.div`
         color: ${({theme}) => theme.toggle};
         margin-right:10px;
     }
+
+    @media screen and (max-width:650px){
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width:400px){
+        font-size: 0.9rem;
+    }
 `
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
     font-size: 19px;
-`
+    @media screen and (max-width:650px){
+        word-break: break-word;
+        word-wrap: break-word;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width:400px){
+        font-size: 0.8rem;
+    }`
 
 export const ButtonWrapper = styled.div`
     width:30%;
@@ -98,15 +119,31 @@ export const Button = styled(LinkS)`
     font-family: var(--font);
     font-size: 1.5rem;
     text-transform: uppercase;
+    text-align:center;
     
 
     &.active{
         color: #CE1212;
         transition: color 0.4s ease;
     }
+
     &:hover{
         background: ${({theme}) => theme.toggle};
         transition: all 1s ease;
         color: white;
     }
+
+    @media screen and (max-width:650px){
+        height: 15rem;
+        width: 15rem;
+        margin-top:50px;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width:350px){
+        height: 10rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    
 `
