@@ -26,7 +26,7 @@ const ServicesSection = () => {
                       por el producto/servicio que ofrece el sitio web.
                     </CardText>
                 </Card>
-                <Card>
+                <Card alt>
                     <FiCode/>
                     <CardTitle>Desarrollar</CardTitle>
                     <CardText>La etapa de desarrollo implica mover la información recolectada en la etapa de planificación hacia la realidad. 

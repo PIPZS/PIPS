@@ -38,6 +38,8 @@ export const Card = styled.div`
     border: 0.3px solid ${({theme}) => theme.toggle};
     overflow: hidden ;
     width:100%;
+    border-left: ${props => props.alt ? 'none' : '' };
+    border-right: ${props => props.alt ? 'none' : '' };
     
     svg {
         font-size: 3.5rem;

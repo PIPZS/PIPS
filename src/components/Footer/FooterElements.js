@@ -3,12 +3,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
     background: #1c1c1c;
-    
-    
 `
 
 export const FooterWrap = styled.div`
-    padding: 50px 130px;
+    padding: 25px 130px;
 
     @media screen and (max-width:900px){
         padding: 50px 50px;
