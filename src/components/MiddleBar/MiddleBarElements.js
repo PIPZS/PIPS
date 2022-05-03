@@ -26,8 +26,8 @@ export const MainWrapper = styled.div`
 `
 export const InfoWrapper = styled.div`
     display: grid;
-    grid-gap: 70px;
-    column-gap: 30px;
+    grid-gap: 30px;
+    column-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(80px, auto);
     width: 70%;

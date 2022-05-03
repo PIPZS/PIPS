@@ -142,7 +142,7 @@ export const OptionTextWrapper = styled.div`
 
 `
 export const OptionTitle = styled.h3`
-    font-size: 19px;
+    font-size: 17px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
 
@@ -154,7 +154,7 @@ export const OptionTitle = styled.h3`
 `
 
 export const OptionInfo = styled.div`
-    font-size: 19px;
+    font-size: 17px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
 
