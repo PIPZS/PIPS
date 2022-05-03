@@ -2,12 +2,12 @@ import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll';
 
 export const BarContainer = styled.div`
-    background: #202124;
+    background: ${({theme}) => theme.bgc};
     display: flex;
     margin-top: 5rem;
 `
 export const MainTitle = styled.h3`
-    font-size: 2rem;
+    font-size: 20px;
     font-family: var(--font); 
     color: ${({theme}) => theme.toggle};
     word-wrap: break-word;
@@ -59,7 +59,7 @@ export const BoxTitle = styled.div`
     color: white;
     margin-bottom: 20px;
     font-family: var(--font);
-    font-size: 1.4rem;
+    font-size: 19px;
     font-weight: bold;
     p{
         color: ${({theme}) => theme.toggle};
@@ -77,8 +77,7 @@ export const BoxTitle = styled.div`
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
-    font-size: 1.3rem;
-
+    font-size: 19px;
     @media screen and (max-width:650px){
         word-break: break-word;
         word-wrap: break-word;
@@ -87,8 +86,7 @@ export const BoxText = styled.div`
 
     @media screen and (max-width:400px){
         font-size: 0.8rem;
-    }
-`
+    }`
 
 export const ButtonWrapper = styled.div`
     width:30%;
@@ -114,7 +112,7 @@ export const Button = styled(LinkS)`
     margin:auto;
     height: 20rem;
     width: 20rem;
-    background-color: #1c1c1c;
+    background-color: #202020;
     border-radius: 100%;
     cursor: pointer;
     justify-content: center;

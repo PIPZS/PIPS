@@ -81,9 +81,7 @@ const InfoSection = (props) => {
                       Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la produccion de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
                   </CarouselSubtitle>
                 </CariuseltextWrapper>
-                <CarouselContainer>
-                    <Carousel/>
-                </CarouselContainer>
+                <section style={{height:'35px', backgroundColor:'#161616'}}></section>
             </MainWrapper>
         </>
     )

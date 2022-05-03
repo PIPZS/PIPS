@@ -9,19 +9,10 @@ const Footer = () => {
         <>
             <FooterContainer>
                 <FooterWrap>
-                    <FooterInfo>
-                        <LeftContainer>
+                    <SocialMediaWrapper>
+                    <LeftContainer>
                             <Title alt>PIPS LAB</Title>
                             <Subtitle>Desafiando el status quo</Subtitle>
-                        </LeftContainer>
-                        <RightContainer>
-                            <Title>HABLEMOS!</Title>
-                            <Subtitle>hola@pipslab.co</Subtitle>
-                        </RightContainer>
-                    </FooterInfo>
-                    <SocialMediaWrapper>
-                        <LeftContainer>
-                            <Subtitle>Buenos Aires, Argentina</Subtitle> 
                         </LeftContainer>
                         <RightContainer>
                             <SocialLinks>
