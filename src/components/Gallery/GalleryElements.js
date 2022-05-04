@@ -14,6 +14,12 @@ export const GalleryContainer = styled.div`
     margin: auto;
     width: 60%;
     background: ${({theme}) => theme.bgc} ;
+
+    @media screen and (max-width: 1000px){
+
+        width: 80%;
+        
+    }  
     
     
 `
