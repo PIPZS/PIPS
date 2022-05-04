@@ -5,6 +5,7 @@ import styled from "styled-components";
 export const Background = styled.div`
     background: ${({theme}) => theme.bgc};
     position:relative;
+   
 `;
 
 
@@ -13,6 +14,7 @@ export const GalleryContainer = styled.div`
     margin: auto;
     width: 60%;
     background: ${({theme}) => theme.bgc} ;
+    
     
 `
 

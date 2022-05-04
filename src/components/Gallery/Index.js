@@ -3,6 +3,10 @@ import {GalleryContainer, GalleryTitle, Background} from './GalleryElements'
 import {makeStyles} from "@material-ui/core/styles"
 import {Grid, Paper} from "@material-ui/core"
 import Image from "../../images/3stado.jpg";
+import Image2 from "../../images/project_three_edited.png";
+import Image3 from "../../images/project_two_edited.png";
+import Image4 from "../../images/restaurant.png";
+import Image5 from "../../images/cefica.png";
 import "./Gallery.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -24,37 +28,34 @@ const Gallery = () => {
     return (
 
         <Background>
-        <GalleryContainer id={'gallery'}>
-            <GalleryTitle>GALERIA DE IMAGENES</GalleryTitle>
-            <Grid container spacing={2} className='grid'>
-                <Grid item xs={12}  className='paper' >
-                    <Paper >
-                        <img src={Image} height='30%' width='100%' alt=""></img>
+        <GalleryContainer id={'gallery'} >
+
+            <Grid container spacing={2} className='grid-container'style={{backgroundColor:'#161616'}}>
+                <Grid item xs={12} sm={12} className='grid' style={{backgroundColor:''}}>
+                    <Paper className='paper' style={{backgroundColor:'transparent'}} >
+                        <img src={Image} height='30%' width='100%' alt="" ></img>
                     </Paper>
                 </Grid>
-                <Grid item xs={4} >
-                    <Paper className={classes.paper}>
-                        <img src={'https://media.istockphoto.com/photos/man-getting-his-beard-trimmed-with-electric-razor-picture-id872361244?k=20&m=872361244&s=612x612&w=0&h=xacxRAgqgXGCN4BAp3dSPZq_jK_irb24I6nZM2P6mNU='} height='30%' width='100%' alt=""></img>
+
+                <Grid item xs={12}sm={6} >
+                    <Paper className={classes.paper} style={{backgroundColor:'transparent'}}>
+                        <img src={Image4} height='30%' width='100%' alt=""></img>
                     </Paper>
                 </Grid>
-                <Grid item xs={4} >
-                    <Paper className={classes.paper}>
-                        <img src={'https://st2.depositphotos.com/2931363/9695/i/600/depositphotos_96952024-stock-photo-young-handsome-man-in-barbershop.jpg'} height='30%' width='100%' alt=""></img>
+
+                <Grid item xs={12} sm={6}>
+                    <Paper className={classes.paper} style={{backgroundColor:'transparent'}}>
+                        <img src={Image3} height='30%' width='100%' alt=""></img>
                     </Paper>
                 </Grid>
-                <Grid item xs={4} >
-                    <Paper className={classes.paper}>
-                        <img src={'https://thumbs.dreamstime.com/b/hands-young-barber-making-haircut-to-attractive-man-barbershop-bearded-74338525.jpg'} height='30%' width='100%' alt=""></img>
+                <Grid item xs={12} sm={6}>
+                    <Paper className={classes.paper} style={{backgroundColor:'transparent'}}>
+                        <img src={Image2} height='30%' width='100%' alt=""></img>
                     </Paper>
                 </Grid>
-                <Grid item xs={6}>
-                    <Paper className={classes.paper}>
-                        <img src={'https://cdn.create.vista.com/api/media/medium/161543432/stock-photo-barber-drying-hair-of-customer?token='} height='30%' width='100%' alt=""></img>
-                    </Paper>
-                </Grid>
-                <Grid item xs={6} >
-                    <Paper className={classes.paper}>
-                        <img src={'https://thumbs.dreamstime.com/b/ajuste-perfecto-en-la-barber%C3%ADa-65608345.jpg'} height='30%' width='100%' alt=""></img>
+                <Grid item xs={12} sm={6}>
+                    <Paper className={classes.paper} style={{backgroundColor:'transparent'}}>
+                        <img src={Image5} height='30%' width='100%' alt=""></img>
                     </Paper>
                 </Grid>
             </Grid>

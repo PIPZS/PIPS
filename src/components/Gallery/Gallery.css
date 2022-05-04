@@ -1,10 +1,16 @@
 .paper {
-    opacity: 1;
-    background: #161616 !important;
-    
-
+   
+    border-radius: 15%;
 }
 
-.grid {
-    background: #161616 !important;
+img {
+    border-radius: 0%;
+    opacity: 1;
+}
+
+
+
+
+.MuiPaper-root {
+    background-color: transparent;
 }

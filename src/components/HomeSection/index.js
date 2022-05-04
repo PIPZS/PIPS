@@ -9,7 +9,7 @@ import VideoUrlWebm from '../../videos/videoedificios.webm'
 
 const Background = styled.div`
     height: 100vh;
-    background-color: #202124;
+    background-color: #161616;
 `;
 
 const MainWrapper = styled.div`

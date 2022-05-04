@@ -13,17 +13,13 @@ export const CardsWrapper = styled.div`
     justify-content: center;
     margin: auto;
     margin-top: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 
     @media screen and (max-width: 1350px){
-        width: 100%;
+        width: 80%;
     }  
 
     @media screen and (max-width: 1000px){
-        width: 100%;
-    }  
-
-    @media screen and (max-width: 750px){
         flex-direction:column ;
         width: 90%;
         gap:20px;
@@ -38,6 +34,8 @@ export const Card = styled.div`
     border: 0.3px solid ${({theme}) => theme.toggle};
     overflow: hidden ;
     width:100%;
+    border-left: ${props => props.alt ? 'none' : '' };
+    border-right: ${props => props.alt ? 'none' : '' };
     
     svg {
         font-size: 3.5rem;
@@ -56,6 +54,7 @@ export const Card = styled.div`
         width: 380px;
         height: 380px;
         margin: auto;
+        border: 0.3px solid ${({theme}) => theme.toggle};
     } 
     @media screen and (max-width: 500px){
         width: 75vw;
