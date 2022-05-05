@@ -20,12 +20,15 @@ const MainWrapper = styled.div`
 
 
 const Video = styled.video`
-    position: absolute;
-    right:0;
-    bottom:0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 1 ;
+  
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+
+    
     
 `;
 
