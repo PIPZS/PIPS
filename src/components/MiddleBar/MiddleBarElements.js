@@ -85,7 +85,7 @@ export const BoxText = styled.div`
     }
 
     @media screen and (max-width:400px){
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }`
 
 export const ButtonWrapper = styled.div`
