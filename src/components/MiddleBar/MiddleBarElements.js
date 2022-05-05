@@ -57,7 +57,7 @@ export const BoxTitle = styled.div`
     display:flex;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-family: var(--font);
     font-size: 19px;
     font-weight: bold;
@@ -77,7 +77,7 @@ export const BoxTitle = styled.div`
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
-    font-size: 19px;
+    font-size: 16px;
     @media screen and (max-width:650px){
         word-break: break-word;
         word-wrap: break-word;

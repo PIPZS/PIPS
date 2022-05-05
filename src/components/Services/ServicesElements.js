@@ -85,7 +85,11 @@ export const CardText = styled.p`
     color: ${({theme}) => theme.text};
 
     @media screen and (max-width: 450px){
-        font-size: 70%;
+        font-size: 1rem;
+    } 
+
+    @media screen and (max-width: 400px){
+        font-size: 0.8rem;
     } 
 `
 
