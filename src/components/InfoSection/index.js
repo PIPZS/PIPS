@@ -7,6 +7,8 @@ import {FiMonitor} from 'react-icons/fi';
 import {FiAward} from 'react-icons/fi';
 import {FiImage} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
+import {AiOutlineWhatsApp} from 'react-icons/ai';
+import "./infoCss.css";
 
 const InfoSection = (props) => {
  
@@ -82,9 +84,16 @@ const InfoSection = (props) => {
                   </CarouselSubtitle>
                 </CariuseltextWrapper>
                 <section style={{height:'35px', backgroundColor:'#161616'}}></section>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+                <a href="https://api.whatsapp.com/send?phone=541154552769&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"> </i>
+              </a>
             </MainWrapper>
         </>
     )
 }
 
 export default InfoSection
+
+
+
