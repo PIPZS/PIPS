@@ -27,7 +27,7 @@ const Video = styled.video`
 
   top: 0;
   left: 0;
-
+  opacity: 1;
     
     
 `;
