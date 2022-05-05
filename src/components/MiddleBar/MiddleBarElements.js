@@ -67,17 +67,17 @@ export const BoxTitle = styled.div`
     }
 
     @media screen and (max-width:650px){
-        font-size: 1.2rem;
+        font-size: 19px;
     }
 
     @media screen and (max-width:400px){
-        font-size: 0.9rem;
+        font-size: 19px;
     }
 `
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 1rem;
     @media screen and (max-width:650px){
         word-break: break-word;
         word-wrap: break-word;
