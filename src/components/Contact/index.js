@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo} from './ContactElements'
+import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo, ContactArea} from './ContactElements'
 import {FiSmartphone} from "react-icons/fi";
 import {FiMail} from "react-icons/fi";
 import emailjs from '@emailjs/browser';
@@ -50,7 +50,7 @@ const ContactSection = () => {
                         <ContactInput type="numner" name="phone" placeholder={'Telefono'}></ContactInput>
                         <ContactInput type="email" name="email" placeholder={'Email'}></ContactInput>
                         <ContactInput type="text" name="company" placeholder={'Empresa'}></ContactInput>
-                        <ContactInput name="message" placeholder={'Mensaje'}></ContactInput>
+                        <ContactArea  name="message" placeholder={'Mensaje'}></ContactArea>
                         <ContactFormButton>Enviar</ContactFormButton>
                     </ContactForm>
                 </ContactWrapper>

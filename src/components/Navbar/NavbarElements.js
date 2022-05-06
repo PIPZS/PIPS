@@ -88,7 +88,7 @@ export const MobileIcon = styled.div`
 
         svg{
             font-size: 1.8rem;
-            color: #CE1212;
+            color:${({theme}) => theme.toggle} ;
         }
     }
 `

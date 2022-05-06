@@ -12,7 +12,7 @@ function MiddleBar() {
                   Optimización de código y mejoras de funcionalidades.
                 </BoxText>
               </Box>
-              <Box>
+              <Box second>
                 <BoxTitle><p>0.2.</p>Optimización seo</BoxTitle>
                 <BoxText>Ofrecemos usoluciones versátiles con el objetivo de maximizar la visibilidad orgánica de los sitios web en 
                   los buscadores y en las redes sociales. Tags personalizados con estándares de SEO actuales.
