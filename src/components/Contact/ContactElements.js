@@ -82,9 +82,23 @@ export const ContactInput = styled.input`
     border: 1px solid ${({theme}) => theme.input};
     padding: 10px;
     background: transparent;
-    height: 50px;
     font-family: var(--font);
     font-size: 1.1rem;
+    color: white;
+    height: 50px;
+`
+
+export const ContactArea = styled.textarea`
+    width: 90%;
+    margin-bottom: 5%;
+    border: 1px solid ${({theme}) => theme.input};
+    padding: 10px;
+    background: transparent;
+    font-family: var(--font);
+    font-size: 1.1rem;
+    color: white;
+    height: 200px;
+    resize: none;
 `
 
 export const ContactFormButton = styled.button`

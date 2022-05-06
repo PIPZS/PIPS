@@ -34,7 +34,6 @@ export const InfoWrapper = styled.div`
     margin: auto;
 
     @media screen and (max-width:1650px){
-        width: 70%;
         display:flex;
         flex-direction: column;
     }
@@ -47,6 +46,7 @@ export const Box = styled.div`
     height: 10rem;
     width: 30rem;
     margin: auto;
+    margin-bottom: ${props => props.second ? '20px' : '' };
 
     @media screen and (max-width:650px){
         width: 100%;
@@ -78,6 +78,7 @@ export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
     font-size: 19px;
+    
     @media screen and (max-width:650px){
         word-break: break-word;
         word-wrap: break-word;
