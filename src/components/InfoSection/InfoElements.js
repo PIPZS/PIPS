@@ -283,3 +283,7 @@ export const CarouselSubtitle = styled.p`
     color: ${({theme}) => theme.text};
     margin-top: 1rem;
 `
+
+export const WhatsAppButton = styled.div`
+    display: ${({ specialScroll }) => (specialScroll ? 'flex' : 'none')};
+`
