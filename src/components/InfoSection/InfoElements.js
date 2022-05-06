@@ -141,6 +141,7 @@ export const InfoCardsWrapper = styled.div`
     height: 70%;
     align-items: center;
     justify-content: center;
+    
 
 
     @media screen and (max-width: 1700px){
@@ -159,6 +160,11 @@ export const InfoCardsWrapper = styled.div`
         margin-top: 5%;
     }   
 
+    @media screen and (max-width: 1000px){
+        width: 90%;
+      
+    }  
+
     @media screen and (max-width: 700px){
         grid-template-columns: 230px 230px;
         grid-template-rows: 230px 230px;
@@ -174,7 +180,6 @@ export const InfoCardsWrapper = styled.div`
     @media screen and (max-width: 500px){
         display:flex;
         flex-direction:column;
-        width:70% ;
         margin-top: 50px;
     } 
 `
@@ -273,7 +278,7 @@ export const CarouselTitle = styled.h3`
 `
 
 export const CarouselSubtitle = styled.p`
-    font-size: 19px;
+    font-size: 17px;
     font-family: var(--font); 
     color: ${({theme}) => theme.text};
     margin-top: 1rem;

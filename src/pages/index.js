@@ -35,7 +35,7 @@ const Home = () => {
             
             <ContactSection/>
             <Footer/>
-            <WhatsappButton/>
+            {/* <WhatsappButton/> */}
         </ThemeProvider>
     )
 }
