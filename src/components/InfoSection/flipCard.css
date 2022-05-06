@@ -115,9 +115,14 @@
     font-family: var(--font);
     font-size: 1rem;
     color: white;
+
     
 }
-
+@media (max-width: 1350px) {
+    .card .back {
+        font-size: 1rem;
+        }
+    }
 
 svg {
     color: #fc5757;

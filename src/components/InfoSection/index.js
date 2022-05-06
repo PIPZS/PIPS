@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, CariuseltextWrapper, CarouselTitle, CarouselSubtitle } from './InfoElements'
+import React, {useEffect, useState} from 'react'
+import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, WhatsAppButton, CariuseltextWrapper, CarouselTitle, CarouselSubtitle } from './InfoElements'
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
 import  {Carousel}  from '../Carousel/Carousel';
@@ -7,9 +7,26 @@ import {FiMonitor} from 'react-icons/fi';
 import {FiAward} from 'react-icons/fi';
 import {FiImage} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
+import {AiOutlineWhatsApp} from 'react-icons/ai';
+import "./infoCss.css";
 
 const InfoSection = (props) => {
- 
+  
+
+
+      const [specialScroll, setSpecialScroll] = useState(false)
+
+      const changeNav = () => {
+          if(window.scrollY >= document.documentElement.clientHeight - 800){
+              setSpecialScroll(true)
+          }else{
+              setSpecialScroll(false);
+          }
+      }
+
+      useEffect(() => {
+          window.addEventListener('scroll', changeNav)
+      }, [])
 
       const cards = [
         {
@@ -81,10 +98,20 @@ const InfoSection = (props) => {
                       Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la produccion de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
                   </CarouselSubtitle>
                 </CariuseltextWrapper>
-                <section style={{height:'35px', backgroundColor:'#161616'}}></section>
+                
+                {/* <section style={{height:'35px', backgroundColor:'#161616'}}></section> */}
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+                <WhatsAppButton specialScroll={specialScroll}>
+                  <a href="https://api.whatsapp.com/send?phone=541154552769&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." class="float" target="_blank">
+                    <i class="fa fa-whatsapp my-float"> </i>
+                  </a>
+              </WhatsAppButton>
             </MainWrapper>
         </>
     )
 }
 
 export default InfoSection
+
+
+

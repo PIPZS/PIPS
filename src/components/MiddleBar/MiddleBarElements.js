@@ -57,7 +57,7 @@ export const BoxTitle = styled.div`
     display:flex;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-family: var(--font);
     font-size: 19px;
     font-weight: bold;
@@ -67,18 +67,17 @@ export const BoxTitle = styled.div`
     }
 
     @media screen and (max-width:650px){
-        font-size: 1.2rem;
+        font-size: 19px;
     }
 
     @media screen and (max-width:400px){
-        font-size: 0.9rem;
+        font-size: 19px;
     }
 `
 export const BoxText = styled.div`
     color:white;
     font-family: var(--font);
-    font-size: 19px;
-    
+    font-size: 1rem;
     @media screen and (max-width:650px){
         word-break: break-word;
         word-wrap: break-word;
@@ -86,7 +85,7 @@ export const BoxText = styled.div`
     }
 
     @media screen and (max-width:400px){
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }`
 
 export const ButtonWrapper = styled.div`
