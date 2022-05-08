@@ -10,6 +10,8 @@ import VideoUrlWebm from '../../videos/videoedificios.webm'
 const Background = styled.div`
     height: 100vh;
     background-color: #161616;
+    top:0;
+    left: 0;
 `;
 
 const MainWrapper = styled.div`
@@ -22,11 +24,11 @@ const MainWrapper = styled.div`
 const Video = styled.video`
   
   object-fit: cover;
-  width: 100vw;
   height: 100vh;
-
+  width  : 100vw;
+  max-width: 100%;
   top: 0;
-  left: 0;
+  left: -2px;
   opacity: 1;
     
     
