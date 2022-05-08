@@ -76,6 +76,7 @@ export const InfoSubtitle = styled.p`
     z-index: 20;
     font-weight: ${props => props.bold ? 'bold' : '' };
     text-align: justify;
+    word-break: break-all;
 
 
     @media screen and (max-width:1700px){
@@ -96,18 +97,19 @@ export const Button = styled(LinkS)`
     height: 3.5rem;
     font-size: 20px;
     word-wrap: break-word;
-    color:white;
+    color:#FC5757;
     bottom: 5rem;
     font-family: var(--font);
     text-transform: uppercase;
     align-items: center;
-    justify-content: center;
+    text-justify: inter-character;
     
 
     &:hover{
         transition: all 0.2s ease-in-out;
         background: ${({theme}) => theme.toggle};
         cursor:pointer;
+        color: white;
     }
 `
 

@@ -28,7 +28,7 @@ const Video = styled.video`
   width  : 100vw;
   max-width: 100%;
   top: 0;
-  left: -2px;
+  left: 0;
   opacity: 1;
     
     
