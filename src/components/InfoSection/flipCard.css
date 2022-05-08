@@ -118,6 +118,10 @@
     text-align: justify;
     text-align-last: center;
     word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     
 }
 @media (max-width: 1350px) {

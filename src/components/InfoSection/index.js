@@ -73,7 +73,7 @@ const InfoSection = (props) => {
               <InfoContainer>
                   <InfoWrapper>
                       {/* <InfoTitle>ABOUT US</InfoTitle>   */}
-                      <InfoSubtitle className='subtitle'>
+                      <InfoSubtitle className='subtitle' lang='en'>
                       <InfoSubtitle bold className='title'>
                                     <br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web innovadores y únicos.
                       </InfoSubtitle>

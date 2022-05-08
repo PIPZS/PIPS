@@ -263,6 +263,9 @@ export const Image = styled.img`
 
 export const Section = styled.div`
     height: 150px;
+    @media screen and (max-width: 1200px){
+            height: 35px;
+        } 
 
 `;
 
