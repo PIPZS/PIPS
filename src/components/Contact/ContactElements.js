@@ -5,7 +5,6 @@ export const ContactContainer = styled.div`
     background: ${({theme}) => theme.bgc};
     padding: 0 24px;
     position: relative;
-    border-top: 1px dashed black;
     overflow: auto;
 `
 

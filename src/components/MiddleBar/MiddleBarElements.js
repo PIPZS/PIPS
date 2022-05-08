@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll';
 export const BarContainer = styled.div`
     background: ${({theme}) => theme.bgc};
     display: flex;
-    margin-top: 5rem;
+    margin-top: 2rem;
 `
 export const MainTitle = styled.h3`
     font-size: 20px;

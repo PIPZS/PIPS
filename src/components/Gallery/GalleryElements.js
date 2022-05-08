@@ -24,6 +24,14 @@ export const GalleryContainer = styled.div`
     
 `
 
+
+export const Section = styled.div`
+    @media screen and (max-width: 1200px){
+            height: 35px;
+        } 
+
+`;
+
 export const GalleryTitle = styled.h1`
 
     font-size: 20px;

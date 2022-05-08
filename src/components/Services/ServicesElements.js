@@ -100,7 +100,7 @@ export const CardsTextWrapper = styled.div`
     margin-top: 10rem;
     text-align: center;
     @media screen and (max-width: 1250px) {
-        margin-top: 45px;
+        margin-top: 85px;
     }
 `
 

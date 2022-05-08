@@ -115,13 +115,8 @@
     font-family: var(--font);
     font-size: 1rem;
     color: white;
-    text-align: justify;
-    text-align-last: center;
-    word-break: break-all;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+
+    
     
 }
 @media (max-width: 1350px) {
@@ -145,7 +140,13 @@ svg {
 .text-container {
     margin-left: 6%;
     margin-right: 6%;
-    text-align:justify;
+    text-align: center;
+    text-align-last: center;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
 
 }
 
