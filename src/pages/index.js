@@ -30,7 +30,6 @@ const Home = () => {
             {/* <Switch theme={theme} setTheme={setTheme}/> */}
             <HomeSection/>
             <InfoSection theme={theme}/>
-            <Gallery/>
             <ServicesSection/>
             
             <ContactSection/>

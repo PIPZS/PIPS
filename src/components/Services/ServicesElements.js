@@ -43,8 +43,8 @@ export const Card = styled.div`
         color: ${({theme}) => theme.toggle};
 
         @media screen and (max-width: 450px){
-            font-size: 15vw;
-            margin-bottom: 5%;
+            font-size: 13vw;
+            margin-bottom: 3%;
         } 
     }
 

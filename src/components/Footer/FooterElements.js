@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link as LinkR} from 'react-router-dom';
 
 
 export const FooterContainer = styled.div`
@@ -101,11 +102,12 @@ export const SocialMediaItem = styled.div`
     }
 `
 
-export const Title = styled.h3`
+export const Title = styled(LinkR)`
     font-size: 25px;
     color: white;
     font-family: ${props => props.alt ? 'Abibas' : 'var(--font)' };
     word-break: break-all;
+    text-decoration: none;
 `
 export const Subtitle = styled.p`
     font-size: 19px;

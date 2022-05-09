@@ -9,6 +9,7 @@ import {FiImage} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
 import {AiOutlineWhatsApp} from 'react-icons/ai';
 import "./infoCss.css";
+import Gallery from '../Gallery/Index';
 
 const InfoSection = (props) => {
   
@@ -98,6 +99,7 @@ const InfoSection = (props) => {
                       Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la produccion de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
                   </CarouselSubtitle>
                 </CariuseltextWrapper>
+                <Gallery/>
                 
                 {/* <section style={{height:'35px', backgroundColor:'#161616'}}></section> */}
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
