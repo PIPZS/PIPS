@@ -74,7 +74,7 @@ const InfoSection = (props) => {
               <InfoContainer>
                   <InfoWrapper>
                       {/* <InfoTitle>ABOUT US</InfoTitle>   */}
-                      <InfoSubtitle className='subtitle'>
+                      <InfoSubtitle className='subtitle' lang='en'>
                       <InfoSubtitle bold className='title'>
                                     <br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web innovadores y únicos.
                       </InfoSubtitle>
@@ -101,13 +101,14 @@ const InfoSection = (props) => {
                 </CariuseltextWrapper>
                 <Gallery/>
                 
-                {/* <section style={{height:'35px', backgroundColor:'#161616'}}></section> */}
+                
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
                 <WhatsAppButton specialScroll={specialScroll}>
                   <a href="https://api.whatsapp.com/send?phone=541154552769&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." class="float" target="_blank">
                     <i class="fa fa-whatsapp my-float"> </i>
                   </a>
               </WhatsAppButton>
+               <section style={{height:'35px', backgroundColor:'#161616'}}></section>
             </MainWrapper>
         </>
     )

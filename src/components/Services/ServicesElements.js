@@ -4,6 +4,9 @@ export const MainWrapper = styled.div`
     background: ${({theme}) => theme.bgc};
     position: relative;
     padding: 100px 24px;
+    @media screen and (max-width: 1200px){
+        padding: 50px 24px;
+    } 
 `;
 
 
@@ -97,7 +100,7 @@ export const CardsTextWrapper = styled.div`
     margin-top: 10rem;
     text-align: center;
     @media screen and (max-width: 1250px) {
-        margin-top: 10rem;
+        margin-top: 85px;
     }
 `
 

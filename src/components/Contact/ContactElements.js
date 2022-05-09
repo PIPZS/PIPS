@@ -5,7 +5,6 @@ export const ContactContainer = styled.div`
     background: ${({theme}) => theme.bgc};
     padding: 0 24px;
     position: relative;
-    border-top: 1px dashed black;
     overflow: auto;
 `
 
@@ -73,11 +72,12 @@ export const ContactForm = styled.form`
     @media screen and (max-width:900px){
         width: auto;
         margin: auto;
+        
     }
 `
 
 export const ContactInput = styled.input`
-    width: 90%;
+    width: 100%;
     margin-bottom: 5%;
     border: 1px solid ${({theme}) => theme.input};
     padding: 10px;
@@ -90,7 +90,7 @@ export const ContactInput = styled.input`
 `
 
 export const ContactArea = styled.textarea`
-    width: 90%;
+    width: 100%;
     margin-bottom: 5%;
     border: 1px solid ${({theme}) => theme.input};
     padding: 10px;
@@ -112,6 +112,7 @@ export const ContactFormButton = styled.button`
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    color:#FC5757;
     width: 10rem;
     height: 3.5rem;
     margin-top: 5px;
@@ -122,6 +123,7 @@ export const ContactFormButton = styled.button`
         transition: all 0.2s ease-in-out;
         background: ${({theme}) => theme.toggle};
         cursor:pointer;
+        color:white;
     }
 
     @media screen and (max-width:900px){
