@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {GalleryContainer, GalleryTitle, Background} from './GalleryElements'
+import {GalleryContainer, GalleryTitle, Background, Section} from './GalleryElements'
 import {makeStyles} from "@material-ui/core/styles"
 import {Grid, Paper} from "@material-ui/core"
 import Image from "../../images/3stado.jpg";
@@ -28,6 +28,7 @@ const Gallery = () => {
     return (
 
         <Background>
+            
         <GalleryContainer id={'gallery'} >
 
             <Grid container spacing={2} className='grid-container'style={{backgroundColor:'#161616'}}>
@@ -61,6 +62,8 @@ const Gallery = () => {
             </Grid>
                 
         </GalleryContainer>
+
+        <Section/>
         </Background>
 
     )

@@ -79,6 +79,7 @@ export const InfoSubtitle = styled.p`
     text-align: justify;
 
 
+
     @media screen and (max-width:1700px){
         font-size: 1.2rem;
     }
@@ -101,11 +102,12 @@ export const Button = styled(LinkS)`
     height: 3.5rem;
     font-size: 20px;
     word-wrap: break-word;
-    color:white;
+    color:#FC5757;
     bottom: 5rem;
     font-family: var(--font);
     text-transform: uppercase;
     align-items: center;
+    text-justify: inter-character;
     justify-content: center;
     
 
@@ -113,6 +115,7 @@ export const Button = styled(LinkS)`
         transition: all 0.2s ease-in-out;
         background: ${({theme}) => theme.toggle};
         cursor:pointer;
+        color: white;
     }
 `
 
@@ -266,6 +269,9 @@ export const Image = styled.img`
 
 export const Section = styled.div`
     height: 150px;
+    @media screen and (max-width: 1200px){
+            height: 35px;
+        } 
 
 `;
 
