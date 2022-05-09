@@ -140,10 +140,6 @@ svg {
 .text-container {
     margin-left: 6%;
     margin-right: 6%;
-<<<<<<< HEAD
-    text-align:justify;
-    text-align:center;
-=======
     text-align: center;
     text-align-last: center;
     -webkit-hyphens: auto;
@@ -151,7 +147,6 @@ svg {
   -ms-hyphens: auto;
   hyphens: auto;
 
->>>>>>> 176046e60ba6ce11f55553d398821b31ce57e9d8
 
 }
 
