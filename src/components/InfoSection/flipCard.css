@@ -140,25 +140,13 @@ svg {
 .text-container {
     margin-left: 6%;
     margin-right: 6%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    text-align:justify;
-    text-align:center;
-=======
-=======
->>>>>>> 176046e60ba6ce11f55553d398821b31ce57e9d8
+
     text-align: center;
     text-align-last: center;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-
-<<<<<<< HEAD
->>>>>>> 176046e60ba6ce11f55553d398821b31ce57e9d8
-=======
->>>>>>> 176046e60ba6ce11f55553d398821b31ce57e9d8
-
 }
 
 .flip {

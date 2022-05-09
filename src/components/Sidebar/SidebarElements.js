@@ -41,9 +41,6 @@ export const SidebarMenu = styled.ul`
     grid-template-rows: repeat(3, 80px);
     text-align: center;
 
-    @media screen and (max-width:480px){
-        grid-template-rows: repeat(6,60px);
-    }
 `
 
 export const SidebarLink = styled(LinkS)`
@@ -96,27 +93,20 @@ export const SidebarRoute = styled(LinkS)`
 `
 
 export const AlternativeLinks = styled.div`
-    @media screen and (max-width:500px){
-        display: flex;
-    }
+    
 `
 
 export const SocialLinks = styled.div`
     display: flex;
-    justify-content: right;
     gap: 1rem;
+    align-items:center;
+    justify-content:center;
 
     svg{
         font-size: 2rem;
         &:hover{
             color: #CE1212;
         }
-    }
-
-    @media screen and (max-width:750px){
-        width: 100%;
-        align-items:center;
-        justify-content:center;
     }
 
 `
@@ -136,8 +126,9 @@ export const SocialMediaItem = styled.div`
 
 export const DivisionLine = styled.div`
     border-bottom: 1px solid white;
-    width: 40%;
+    width: 13rem;
     margin:auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     margin-top: 60px;
+    overflow:hidden;
 `
