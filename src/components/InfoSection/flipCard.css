@@ -140,14 +140,13 @@ svg {
 .text-container {
     margin-left: 6%;
     margin-right: 6%;
+
     text-align: center;
     text-align-last: center;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-
-
 }
 
 .flip {
