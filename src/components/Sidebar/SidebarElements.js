@@ -38,7 +38,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(3, 80px);
     text-align: center;
 
     @media screen and (max-width:480px){
@@ -57,7 +57,8 @@ export const SidebarLink = styled(LinkS)`
     text-decoration: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    color: ${({theme}) => theme.toggle};
+    color: white;
+    text-transform: uppercase;
 
     &:hover{
         color: black;
@@ -94,3 +95,49 @@ export const SidebarRoute = styled(LinkS)`
     }
 `
 
+export const AlternativeLinks = styled.div`
+    @media screen and (max-width:500px){
+        display: flex;
+    }
+`
+
+export const SocialLinks = styled.div`
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+
+    svg{
+        font-size: 2rem;
+        &:hover{
+            color: #CE1212;
+        }
+    }
+
+    @media screen and (max-width:750px){
+        width: 100%;
+        align-items:center;
+        justify-content:center;
+    }
+
+`
+
+export const SocialMediaItem = styled.div`
+    color: white;
+    font-size: 19px;
+    font-family: var(--font);
+    transition: .5s all ease-out;
+    word-break: break-all;
+
+    &:hover{
+        cursor: pointer;
+        color: ${({theme}) => theme.toggle};
+    }
+`
+
+export const DivisionLine = styled.div`
+    border-bottom: 1px solid white;
+    width: 40%;
+    margin:auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+`

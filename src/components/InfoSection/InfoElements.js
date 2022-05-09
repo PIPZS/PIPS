@@ -48,10 +48,11 @@ export const InfoWrapper = styled.div`
     position: relative;
 
     @media screen and (max-width:1200px){
-        width: 100%;
+        width: 80%;
         margin-left: 0%;;
         padding-top: 0%;
     }
+
 `
 
 export const InfoTitle = styled.h1`
@@ -80,6 +81,10 @@ export const InfoSubtitle = styled.p`
 
     @media screen and (max-width:1700px){
         font-size: 1.2rem;
+    }
+
+    @media screen and (max-width:768px){
+        text-align: left;
     }
 
     @media screen and (max-width:500px){

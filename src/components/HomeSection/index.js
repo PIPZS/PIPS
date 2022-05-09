@@ -52,7 +52,7 @@ const HomeSection = () => {
                 <span className='text'>PIPS</span>
                 </Title>
 
-                <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-80}>
+                <ScrollDown to="about" smooth={true} duration={500} spy={true} exact={true} offset={-75}>
                     <div className='scrolldown'>
                         <span></span>
                         <span></span>

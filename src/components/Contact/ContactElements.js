@@ -86,6 +86,7 @@ export const ContactInput = styled.input`
     font-size: 1.1rem;
     color: white;
     height: 50px;
+    outline: none;
 `
 
 export const ContactArea = styled.textarea`
@@ -99,6 +100,7 @@ export const ContactArea = styled.textarea`
     color: white;
     height: 200px;
     resize: none;
+    outline: none;
 `
 
 export const ContactFormButton = styled.button`

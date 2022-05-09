@@ -22,6 +22,7 @@ export const MainWrapper = styled.div`
 
     @media screen and (max-width:1000px){
         flex-direction: column;
+        width: 80%;
     }
 `
 export const InfoWrapper = styled.div`
@@ -49,7 +50,7 @@ export const Box = styled.div`
     margin-bottom: ${props => props.second ? '20px' : '' };
 
     @media screen and (max-width:650px){
-        width: 100%;
+        width: 110%;
     }
     
 `
