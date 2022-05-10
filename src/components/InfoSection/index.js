@@ -83,7 +83,7 @@ const InfoSection = (props) => {
                                     <br></br>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de hacer cualquier movimiento que desafíe el status quo
                       </InfoSubtitle>
                       <ContactText>
-                        <Button to="contact" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Ver más</Button>
+                        <Button to="services" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Ver más</Button>
                       </ContactText>
                   </InfoWrapper>
                   <InfoCardsWrapper>

@@ -13,6 +13,7 @@ export const MainTitle = styled.h3`
     word-wrap: break-word;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 5rem;
 `
 
 export const MainWrapper = styled.div`
@@ -47,10 +48,9 @@ export const Box = styled.div`
     height: 10rem;
     width: 30rem;
     margin: auto;
-    margin-bottom: ${props => props.second ? '20px' : '' };
 
     @media screen and (max-width:650px){
-        width: 110%;
+        width: 100%;
     }
     
 `
@@ -101,7 +101,7 @@ export const ButtonWrapper = styled.div`
 
     @media screen and (max-width:1000px){
         width: 100%;
-        margin-top:10%;
+        margin-top:5%;
     }
 `
 
@@ -111,8 +111,8 @@ export const Button = styled(LinkS)`
     align-items: center;
     text-decoration: none;
     margin:auto;
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     background-color: #202020;
     border-radius: 100%;
     cursor: pointer;
@@ -121,6 +121,7 @@ export const Button = styled(LinkS)`
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align:center;
+    overflow:hidden;
     
 
     &.active{

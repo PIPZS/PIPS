@@ -3,7 +3,7 @@ import {Link as LinkR} from 'react-router-dom';
 
 
 export const FooterContainer = styled.div`
-    background: #161616;
+    background: #1c1c1c;
 `
 
 export const FooterWrap = styled.div`
