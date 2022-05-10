@@ -34,7 +34,7 @@ function MiddleBar() {
               </Box>
             </InfoWrapper>
         <ButtonWrapper>
-          <Button to='contact' smooth={true} duration={500} spy={true} exact={true} offset={-60}>Discutí tu proyecto</Button>
+          <Button to='contact' smooth={true} duration={500} spy={true} exact={true} offset={-60}>contáctanos</Button>
         </ButtonWrapper>
       </MainWrapper>
     </BarContainer>
