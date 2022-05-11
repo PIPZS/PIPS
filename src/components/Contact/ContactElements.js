@@ -181,3 +181,7 @@ export const OptionInfo = styled.div`
         word-break: break-all;
     }
 `
+
+export const GeneralError = styled.p`
+    color:red;
+`

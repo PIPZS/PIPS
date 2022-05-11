@@ -90,7 +90,7 @@ const InfoSection = (props) => {
                       {cards.map((card) => (<FlipCard key={card.id} card={card} icon={card.icon} />))}
                   </InfoCardsWrapper>
                 </InfoContainer>
-                <Section/>
+                
                 <CariuseltextWrapper>
                   <CarouselTitle>
                       DISEÑO DE SITIO WEB PERSONALIZADO

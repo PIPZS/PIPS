@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo, ContactArea} from './ContactElements'
+import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo, ContactArea, GeneralError} from './ContactElements'
 import {FiSmartphone} from "react-icons/fi";
 import {FiMail} from "react-icons/fi";
 import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
+
     const [result, showResult] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
@@ -20,6 +21,7 @@ const ContactSection = () => {
       };
     return (
         <>
+        <script type="text/javascript" src="./formValidations.js"/>
             <ContactContainer id={'contact'}>
                 <GeneralWrapper>
                 <TextWrapper>
@@ -45,12 +47,13 @@ const ContactSection = () => {
                     </ContactOption>
                 </TextWrapper>
                 <ContactWrapper>
-                    <ContactForm onSubmit={sendEmail}> 
-                        <ContactInput type="text" name="name" placeholder={'Nombre'}></ContactInput>
-                        <ContactInput type="numner" name="phone" placeholder={'Telefono'}></ContactInput>
-                        <ContactInput type="email" name="email" placeholder={'Email'}></ContactInput>
-                        <ContactInput type="text" name="company" placeholder={'Empresa'}></ContactInput>
-                        <ContactArea  name="message" placeholder={'Mensaje'}></ContactArea>
+                    <ContactForm id="form" onSubmit={sendEmail}> 
+                        <GeneralError id="error"></GeneralError>
+                        <ContactInput id="name" type="text" name="name" placeholder={'Nombre'} required></ContactInput>
+                        <ContactInput id="phone" type="numner" name="phone" placeholder={'Telefono'} required></ContactInput>
+                        <ContactInput id="email" type="email" name="email" placeholder={'Email'} required></ContactInput>
+                        <ContactInput id="company" type="text" name="company" placeholder={'Empresa'}></ContactInput>
+                        <ContactArea  id="message" name="message" placeholder={'Mensaje'} required></ContactArea>
                         <ContactFormButton>Enviar</ContactFormButton>
                     </ContactForm>
                 </ContactWrapper>
