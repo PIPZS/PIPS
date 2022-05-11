@@ -38,6 +38,7 @@ export const InfoWrapper = styled.div`
     @media screen and (max-width:1650px){
         display:flex;
         flex-direction: column;
+        gap: 0px;
     }
 
     @media screen and (max-width:1000px){
@@ -101,7 +102,6 @@ export const ButtonWrapper = styled.div`
 
     @media screen and (max-width:1000px){
         width: 100%;
-        margin-top:5%;
     }
 `
 

@@ -278,6 +278,7 @@ export const Section = styled.div`
 export const CariuseltextWrapper = styled.div`
     width: 80%;
     margin: auto;
+    padding-top: 5rem;
 `
 
 export const CarouselTitle = styled.h3`
