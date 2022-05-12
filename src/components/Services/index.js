@@ -22,7 +22,7 @@ const ServicesSection = () => {
                 <Card>
                     <FiFileText/>
                     <CardTitle>Planear</CardTitle>
-                    <CardText>En esta fase se define el publico objetivo del cliente, sus debilidades y la razon por la que los usuarios deberian preocuparse
+                    <CardText>En esta fase se define el público objetivo del cliente, sus debilidades y la razón por la que los usuarios deberían preocuparse
                       por el producto/servicio que ofrece el sitio web.
                     </CardText>
                 </Card>

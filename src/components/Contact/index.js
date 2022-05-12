@@ -27,7 +27,7 @@ const ContactSection = () => {
                 <TextWrapper>
                     <ContactTitle>COMUNICATE CON NOSTROS</ContactTitle>
                     <Subtitle>Contanos sobre vos y encontraremos la mejor opción para tu proyecto. ¿No te gusta llenar formularios?
-                        Envianos un correo electrónico directamente a team@pipslab.co
+                        Envianos un correo electrónico a team@pipslab.co
                     </Subtitle>
                     <ContactOption>
                         <OptionWrapper>
@@ -50,7 +50,7 @@ const ContactSection = () => {
                     <ContactForm id="form" onSubmit={sendEmail}> 
                         <GeneralError id="error"></GeneralError>
                         <ContactInput id="name" type="text" name="name" placeholder={'Nombre'} required></ContactInput>
-                        <ContactInput id="phone" type="numner" name="phone" placeholder={'Telefono'} required></ContactInput>
+                        <ContactInput id="phone" type="numner" name="phone" placeholder={'Teléfono'} required></ContactInput>
                         <ContactInput id="email" type="email" name="email" placeholder={'Email'} required></ContactInput>
                         <ContactInput id="company" type="text" name="company" placeholder={'Empresa'}></ContactInput>
                         <ContactArea  id="message" name="message" placeholder={'Mensaje'} required></ContactArea>

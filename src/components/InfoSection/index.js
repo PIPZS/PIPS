@@ -74,11 +74,11 @@ const InfoSection = (props) => {
                       {/* <InfoTitle>ABOUT US</InfoTitle>   */}
                       <InfoSubtitle className='subtitle' lang='en'>
                       <InfoSubtitle bold className='title'>
-                                    <br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web innovadores y únicos.
+                                    <br></br>PIPS LAB es una compañía creativa con sede en Buenos Aires que busca ayudar a las marcas y personas a comunicarse a través de sitios web únicos e innovadores.
                       </InfoSubtitle>
                                     Trabajamos para hacer un cambio disruptivo, que defina la industria y que haga latir el corazón. El tipo de trabajo que habla de posibilidad y progreso, 
                                               abriendo oportunidades para generar un impacto positivo para su marca y el mundo que nos rodea.<br></br>
-                                    <br></br>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de hacer cualquier movimiento que desafíe el status quo
+                                    <br></br>No importa cuál sea su desafío, grande o pequeño, existe la posibilidad de hacer cualquier movimiento que desafíe el statu quo.
                       </InfoSubtitle>
                       <ContactText>
                         <Button to="services" smooth={true} duration={500} spy={true} exact={true} offset={-60}>Ver más</Button>
@@ -94,7 +94,7 @@ const InfoSection = (props) => {
                       DISEÑO DE SITIO WEB PERSONALIZADO
                   </CarouselTitle>
                   <CarouselSubtitle>
-                      Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la produccion de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
+                      Ofrecemos servicios de diseño y desarrollo de sitios web personalizados y tenemos experiencia en la producción de sitios web que se encuentran dentro del mejor algoritmo para las mejores clasificaciones de SEO.
                   </CarouselSubtitle>
                 </CariuseltextWrapper>
                 <Gallery/>
