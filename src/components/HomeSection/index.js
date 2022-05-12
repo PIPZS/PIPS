@@ -39,8 +39,9 @@ const HomeSection = () => {
 
     return (
       <Background>
-            <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto"  muted playsInline>
+            <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto" muted playsInline>
                 <source src={VideoUrl} type="video/mp4"></source>
+                <source src={VideoUrl} type="video/webm"></source>
             </Video>
             <MainWrapper >
                 <Title>
