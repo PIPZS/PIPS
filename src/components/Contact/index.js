@@ -27,7 +27,7 @@ const ContactSection = () => {
                 <TextWrapper>
                     <ContactTitle>COMUNICATE CON NOSTROS</ContactTitle>
                     <Subtitle>Contanos sobre vos y encontraremos la mejor opción para tu proyecto. ¿No te gusta llenar formularios?
-                        Envianos un correo electrónico directamente a hola@pipslab.co
+                        Envianos un correo electrónico directamente a team@pipslab.co
                     </Subtitle>
                     <ContactOption>
                         <OptionWrapper>
@@ -41,7 +41,7 @@ const ContactSection = () => {
                             <FiMail/>
                             <OptionTextWrapper>
                                 <OptionTitle>ENVIANOS UN CORREO</OptionTitle>
-                                <OptionInfo>hola@pipslab.co</OptionInfo>
+                                <OptionInfo>team@pipslab.co</OptionInfo>
                             </OptionTextWrapper>
                         </OptionWrapper>
                     </ContactOption>

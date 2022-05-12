@@ -33,7 +33,7 @@ const InfoSection = (props) => {
           variant: "hover",
           front: "Desarrollo web",
           subtitle: "Proyecto 1",
-          back: "Nuestra especialidad. Creamos experiencias digitales que desafían el status quo. Trabajamos estratégicamente para que las marcas y las personas interactúen a través de sitios web disruptivos e innovadores.",
+          back: "Nuestra especialidad. Creamos experiencias digitales que desafían el statu quo. Trabajamos estratégicamente para que las marcas y las personas interactúen a través de sitios web disruptivos e innovadores.",
           icon: <FiMonitor/>,
         },
         {
