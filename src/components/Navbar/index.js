@@ -8,7 +8,7 @@ const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
     const [specialScroll, setSpecialScroll] = useState(false)
 
-    const[theme, setTheme] = useState('light')
+   
 
     const changeNav = () => {
 

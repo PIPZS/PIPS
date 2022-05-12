@@ -1,7 +1,9 @@
 {
-  "name": "estudiojuridico-web",
+  "name": "pips",
+  "homepage": "http://pipsdevpips.com/",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://192.168.0.69:3000",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.8.2",

@@ -1,13 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, CarouselContainer, Section, WhatsAppButton, CariuseltextWrapper, CarouselTitle, CarouselSubtitle } from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoCardsWrapper, InfoSubtitle, Button, ContactText, MainWrapper, WhatsAppButton, CariuseltextWrapper, CarouselTitle, CarouselSubtitle } from './InfoElements'
 import "./infoSection.scss";
 import FlipCard from './FlipCard';
-import  {Carousel}  from '../Carousel/Carousel';
 import {FiMonitor} from 'react-icons/fi';
 import {FiAward} from 'react-icons/fi';
 import {FiImage} from 'react-icons/fi';
 import {FiCloud} from 'react-icons/fi';
-import {AiOutlineWhatsApp} from 'react-icons/ai';
 import "./infoCss.css";
 import Gallery from '../Gallery/Index';
 

@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import {GalleryContainer, GalleryTitle, Background, Section} from './GalleryElements'
+import React from 'react'
+import {GalleryContainer, Background, Section} from './GalleryElements'
 import {makeStyles} from "@material-ui/core/styles"
 import {Grid, Paper} from "@material-ui/core"
 import Image from "../../images/3stado.jpg";
