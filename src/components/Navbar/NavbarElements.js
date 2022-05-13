@@ -14,6 +14,7 @@ export const Nav = styled.nav`
     margin-top: ${({ specialScroll }) => (specialScroll ? '-80px' : '0px')};
     justify-content: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
     align-items: ${({ specialScroll }) => (specialScroll ? 'flex-start' : 'center')};
+    overflow:hidden;
     
 
     /* @media screen and (max-width:960px){

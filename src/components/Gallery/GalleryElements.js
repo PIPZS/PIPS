@@ -6,6 +6,7 @@ export const Background = styled.div`
     background: ${({theme}) => theme.bgc};
     position:relative;
     margin-top:5%;
+    overflow:hidden;
    
 `;
 

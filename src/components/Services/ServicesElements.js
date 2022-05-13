@@ -4,6 +4,7 @@ export const MainWrapper = styled.div`
     background: ${({theme}) => theme.bgc};
     position: relative;
     padding: 100px 24px;
+    overflow:hidden;
     @media screen and (max-width: 1200px){
         padding: 50px 24px;
     } 

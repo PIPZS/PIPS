@@ -4,13 +4,14 @@ import {Link as LinkR} from 'react-router-dom';
 
 export const FooterContainer = styled.div`
     background: #161616;
+    overflow:hidden;
 `
 
 export const FooterWrap = styled.div`
-    padding: 25px 150px;
+    padding: 25px 130px;
 
     @media screen and (max-width:900px){
-        padding: 50px 50px;
+        padding: 50px 60px;
     }
     
 `
