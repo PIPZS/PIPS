@@ -5,6 +5,7 @@ export const BarContainer = styled.div`
     background: ${({theme}) => theme.bgc};
     display: flex;
     margin-top: 2rem;
+    overflow:hidden;
 `
 export const MainTitle = styled.h3`
     font-size: 20px;

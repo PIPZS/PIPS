@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
     background: ${({theme}) => theme.bgc};
     padding: 0 24px;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 `
 
 export const GeneralWrapper = styled.div`
@@ -184,4 +184,8 @@ export const OptionInfo = styled.div`
 
 export const GeneralError = styled.p`
     color:red;
+`
+
+export const Label = styled.div`
+    color: red;
 `

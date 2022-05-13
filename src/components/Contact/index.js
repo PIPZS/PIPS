@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo, ContactArea, GeneralError} from './ContactElements'
+import { ContactContainer, ContactWrapper, ContactTitle, ContactForm, ContactInput, ContactFormButton, TextWrapper, Subtitle, GeneralWrapper, ContactOption, OptionWrapper, OptionTextWrapper, OptionTitle, OptionInfo, ContactArea, GeneralError, Label} from './ContactElements'
 import {FiSmartphone} from "react-icons/fi";
 import {FiMail} from "react-icons/fi";
 import emailjs from '@emailjs/browser';

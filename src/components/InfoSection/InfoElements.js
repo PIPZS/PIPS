@@ -6,6 +6,7 @@ import {Link as LinkS} from 'react-scroll';
 export const MainWrapper = styled.div`
     background: ${({theme}) => theme.bgc};
     position:relative;
+    overflow:hidden;
 `;
 
 export const Wrapper = styled.div`
@@ -90,6 +91,7 @@ export const InfoSubtitle = styled.p`
 
     @media screen and (max-width:500px){
         font-size: 16px;
+        text-align: center;
     }
 `
 
@@ -109,6 +111,10 @@ export const Button = styled(LinkS)`
     align-items: center;
     text-justify: inter-character;
     justify-content: center;
+
+    @media screen and (max-width:500px){
+        margin:auto;
+    }
     
 
     &:hover{

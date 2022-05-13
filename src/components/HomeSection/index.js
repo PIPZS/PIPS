@@ -11,6 +11,7 @@ const Background = styled.div`
     background-color: #161616;
     top:0;
     left: 0;
+    overflow:hidden;
 `;
 
 const MainWrapper = styled.div`

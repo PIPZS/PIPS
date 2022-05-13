@@ -22,6 +22,12 @@
     }
 }
 
+@media screen and (max-width:200px){
+    .text {
+        font-size: 40vw;
+    }
+}
+
 
 .scrolldown{
     position: absolute;
