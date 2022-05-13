@@ -95,6 +95,7 @@ export const ButtonWrapper = styled.div`
     width:30%;
     margin:auto;
     margin-left: 15%;
+    padding-bottom: 60px;
 
     @media screen and (max-width:1650px){
         margin: auto;

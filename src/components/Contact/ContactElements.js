@@ -9,7 +9,7 @@ export const ContactContainer = styled.div`
 `
 
 export const GeneralWrapper = styled.div`
-    width: 90%;
+    width: 80%;
     margin:auto;
     display: flex;
     padding-top:5%;
