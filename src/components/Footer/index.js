@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterWrap, FooterInfo, LeftContainer, RightContainer, Title, Subtitle, SocialMediaWrapper, SocialMediaItem, SocialLinks, AlternativeLinks} from './FooterElements'
+import { FooterContainer, FooterWrap, LeftContainer, RightContainer, Title, Subtitle, SocialMediaWrapper, SocialMediaItem, SocialLinks, AlternativeLinks} from './FooterElements'
 import {FiLinkedin, FiInstagram, FiTwitter} from 'react-icons/fi'
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -18,7 +18,7 @@ const Footer = () => {
                     <SocialMediaWrapper>
                     <LeftContainer>
                             <Title alt to='/' onClick={toggleHome}>PIPS LAB</Title>
-                            <Subtitle>Desafiando el status quo</Subtitle>
+                            <Subtitle>Desafiando el statu quo</Subtitle>
                         </LeftContainer>
                         <RightContainer>
                             <SocialLinks>

@@ -7,9 +7,9 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import  Themes  from "../components/Theme/Themes.js";
 import { ThemeProvider } from 'styled-components';
-import WhatsappButton from '../components/WhatsappButton/WhatsappButton';
+
 import ServicesSection from '../components/Services';
-import Gallery from '../components/Gallery/Index';
+
 
 
 
@@ -34,7 +34,6 @@ const Home = () => {
             
             <ContactSection/>
             <Footer/>
-            {/* <WhatsappButton/> */}
         </ThemeProvider>
     )
 }

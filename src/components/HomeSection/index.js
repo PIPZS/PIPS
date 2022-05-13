@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {Title, ScrollDown} from './HomeElements.js';
 import './Home.css';
 import VideoUrl from '../../videos/videoedificios.mp4';
-import VideoUrlWebm from '../../videos/videoedificios.webm'
 
 
 
@@ -37,18 +36,13 @@ const Video = styled.video`
 
 const HomeSection = () => {
 
-    
-    const [isOpen, setIsOpen] = useState(false)
-    
 
-    const toggle = () =>{
-        setIsOpen(!isOpen)
-    }
 
     return (
       <Background>
-            <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto"  muted playsInline>
+            <Video id="myVideo"  autoPlay="autoplay"  loop="loop" preload="auto" muted playsInline>
                 <source src={VideoUrl} type="video/mp4"></source>
+                <source src={VideoUrl} type="video/webm"></source>
             </Video>
             <MainWrapper >
                 <Title>
