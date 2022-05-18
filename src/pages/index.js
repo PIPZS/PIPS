@@ -31,7 +31,6 @@ const Home = () => {
             <HomeSection/>
             <InfoSection theme={theme}/>
             <ServicesSection/>
-            
             <ContactSection/>
             <Footer/>
         </ThemeProvider>
