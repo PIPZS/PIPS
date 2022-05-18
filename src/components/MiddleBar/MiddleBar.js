@@ -7,26 +7,26 @@ function MiddleBar() {
         <MainWrapper>
           <InfoWrapper>
               <Box>
-                <BoxTitle><p>0.1.</p>Mantenimiento web</BoxTitle>
+                <BoxTitle><p>01.</p>Mantenimiento web</BoxTitle>
                 <BoxText>Seguimiento de los avances del proyecto. Matenimiento y actualizaciones de sitios web CMS y tradicionales. 
                   Optimización de código y mejoras de funcionalidades.
                 </BoxText>
               </Box>
               <Box second>
-                <BoxTitle><p>0.2.</p>Optimización seo</BoxTitle>
+                <BoxTitle><p>02.</p>Optimización seo</BoxTitle>
                 <BoxText>Ofrecemos soluciones versátiles con el objetivo de maximizar la visibilidad orgánica de los sitios web en 
                   los buscadores y en las redes sociales. Tags personalizados con estándares de SEO actuales.
                 </BoxText>
               </Box>
               <Box>
-                <BoxTitle><p>0.3.</p>Registro de dominio</BoxTitle>
+                <BoxTitle><p>03.</p>Registro de dominio</BoxTitle>
                 <BoxText>
                   Nos aseguramos de que encuentres el dominio correcto y que tenga un lugar seguro en línea con protección de privacidad 
                   para personas y empresas.
                 </BoxText>
               </Box>
               <Box>
-                <BoxTitle><p>0.4.</p>Servicios de hosting</BoxTitle>
+                <BoxTitle><p>04.</p>Servicios de hosting</BoxTitle>
                 <BoxText>
                   Mapeamos todo para que tu presencia online sea efectiva: variedad de planes de Hosting profesionales con emails propios, 
                   soporte formidable y aplicaciones autoinstalables.

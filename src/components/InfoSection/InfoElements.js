@@ -285,6 +285,10 @@ export const CariuseltextWrapper = styled.div`
     width: 80%;
     margin: auto;
     padding-top: 5rem;
+
+    @media screen and (max-width:500px){
+        text-align: center;
+    }
 `
 
 export const CarouselTitle = styled.h3`

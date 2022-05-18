@@ -8,7 +8,7 @@ function WhatsappButton() {
     const [specialScroll, setSpecialScroll] = useState(false)
 
     const changeNav = () => {
-        if(window.scrollY >= document.documentElement.clientHeight - 800){
+        if(window.scrollY >= document.documentElement.clientHeight - 1000){
             setSpecialScroll(true)
         }else{
             setSpecialScroll(false);
