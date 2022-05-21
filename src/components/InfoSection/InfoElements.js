@@ -77,7 +77,7 @@ export const InfoSubtitle = styled.p`
     position: relative;
     z-index: 20;
     font-weight: ${props => props.bold ? 'bold' : '' };
-    text-align: justify;
+    text-align: left;
 
 
 
