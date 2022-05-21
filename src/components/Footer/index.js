@@ -18,7 +18,7 @@ const Footer = () => {
                     <SocialMediaWrapper>
                     <LeftContainer>
                             <Title alt to='/' onClick={toggleHome}>PIPS LAB</Title>
-                            <Subtitle>Desafiando el statu quo</Subtitle>
+                            <Subtitle>Desafiando el status quo</Subtitle>
                         </LeftContainer>
                         <RightContainer>
                             <SocialLinks>
